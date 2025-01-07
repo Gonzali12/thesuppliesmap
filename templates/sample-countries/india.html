@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block title %} India {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>India</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/india-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            India, the second-most populous country in the world, has a population of over 1.4 billion people. Classified as a More Economically Developed Country (MEDC), it has a Human Development Index (HDI) of 0.645, indicating moderate levels of income, health, and education. <br><br>Covering a geographical area of 3,287,263 square kilometers, India is known for its vast cultural diversity, historical landmarks, and varied geography from the Himalayas to coastal regions. <br><br>The current Prime Minister, Narendra Modi, holds a center-right political stance, focusing on economic development, digital innovation, and national security. <br><br>India’s growing economy, strategic geopolitical position, and rich cultural heritage make it a major global player.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">India's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">India's logistics sector is rapidly growing, driven by increasing demand for efficient transportation, warehousing, and supply chain solutions. The industry is expected to play a critical role in supporting the country's economic growth.</p>
+
+        <h1>The biggest logistics companies in India are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Blue Dart Express</h5> 
+                    <p class="card-text">Blue Dart Express is a leading logistics company in India, specializing in express courier delivery services. The company operates a vast network across the country and is known for its reliable and timely delivery solutions.</p>
+                    <div class="specialty">Specialty: Express Courier Delivery</div>
+                    <a href="https://www.bluedart.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Gati Ltd.</h5> 
+                    <p class="card-text">Gati Ltd. is one of India's premier logistics and supply chain solutions providers, offering a wide range of services including express distribution, freight forwarding, and e-commerce logistics. The company is known for its extensive network and innovative solutions.</p>
+                    <div class="specialty">Specialty: Supply Chain Solutions & Freight Forwarding</div>
+                    <a href="https://www.gati.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TCI (Transport Corporation of India)</h5> 
+                    <p class="card-text">Transport Corporation of India (TCI) is a major logistics and supply chain management company in India, offering integrated transportation and logistics solutions. The company operates across various sectors, including automotive, retail, and manufacturing.</p>
+                    <div class="specialty">Specialty: Integrated Transportation & Logistics Solutions</div>
+                    <a href="https://www.tcil.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Mahindra Logistics</h5> 
+                    <p class="card-text">Mahindra Logistics is a leading logistics and supply chain management company in India, providing end-to-end solutions including transportation, warehousing, and distribution. The company is part of the Mahindra Group and is known for its efficiency and reliability.</p>
+                    <div class="specialty">Specialty: Supply Chain Management & Transportation</div>
+                    <a href="https://www.mahindralogistics.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Delhivery</h5> 
+                    <p class="card-text">Delhivery is one of India's fastest-growing logistics companies, specializing in e-commerce logistics and supply chain solutions. The company offers a range of services including express parcel delivery, freight, and warehousing.</p>
+                    <div class="specialty">Specialty: E-commerce Logistics & Supply Chain Solutions</div>
+                    <a href="https://www.delhivery.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in India are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tata Group</h5> 
+                    <p class="card-text">Tata Group is one of India's largest and most diversified conglomerates, with a significant presence in manufacturing industries including automotive, steel, and consumer goods. The group is known for its innovation and commitment to quality.</p>
+                    <div class="specialty">Specialty: Diversified Manufacturing</div>
+                    <a href="https://www.tata.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Reliance Industries</h5> 
+                    <p class="card-text">Reliance Industries is one of India's largest conglomerates, with major interests in petrochemicals, refining, oil, and telecommunications. The company is known for its large-scale manufacturing operations and significant contribution to India's economy.</p>
+                    <div class="specialty">Specialty: Petrochemicals & Refining</div>
+                    <a href="https://www.ril.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Larsen & Toubro</h5> 
+                    <p class="card-text">Larsen & Toubro (L&T) is a leading engineering and construction company in India, specializing in infrastructure, heavy engineering, and defense manufacturing. The company is known for its expertise in large-scale projects and cutting-edge technology.</p>
+                    <div class="specialty">Specialty: Engineering & Construction</div>
+                    <a href="https://www.larsentoubro.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Hindustan Unilever</h5> 
+                    <p class="card-text">Hindustan Unilever is one of India's largest consumer goods companies, producing a wide range of products including food, beverages, cleaning agents, and personal care items. The company is known for its extensive brand portfolio and market leadership.</p>
+                    <div class="specialty">Specialty: Consumer Goods Manufacturing</div>
+                    <a href="https://www.hul.co.in/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Mahindra & Mahindra</h5> 
+                    <p class="card-text">Mahindra & Mahindra is a major automotive and farm equipment manufacturer in India, producing a wide range of vehicles and machinery. The company is known for its innovation, quality, and global presence.</p>
+                    <div class="specialty">Specialty: Automotive & Farm Equipment Manufacturing</div>
+                    <a href="https://www.mahindra.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in India are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy India</h5> 
+                    <p class="card-text">Ogilvy India is part of the global Ogilvy network, providing comprehensive marketing and advertising services. The agency is known for its creativity and effectiveness in building brands in the Indian market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.ogilvy.com/india" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Wunderman Thompson India</h5> 
+                    <p class="card-text">Wunderman Thompson India is a leading marketing communications agency, offering services in advertising, digital marketing, and brand strategy. The agency is known for its innovative and data-driven approach to marketing.</p>
+                    <div class="specialty">Specialty: Digital Marketing & Brand Strategy</div>
+                    <a href="https://www.wundermanthompson.com/india" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Burnett India</h5> 
+                    <p class="card-text">Leo Burnett India is part of the global Leo Burnett network, offering creative advertising and marketing services. The agency is known for its powerful storytelling and ability to connect with Indian audiences.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Storytelling</div>
+                    <a href="https://leoburnett.co.in/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">McCann Worldgroup India</h5> 
+                    <p class="card-text">McCann Worldgroup India is a prominent advertising agency known for its creative campaigns and brand-building strategies. The agency has worked with some of the biggest brands in India, delivering impactful marketing solutions.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Building</div>
+                    <a href="https://www.mccannworldgroup.com/locations/india" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Dentsu Aegis Network India</h5> 
+                    <p class="card-text">Dentsu Aegis Network India is part of the global Dentsu Aegis network, offering a wide range of marketing services including media planning, digital marketing, and brand strategy. The agency is known for its innovative and data-driven approach.</p>
+                    <div class="specialty">Specialty: Media Planning & Digital Marketing</div>
+                    <a href="https://www.dentsu.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in India are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">State Bank of India (SBI)</h5> 
+                    <p class="card-text">State Bank of India (SBI) is the largest public sector bank in India, offering a comprehensive range of banking services including retail banking, corporate banking, and investment services. The bank is known for its extensive branch network and customer reach.</p>
+                    <div class="specialty">Specialty: Comprehensive Banking Services</div>
+                    <a href="https://www.sbi.co.in/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">HDFC Bank</h5> 
+                    <p class="card-text">HDFC Bank is one of India's leading private sector banks, known for its strong retail banking presence, digital banking innovations, and customer-centric approach. The bank offers a wide range of financial services including loans, credit cards, and wealth management.</p>
+                    <div class="specialty">Specialty: Retail & Digital Banking</div>
+                    <a href="https://www.hdfcbank.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ICICI Bank</h5> 
+                    <p class="card-text">ICICI Bank is a leading private sector bank in India, offering a wide range of banking products and services including retail banking, corporate banking, and treasury operations. The bank is known for its technological innovation and robust customer base.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.icicibank.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Axis Bank</h5> 
+                    <p class="card-text">Axis Bank is one of India's major private sector banks, providing a comprehensive range of financial services including personal banking, corporate banking, and investment services. The bank is known for its customer-focused approach and digital banking solutions.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.axisbank.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Kotak Mahindra Bank</h5> 
+                    <p class="card-text">Kotak Mahindra Bank is a leading Indian bank, offering a wide range of banking products and financial services including personal finance, investment banking, and wealth management. The bank is known for its innovation and customer-centric services.</p>
+                    <div class="specialty">Specialty: Wealth Management & Retail Banking</div>
+                    <a href="https://www.kotak.com/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in India are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DLF Ltd.</h5> 
+                    <p class="card-text">DLF Ltd. is one of India's largest real estate companies, specializing in the development of commercial, residential, and retail properties. The company is known for its high-quality construction and significant contribution to India's real estate sector.</p>
+                    <div class="specialty">Specialty: Commercial & Residential Real Estate Development</div>
+                    <a href="https://www.dlf.in/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Godrej Properties</h5> 
+                    <p class="card-text">Godrej Properties is a leading real estate developer in India, known for its innovation and excellence in residential and commercial projects. The company is part of the Godrej Group and is committed to sustainability and customer satisfaction.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate Development</div>
+                    <a href="https://www.godrejproperties.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Oberoi Realty</h5> 
+                    <p class="card-text">Oberoi Realty is a prominent real estate development company in India, specializing in luxury residential and commercial properties. The company is known for its high-quality construction and commitment to creating sustainable communities.</p>
+                    <div class="specialty">Specialty: Luxury Residential & Commercial Real Estate</div>
+                    <a href="https://www.oberoirealty.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Prestige Group</h5> 
+                    <p class="card-text">Prestige Group is a leading real estate developer in India, offering a wide range of residential, commercial, and hospitality projects. The company is known for its innovation, quality, and focus on customer satisfaction.</p>
+                    <div class="specialty">Specialty: Residential & Hospitality Real Estate</div>
+                    <a href="https://www.prestigeconstructions.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Brigade Group</h5> 
+                    <p class="card-text">Brigade Group is a major real estate developer in India, involved in the development of residential, commercial, and hospitality properties. The company is known for its innovative projects and commitment to quality.</p>
+                    <div class="specialty">Specialty: Integrated Real Estate Development</div>
+                    <a href="https://www.brigadegroup.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

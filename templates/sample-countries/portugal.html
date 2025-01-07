@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} Portugal {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Portugal</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/portugal-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Portugal, located in Southern Europe on the Iberian Peninsula, has a population of approximately 10.28 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.864, highlighting its high standards of living, education, and healthcare. <br><br>Covering a geographical area of 92,090 square kilometers, Portugal is known for its rich cultural heritage, historical landmarks, and beautiful Atlantic coastline. <br><br>The country is currently led by Prime Minister António Costa, who holds a center-left political stance, focusing on social equality, economic growth, and environmental sustainability. <br><br>Portugal’s robust economy, cultural influence, and strategic position in Europe underscore its global significance.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Portugal's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Portugal's logistics sector plays a key role in its economy, facilitating trade and the efficient movement of goods both domestically and internationally. The industry is supported by advanced infrastructure and strategic port locations.</p>
+
+        <h1>The biggest logistics companies in Portugal are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Luis Simões</h5> 
+                    <p class="card-text">Luis Simões is a leading logistics and transportation company in Portugal, offering a wide range of services including freight transport, warehousing, and supply chain management. The company is known for its extensive network and innovative solutions.</p>
+                    <div class="specialty">Specialty: Freight Transport & Supply Chain Management</div>
+                    <a href="https://www.luis-simoes.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TIBA Portugal</h5> 
+                    <p class="card-text">TIBA Portugal is a major logistics provider, specializing in freight forwarding, customs brokerage, and integrated logistics services. The company is recognized for its expertise in handling complex logistics operations.</p>
+                    <div class="specialty">Specialty: Freight Forwarding & Customs Brokerage</div>
+                    <a href="https://www.tibagroup.com/en/portugal/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Rangel Logistics Solutions</h5> 
+                    <p class="card-text">Rangel Logistics Solutions is a leading logistics company in Portugal, offering a comprehensive range of services including international transport, warehousing, and supply chain management. The company is known for its innovation and customer-focused approach.</p>
+                    <div class="specialty">Specialty: International Transport & Warehousing</div>
+                    <a href="https://www.rangel.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">GEFCO Portugal</h5> 
+                    <p class="card-text">GEFCO Portugal is a global logistics provider, specializing in automotive logistics, freight forwarding, and supply chain management. The company is recognized for its strong presence in the automotive sector and innovative solutions.</p>
+                    <div class="specialty">Specialty: Automotive Logistics & Freight Forwarding</div>
+                    <a href="https://pt.gefco.net/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">KLOG Logistics Solutions</h5> 
+                    <p class="card-text">KLOG Logistics Solutions is a Portuguese logistics company offering services such as freight transport, warehousing, and logistics consulting. The company is known for its agility, efficiency, and commitment to sustainability.</p>
+                    <div class="specialty">Specialty: Freight Transport & Logistics Consulting</div>
+                    <a href="https://www.klog.pt/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Portugal are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">EDP - Energias de Portugal</h5> 
+                    <p class="card-text">EDP - Energias de Portugal is one of the largest energy companies in Portugal, specializing in electricity generation, distribution, and supply. The company is a leader in renewable energy and is known for its commitment to sustainability.</p>
+                    <div class="specialty">Specialty: Energy Production & Renewable Energy</div>
+                    <a href="https://www.edp.com/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Galp Energia</h5> 
+                    <p class="card-text">Galp Energia is a leading energy company in Portugal, involved in the exploration, production, and refining of oil and natural gas. The company also has significant operations in renewable energy and is a key player in the energy sector.</p>
+                    <div class="specialty">Specialty: Oil & Gas Exploration & Production</div>
+                    <a href="https://www.galp.com/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sonae</h5> 
+                    <p class="card-text">Sonae is a major Portuguese conglomerate with interests in retail, telecommunications, shopping centers, and manufacturing. The company is known for its innovation and strong presence in the retail and industrial sectors.</p>
+                    <div class="specialty">Specialty: Retail & Industrial Manufacturing</div>
+                    <a href="https://www.sonae.pt/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">The Navigator Company</h5> 
+                    <p class="card-text">The Navigator Company is a leading producer of paper and pulp in Portugal, known for its high-quality products and commitment to sustainability. The company is one of the largest exporters in the country and a key player in the global paper market.</p>
+                    <div class="specialty">Specialty: Paper & Pulp Manufacturing</div>
+                    <a href="https://www.thenavigatorcompany.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Corticeira Amorim</h5> 
+                    <p class="card-text">Corticeira Amorim is the world’s largest cork producer, based in Portugal. The company is a global leader in cork manufacturing, providing products for various industries including wine, construction, and design.</p>
+                    <div class="specialty">Specialty: Cork Manufacturing</div>
+                    <a href="https://www.amorimcork.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Portugal are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Portugal</h5> 
+                    <p class="card-text">Ogilvy Portugal is part of the global Ogilvy network, providing a wide range of marketing and advertising services. The agency is known for its creativity and strategic approach to brand communication in the Portuguese market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.ogilvy.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Havas Portugal</h5> 
+                    <p class="card-text">Havas Portugal is part of the global Havas network, offering integrated marketing solutions including advertising, digital marketing, and media planning. The agency is recognized for its innovative campaigns and strong client relationships.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Digital Marketing</div>
+                    <a href="https://pt.havas.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Burnett Lisboa</h5> 
+                    <p class="card-text">Leo Burnett Lisboa is a leading advertising agency in Portugal, part of the global Leo Burnett network. The agency is known for its creative advertising solutions and strategic brand building efforts in the Portuguese market.</p>
+                    <div class="specialty">Specialty: Strategic Brand Building & Advertising</div>
+                    <a href="https://www.leoburnett.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Wunderman Thompson Portugal</h5> 
+                    <p class="card-text">Wunderman Thompson Portugal is part of the global Wunderman Thompson network, offering comprehensive marketing services including advertising, digital marketing, and customer experience management. The agency is known for its innovation and creativity.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Customer Experience</div>
+                    <a href="https://www.wundermanthompson.com/portugal" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">McCann Portugal</h5> 
+                    <p class="card-text">McCann Portugal is a top advertising agency in Portugal, part of the global McCann Worldgroup. The agency offers a range of marketing services including advertising, brand strategy, and digital marketing, known for its creativity and strategic approach.</p>
+                    <div class="specialty">Specialty: Advertising & Brand Strategy</div>
+                    <a href="https://www.mccann.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Portugal are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Caixa Geral de Depósitos (CGD)</h5> 
+                    <p class="card-text">Caixa Geral de Depósitos (CGD) is the largest public sector bank in Portugal, offering a wide range of financial services including retail banking, corporate banking, and investment services. The bank is known for its strong market presence and customer service.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.cgd.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Santander Totta</h5> 
+                    <p class="card-text">Banco Santander Totta is one of the largest banks in Portugal, providing a comprehensive range of banking services including retail banking, corporate banking, and investment management. The bank is a subsidiary of the global Santander Group.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.santandertotta.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco BPI</h5> 
+                    <p class="card-text">Banco BPI is one of the largest private banks in Portugal, offering a wide range of services including retail banking, corporate banking, and asset management. The bank is known for its customer-centric approach and financial innovation.</p>
+                    <div class="specialty">Specialty: Retail & Asset Management</div>
+                    <a href="https://www.bancobpi.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Novo Banco</h5> 
+                    <p class="card-text">Novo Banco is a major Portuguese bank offering a full range of banking services, including retail banking, corporate banking, and investment services. The bank was established following the resolution of Banco Espírito Santo and has a strong market presence.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.novobanco.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Millennium bcp</h5> 
+                    <p class="card-text">Millennium bcp is the largest private bank in Portugal, offering a wide range of financial services including retail banking, corporate banking, and wealth management. The bank is known for its innovative digital banking platform.</p>
+                    <div class="specialty">Specialty: Retail Banking & Digital Banking</div>
+                    <a href="https://www.millenniumbcp.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Portugal are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sonae Sierra</h5> 
+                    <p class="card-text">Sonae Sierra is a leading international developer and operator of shopping centers, based in Portugal. The company is known for its innovative approach to retail property development and its commitment to sustainability.</p>
+                    <div class="specialty">Specialty: Shopping Center Development & Management</div>
+                    <a href="https://www.sonaesierra.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Vanguard Properties</h5> 
+                    <p class="card-text">Vanguard Properties is one of Portugal's leading real estate developers, specializing in luxury residential and commercial properties. The company is recognized for its high-end developments and innovative architectural designs.</p>
+                    <div class="specialty">Specialty: Luxury Real Estate Development</div>
+                    <a href="https://www.vanguardproperties.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lusoproa</h5> 
+                    <p class="card-text">Lusoproa is a key player in Portugal's real estate market, focusing on the development of residential, commercial, and mixed-use properties. The company is known for its quality construction and sustainable practices.</p>
+                    <div class="specialty">Specialty: Residential & Mixed-Use Development</div>
+                    <a href="https://www.lusoproa.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Square Asset Management</h5> 
+                    <p class="card-text">Square Asset Management is a leading real estate investment management company in Portugal, focusing on the acquisition and management of commercial properties. The company is recognized for its expertise in property investment and portfolio management.</p>
+                    <div class="specialty">Specialty: Real Estate Investment & Property Management</div>
+                    <a href="https://www.squaream.pt/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Libertas</h5> 
+                    <p class="card-text">Grupo Libertas is a prominent real estate developer in Portugal, specializing in residential and commercial projects. The company is known for its innovative developments and commitment to quality and sustainability.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Development</div>
+                    <a href="https://www.grupolibertas.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

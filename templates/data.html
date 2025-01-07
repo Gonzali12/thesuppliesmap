@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %} Data {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/data-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<h2 id="description-title">Where does our data come from?</h2>
+<hr/>
+<div class="text-block">
+    <p id="data-description">
+        On this website, I have utilized a combination of datasets to present a comprehensive analysis of the global economic landscape. The first source is the Atlas of Economic Complexity, provided by Harvard's Growth Lab. Economic complexity is a metric that captures the diversity and sophistication of a country's productive capabilities. It evaluates how many distinct products a country can produce and how many other countries can also manufacture those products. A higher economic complexity score indicates a production structure that is both diversified and focused on less commonly produced, high-knowledge goods. This metric is closely tied to manufacturing, as economies with greater complexity often excel in producing advanced and varied manufactured goods, reflecting a higher capacity for industrial innovation and production efficiency. Additionally, from the same source, I gathered data on each country's total imports and exports to assess the size of the market available for businesses. Larger markets provide businesses with more opportunities under the same regulatory framework.<br><br>
+    
+        To supplement this, I incorporated GDP per capita figures from the World Bank for the year 2022. Including GDP per capita enhances the analysis by revealing how a country's economic complexity correlates with its per capita output, thereby providing insights into the quality of economic output and standard of living. I also calculated the average annual GDP growth rate over the last ten years of available data from the same source. This metric enables an evaluation of whether a country has experienced sustained economic growth and continuous business expansion.<br><br>
+    
+        For value-added tax (VAT) rates, I used data from the PwC database, which compiles the most recent available information on each country's VAT rates. VAT rates represent an additional cost to both customers and businesses, making this variable critical when planning expansion into countries with different tax structures. Similarly, I analyzed capital gains tax rates from the same source and corporate tax rates from the Tax Foundation. Furthermore, I included the top income tax rate to represent each country's approach to taxing high-net-worth individuals and wealth creation. While an average income tax rate might have been a more comprehensive metric, time constraints required a simpler approach. Nonetheless, this decision should not significantly reduce the resolution of the average business expansion score per country. The figures for top income tax rates were obtained from Trading Economics. Lastly, I incorporated social security tax rates as they represent an additional burden for businesses. The data for this metric was also sourced from Trading Economics.<br><br>
+    
+        The Ease of Doing Business metric, obtained from doingbusiness.org, offers valuable insights into how regulatory frameworks impact business operations and creation within a country. I utilized the score version of this metric rather than the ranking to provide a more precise analysis.<br><br>
+    
+        The Gini Coefficient measures income distribution within a country. A higher Gini Coefficient indicates greater income disparity among demographic groups. For instance, South Africa has a Gini Coefficient of 63%, signifying that the richest 10% of the population holds 63% of the wealth. This metric is particularly important due to its correlation with unstable business environments. The Gini Coefficient data was sourced from the World Population Review.<br><br>
+    
+        The Logistics Performance Index (LPI) assesses the efficiency and ease with which products can move into and within a country. Higher LPI scores indicate superior logistics systems, which are crucial for establishing a business. The LPI scores were gathered from The World Bank.<br><br>
+    
+        The Political Stability Index evaluates the volatility of a country's political environment. Values range from -2.5 (weak) to 2.5 (strong) and were sourced from The Global Economy.<br><br>
+    
+        Port throughput measures the volume of cargo or number of vessels handled by a country's ports over a specified period, typically one year. This data, sourced from CEIC: Global Economic Data, Indicators, Charts & Forecasts, provides insights into a country's port capacity.<br><br>
+    
+        The Median Turnaround Time at a Port measures the time required for a vessel to arrive, load and unload cargo, and depart. This metric reflects port efficiency and is crucial for assessing the operational effectiveness of a country's ports. Data for this metric was obtained from The World Bank.<br><br>
+    
+        Total trade per country, a macroeconomic indicator, represents the aggregate value of exports and imports. To calculate this, I used exports and imports data from Trading Economics and summed them. This metric reflects the size of a country’s market.<br><br>
+    
+        For live data, I utilized APIs from the FRED database and, when unavailable, accessed data from specific central banks for exchange rates, interest rates, and inflation rates. These macroeconomic indicators provide critical information for businesses to analyze expansion plans.<br><br>
+    
+        Lastly, I sourced credit ratings and equity risk premiums from FinHub. These metrics are vital for assessing the risks associated with foreign investments in a given country.
+    </p>
+    
+    <h4 id="references-header">References:</h4>
+    <ol id="references-list">
+        <li class="references-list-item">CEPII. (2022). <i>Bilateral Trade by Products Database (BACI).</i> Retrieved from <a href="http://www.cepii.fr" class="data-link">http://www.cepii.fr</a></li>
+        <li class="references-list-item">CEIC: Global Economic Data, Indicators, Charts & Forecasts. (2022). <i>Container port throughput.</i> Retrieved from <a href="https://www.ceicdata.com/en/indicator/container-port-throughput" class="data-link">https://www.ceicdata.com/en/indicator/container-port-throughput</a></li>
+        <li class="references-list-item">Ease of Doing Business. (2020). <i>Ease of doing business scores.</i> Retrieved from <a href="https://archive.doingbusiness.org/en/data/doing-business-score" class="data-link">https://archive.doingbusiness.org/en/data/doing-business-score</a></li>
+        <li class="references-list-item">FRED. (2024). <i>Exchange, interest, and inflation rates.</i> Retrieved from <a href="https://fred.stlouisfed.org/" class="data-link">https://fred.stlouisfed.org/</a></li>
+        <li class="references-list-item">Finhub. (2025). <i>Country metadata.</i> Retrieved from <a href="https://finnhub.io/docs/api/country" class="data-link">https://finnhub.io/docs/api/country</a></li>
+        <li class="references-list-item">Harvard Growth Lab. (2022). <i>The Atlas of Economic Complexity.</i> Retrieved from <a href="http://atlas.cid.harvard.edu" class="data-link">http://atlas.cid.harvard.edu</a></li>
+        <li class="references-list-item">The World Bank. (2022). <i>GDP per capita.</i> Retrieved from <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.CD" class="data-link">https://data.worldbank.org/indicator/NY.GDP.PCAP.CD</a></li>
+        <li class="references-list-item">The World Bank. (2023). <i>International LPI.</i> Retrieved from <a href="https://lpi.worldbank.org/international/global" class="data-link">https://lpi.worldbank.org/international/global</a></li>
+        <li class="references-list-item">The World Bank. (2023). <i>Supply chain tracking data.</i> Retrieved from <a href="https://lpi.worldbank.org/international/tracking-data" class="data-link">https://lpi.worldbank.org/international/tracking-data</a></li>
+        <li class="references-list-item">The Global Economy. (2023). <i>Political stability - Country rankings.</i> Retrieved from <a href="https://www.theglobaleconomy.com/rankings/wb_political_stability/" class="data-link">https://www.theglobaleconomy.com/rankings/wb_political_stability/</a></li>
+        <li class="references-list-item">Trading Economics. (2024). <i>List of countries by personal income tax rate.</i> Retrieved from <a href="https://tradingeconomics.com/country-list/personal-income-tax-rate" class="data-link">https://tradingeconomics.com/country-list/personal-income-tax-rate</a></li>
+        <li class="references-list-item">Trading Economics. (2024). <i>Social security rate for employees.</i> Retrieved from <a href="https://tradingeconomics.com/country-list/social-security-rate-for-employees" class="data-link">https://tradingeconomics.com/country-list/social-security-rate-for-employees</a></li>
+        <li class="references-list-item">Trading Economics. (n.d.). <i>Exports.</i> Retrieved from <a href="https://tradingeconomics.com/country-list/exports" class="data-link">https://tradingeconomics.com/country-list/exports</a></li>
+        <li class="references-list-item">Trading Economics. (n.d.). <i>Imports.</i> Retrieved from <a href="https://tradingeconomics.com/country-list/imports" class="data-link">https://tradingeconomics.com/country-list/imports</a></li>
+        <li class="references-list-item">The World Population Review. (2024). <i>Gini coefficient by country 2024.</i> Retrieved from <a href="https://worldpopulationreview.com/country-rankings/gini-coefficient-by-country" class="data-link">https://worldpopulationreview.com/country-rankings/gini-coefficient-by-country</a></li>
+        <li class="references-list-item">PwC. (n.d.). <i>Value-added tax (VAT) rates.</i> Retrieved from <a href="https://taxsummaries.pwc.com/quick-charts/value-added-tax-vat-rates" class="data-link">https://taxsummaries.pwc.com/quick-charts/value-added-tax-vat-rates</a></li>
+        <li class="references-list-item">PwC. (n.d.). <i>Capital gains tax rates.</i> Retrieved from <a href="https://taxsummaries.pwc.com/quick-charts/capital-gains-tax-cgt-rates" class="data-link">https://taxsummaries.pwc.com/quick-charts/capital-gains-tax-cgt-rates</a></li>
+    </ol>    
+</div>
+<div>
+    <h2 id="quote">Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others. And having no respect he ceases to love. <br><br> ― Fyodor Dostoevsky, The Brothers Karamazov</h2>
+</div>
+<br/>
+{% endblock %}

@@ -1,0 +1,82 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#window-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.container #window-video, .container .singapore-and-japan{
+    grid-area: 1/1;
+}
+
+.singapore-and-japan{
+    display: flex;
+    gap: 115px;
+}
+
+.japan, .singapore{
+    display: flex;
+    flex-direction: column;
+}
+
+#manufacturing-Japan, #shipping-Singapore{
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(243, 238, 226);
+}
+
+#singapore-flag, #japan-flag{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    border-radius: 10%;
+}
+
+@media(max-width: 1400px){
+    h3{
+        padding: 30px 0px 15px 0px;
+    }
+
+    #manufacturing-Japan, #shipping-Singapore{
+        padding: 8px 10px;
+        font-size: small;
+    }
+}
+
+@media(max-width: 1100px){
+   .singapore-and-japan{
+        flex-direction: column;
+    }
+
+    .singapore{
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width: 490px){
+    .singapore-and-japan{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media(max-width: 465px){
+    #singapore-flag, #japan-flag{
+        margin-bottom: 5px;
+    }
+}

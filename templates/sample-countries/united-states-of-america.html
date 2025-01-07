@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} United States of America {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}     
+
+{% block content %}
+<div class="country-title">
+    <h2>United States of America</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/united-states-of-america-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            The United States of America, located in North America, has a population of approximately 331.89 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.926, highlighting its high standards of living, education, and healthcare. <br><br>Covering a vast geographical area of 9,833,520 square kilometers, the USA is known for its diverse landscapes, economic power, and cultural influence. <br><br>The country is currently led by President Joe Biden, who holds a center-left political stance, focusing on economic recovery, social equity, and international cooperation. <br><br>The USA’s strong economy, technological advancements, and global leadership position make it a major world power.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">USA's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">The logistics sector in the United States is a cornerstone of its economy, supporting vast domestic distribution networks and international trade. The industry is known for its advanced infrastructure and global reach.</p>
+
+        <h1>The biggest logistics companies in the United States are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">UPS</h5> 
+                    <p class="card-text">UPS (United Parcel Service) is one of the world's largest and most trusted logistics and package delivery companies, offering a wide range of services including domestic and international shipping, freight forwarding, and supply chain management.</p>
+                    <div class="specialty">Specialty: Package Delivery & Logistics</div>
+                    <a href="https://www.ups.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">FedEx</h5> 
+                    <p class="card-text">FedEx is a global logistics company known for its fast and reliable courier services, express transportation, freight, and supply chain management solutions. The company is a leader in innovation and customer service in the logistics industry.</p>
+                    <div class="specialty">Specialty: Express Transportation & Supply Chain Solutions</div>
+                    <a href="https://www.fedex.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL USA</h5> 
+                    <p class="card-text">DHL USA is part of the global DHL network, offering a comprehensive range of logistics services including express shipping, freight transportation, and supply chain management. The company is recognized for its global reach and efficiency.</p>
+                    <div class="specialty">Specialty: Global Logistics & Express Shipping</div>
+                    <a href="https://www.dhl.com/us-en/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">XPO Logistics</h5> 
+                    <p class="card-text">XPO Logistics is a leading provider of transportation and logistics services in the United States, offering freight brokerage, supply chain management, and last-mile delivery solutions. The company is known for its innovative technology and customer-centric services.</p>
+                    <div class="specialty">Specialty: Freight Brokerage & Supply Chain Solutions</div>
+                    <a href="https://www.xpo.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">C.H. Robinson</h5> 
+                    <p class="card-text">C.H. Robinson is one of the largest third-party logistics providers in the United States, specializing in freight transportation, logistics, and supply chain management. The company is known for its vast network and advanced logistics solutions.</p>
+                    <div class="specialty">Specialty: Third-Party Logistics & Freight Transportation</div>
+                    <a href="https://www.chrobinson.com/en-us/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in the United States are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Apple Inc.</h5> 
+                    <p class="card-text">Apple Inc. is one of the world's leading technology companies, known for its innovative products including the iPhone, iPad, and Mac computers. The company is a leader in consumer electronics, software, and digital services.</p>
+                    <div class="specialty">Specialty: Consumer Electronics & Software</div>
+                    <a href="https://www.apple.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">General Motors (GM)</h5> 
+                    <p class="card-text">General Motors is one of the largest automobile manufacturers in the world, based in the United States. The company produces a wide range of vehicles under brands such as Chevrolet, GMC, Cadillac, and Buick.</p>
+                    <div class="specialty">Specialty: Automobile Manufacturing</div>
+                    <a href="https://www.gm.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Boeing</h5> 
+                    <p class="card-text">Boeing is a leading aerospace company, manufacturing commercial airplanes, defense, space, and security systems. The company is known for its innovation in aerospace engineering and its role as a major exporter for the United States.</p>
+                    <div class="specialty">Specialty: Aerospace & Defense Manufacturing</div>
+                    <a href="https://www.boeing.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Procter & Gamble (P&G)</h5> 
+                    <p class="card-text">Procter & Gamble (P&G) is one of the largest consumer goods companies in the world, known for its extensive range of products including personal care, household cleaning, and health care items. The company owns brands such as Gillette, Tide, and Pampers.</p>
+                    <div class="specialty">Specialty: Consumer Goods Manufacturing</div>
+                    <a href="https://us.pg.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ExxonMobil</h5> 
+                    <p class="card-text">ExxonMobil is one of the world's largest publicly traded energy companies, involved in the exploration, production, refining, and distribution of oil and gas. The company is also expanding into renewable energy and sustainability initiatives.</p>
+                    <div class="specialty">Specialty: Oil & Gas Exploration & Refining</div>
+                    <a href="https://corporate.exxonmobil.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in the United States are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Omnicom Group</h5> 
+                    <p class="card-text">Omnicom Group is one of the largest marketing and communications companies in the world, headquartered in New York, USA. The company provides a wide range of services including advertising, media planning, public relations, and digital marketing.</p>
+                    <div class="specialty">Specialty: Advertising & Communications</div>
+                    <a href="https://www.omnicomgroup.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">The Interpublic Group (IPG)</h5> 
+                    <p class="card-text">The Interpublic Group (IPG) is a global provider of marketing solutions, offering services in advertising, digital marketing, communications, and media management. The company operates through a variety of well-known agencies like McCann, FCB, and MullenLowe.</p>
+                    <div class="specialty">Specialty: Advertising & Media Management</div>
+                    <a href="https://www.interpublic.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">WPP USA</h5> 
+                    <p class="card-text">WPP USA is part of the global WPP network, providing comprehensive marketing services including advertising, digital marketing, and public relations. The company is known for its creativity and strategic marketing solutions in the American market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Public Relations</div>
+                    <a href="https://www.wpp.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Dentsu USA</h5> 
+                    <p class="card-text">Dentsu USA is a leading advertising and marketing agency, part of the global Dentsu network. The agency offers a wide range of services including advertising, digital marketing, and brand strategy, known for its innovative and creative solutions.</p>
+                    <div class="specialty">Specialty: Advertising & Brand Strategy</div>
+                    <a href="https://www.dentsu.com/us/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Publicis Groupe USA</h5> 
+                    <p class="card-text">Publicis Groupe USA is part of the global Publicis network, offering integrated marketing services including advertising, digital marketing, and media planning. The company is recognized for its innovative campaigns and client-focused approach.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Media Planning</div>
+                    <a href="https://www.publicisgroupe.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in the United States are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JPMorgan Chase</h5> 
+                    <p class="card-text">JPMorgan Chase is the largest bank in the United States and one of the largest financial institutions in the world, offering a comprehensive range of services including retail banking, investment banking, and asset management.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.jpmorganchase.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bank of America</h5> 
+                    <p class="card-text">Bank of America is a multinational investment bank and financial services company, offering a broad range of services including personal banking, corporate banking, and wealth management. The bank is a leader in digital banking innovation.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.bankofamerica.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Wells Fargo</h5> 
+                    <p class="card-text">Wells Fargo is one of the largest banks in the United States, providing a wide range of financial services including retail banking, commercial banking, and mortgage services. The bank is known for its extensive branch network and customer service.</p>
+                    <div class="specialty">Specialty: Retail & Mortgage Banking</div>
+                    <a href="https://www.wellsfargo.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Citigroup</h5> 
+                    <p class="card-text">Citigroup, also known as Citi, is a leading global bank, offering a range of financial services including consumer banking, corporate banking, and investment banking. The bank has a strong presence in the global financial markets.</p>
+                    <div class="specialty">Specialty: Global Consumer & Investment Banking</div>
+                    <a href="https://www.citigroup.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Goldman Sachs</h5> 
+                    <p class="card-text">Goldman Sachs is a leading global investment bank, providing services in investment management, securities, and investment banking. The company is known for its expertise in financial markets and its role in major global transactions.</p>
+                    <div class="specialty">Specialty: Investment Banking & Asset Management</div>
+                    <a href="https://www.goldmansachs.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in the United States are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CBRE Group</h5> 
+                    <p class="card-text">CBRE Group is the largest commercial real estate services and investment firm in the world, based in the United States. The company offers a wide range of services including property management, investment management, and real estate brokerage.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Services & Investment</div>
+                    <a href="https://www.cbre.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JLL (Jones Lang LaSalle)</h5> 
+                    <p class="card-text">JLL (Jones Lang LaSalle) is a leading professional services firm specializing in real estate and investment management. The company provides services in property management, leasing, capital markets, and project management.</p>
+                    <div class="specialty">Specialty: Real Estate & Investment Management</div>
+                    <a href="https://www.us.jll.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Keller Williams Realty</h5> 
+                    <p class="card-text">Keller Williams Realty is one of the largest real estate franchises in the United States, specializing in residential and commercial real estate brokerage. The company is known for its innovative approach and strong network of agents.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate Brokerage</div>
+                    <a href="https://www.kw.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cushman & Wakefield</h5> 
+                    <p class="card-text">Cushman & Wakefield is a global real estate services firm headquartered in the United States, offering services in property management, leasing, and investment management. The company is known for its expertise in commercial real estate.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Services</div>
+                    <a href="https://www.cushmanwakefield.com/en/united-states" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">RE/MAX</h5> 
+                    <p class="card-text">RE/MAX is one of the largest real estate brokerage firms in the United States, known for its extensive network of agents and franchise offices. The company specializes in residential real estate brokerage, with a strong presence in the U.S. and internationally.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Brokerage</div>
+                    <a href="https://www.remax.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

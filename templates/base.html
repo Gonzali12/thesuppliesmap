@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Global General Supply Chains Map">
+        <meta name="keywords" content="Manufacturing, supply chain, logistics, economics, globalization">
+        <meta name="author" content="Gonzalo Carpio-Rivero">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/header-and-footer-style.css') }}" rel="stylesheet">
+        <title>{% block title %}{% endblock %}</title>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <p id="announcement-bar"><i>Welcome To The Supply Chain World Map 🌎, <b> Made By Gonzalo Carpio-Rivero 🚂</b></i></p>
+        <div class="main-menu-container">
+        <a href="{{ url_for('homepage') }}" id="home-icon-on-nav" aria-label="home">
+            <img src="{{ url_for('static', filename='img/footer-and-nav/atlas-white.png') }}"  height="45" alt="This is atlas">
+        </a>
+        <div class="main-menu-navigation">
+            <ul id="menu-ul">
+                <li class="menu-li"><a href="{{ url_for('manufacturing_and_shipping') }}">Manufacturing And Shipping</a></li>
+                <li class="menu-li"><a href="{{ url_for('data') }}">Data</a></li>
+                <li class="menu-li"><a href="{{ url_for('about_me') }}">About Me</a></li>
+            </ul>
+        </div>
+        {% block header %}
+        <div class="search-and-results">
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">Search</span>
+                <input type="search" id="search-bar" name="q" placeholder="Search for a country"/>
+            </div>
+            <div class="search-results-main-menu">
+                <ul id="search-results"></ul>
+            </div>
+        </div>
+        {% endblock %}
+        </div>
+        <!--Bootstrap Mobile Menu-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('homepage') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('search_in_mobile') }}">Search A Country</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('manufacturing_and_shipping') }}">Manufacturing And Shipping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('data') }}">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about_me') }}">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <h5 id="modal-header-hamburger">Welcome To The Supply Chains Map! 🚂 </h5>
+        </nav>
+        <!--Bootstrap Mobile Menu-->    
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <div class="upper-footer">
+                <div class="footer-three-pillars">
+                    <div class="identity">
+                        <h3>Who am I?</h3>
+                        <p>Hello! My name is Gonzalo Carpio-Rivero. I am an industrial engineering student at Purdue University. This is my first major IE and CS project. It took approximately 8 months. Starting off, I didn’t know how to code, so I had to learn JavaScript, Python, HTML and CSS from YouTube videos. As things got serious, I realized I had to learn about HTTP requests, ports, responsive design, APIs, WebSockets, and more. Essentially, I became a full-stack developer before knowing what those words meant. This website has limited utility, but I built it from the ground up, brick by brick, and I’m proud of that. Driven by ambition and a never-ending desire to challenge myself, I’ll use the skills I gained from this experience to work on more projects. So, stay tuned!
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/gonzalocarpiorivero/">
+                                <img src="{{ url_for('static', filename='img/footer-and-nav/instagram.webp') }}" alt="instagram" id="instagram" class="footer-image" height="50">
+                            </a>
+                            <a href="https://www.linkedin.com/in/gonzalo-carpio-rivero-2a36812b7/">
+                                <img src="{{ url_for('static', filename='img/footer-and-nav/linkedin.webp') }}" alt="linkedin" id="linkedin" class="footer-image" height="50">
+                            </a>
+                            <a href="https://github.com/Gonzali12">
+                                <img src="{{ url_for('static', filename='img/footer-and-nav/github.webp') }}" alt="github" id="github" class="footer-image" height="50">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="interested-in-working-with-me">
+                        <h3>Interested in working with me?</h3>
+                        <p> I'm looking for talented, ambitious, and hard-working individuals to help me build more projects. I’m not particularly looking for CS or engineering majors, as much of the work I’m doing revolves around other fields! I just need you to be hungry for growth and ready to work extremely hard. <br><br>
+                            As a side note, I just founded “C.R. Sousa“, a manufacturing and supply chain student-led research organization at Purdue University. So, if you’re interested in joining that, please contact me. 
+                        </p>                             
+                        <div class="work-with-me-images">
+                            <img src="{{ url_for('static', filename='img/footer-and-nav/gcrlogo.png') }}" alt="gonzalo-carpio-rivero-logo" class="footer-image" height="50">
+                            <img src="{{ url_for('static', filename='img/footer-and-nav/purdue.png') }}" alt="Purdue" class="footer-image" height="50">
+                            <a href="https://www.linkedin.com/company/crsousa/">
+                                <img src="{{ url_for('static', filename='img/footer-and-nav/crsousa.png') }}" alt="crsousa" class="footer-image"height="50">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="what-can-i-do"> 
+                        <h3>What can I do with this website?</h3>
+                        <p> TheSuppliesMap offers over 16 key data metrics, including economics, politics, logistics, and finance for approximately 190 countries. Additionally, we calculate both average and weighted scores based on these metrics, providing a holistic evaluation of each country’s business environment. With this information, you’ll have everything you need to kickstart your business expansion! </p> <p> For businesses seeking deeper insights, we provide premium, in-depth analysis of the business environment for 25 countries. You’ll also gain access to an extended list of manufacturing, distribution, banking, advertising, and real estate contacts for each country! </p>
+                        <a class="gofundme" href="https://www.gofundme.com/f/support-crsousa-american-manufacturing?utm_campaign=fp_sharesheet&utm_medium=customer&utm_source=copy_link&attribution_id=sl%3A174307de-b70a-4d30-9f05-846b34829f15">
+                            <img src="{{ url_for('static', filename='img/footer-and-nav/gofundme.png') }}" class="gofundme-image"> 
+                        </a>
+                    </div>
+                </div>
+                <img src="{{ url_for('static', filename='img/footer-and-nav/atlas-grey.png') }}" alt="Atlas" id="footer-logo">
+            </div>
+            <hr class="footer-horizontal-line">
+            <div class="ownership-and-email">
+                <p>All rights reserved &copy; 2024 Website Made By <a href="https://pe.linkedin.com/in/gonzalo-carpio-rivero-2a36812b7" id="personal-website">Gonzalo Carpio-Rivero</a></p>
+                <p>Contact me at <a href="mailto:gcarpiorivero@gmail.com" id="email-footer">gcarpiorivero@gmail.com</a></p>
+            </div>
+        </footer>
+        <!--URL for JSON data, macroeconomics, ECI-->
+        <script> const jsonDataUrlOne = "{{ url_for('get_json_data_eci') }}"; </script>
+        <!--URL for JSON data, macroeconomics, gdpPerCapita-->
+        <script> const jsonDataUrlTwo = "{{ url_for('get_json_data_gdpPerCapita') }}"; </script>
+        <!--URL for JSON data, macroeconomics, average gdp growth last ten years-->
+        <script> const jsonDataUrlThree = "{{ url_for('get_json_gdp_growth_average_last_ten_years') }}"; </script>
+        <!--URL for JSON data, macroeconomics, total trade-->
+        <script> const jsonDataUrlFour = "{{ url_for('get_json_data_total_trade') }}"; </script>
+        <!--URL for JSON data, macroeconomics, gini coefficient -->
+        <script> const jsonDataUrlFive = "{{ url_for('get_json_data_gini') }}"; </script>
+        <!--URL for JSON data, intermodal shipping, port throughput-->
+        <script> const jsonDataUrlNine = "{{ url_for('get_json_port_throughput') }}"; </script>        
+        <!--URL for JSON data, intermodal shipping, turnaround time-->
+        <script> const jsonDataUrlTen = "{{ url_for('get_json_turnaround_time') }}"; </script>
+        <!--URL for JSON data, politics, added value tax-->
+        <script> const jsonDataUrlFourteen = "{{ url_for('get_json_added_value_tax_rate') }}"; </script>
+        <!--URL for JSON data, politics, corporate tax rate-->
+        <script> const jsonDataUrlFifteen = "{{ url_for('get_json_corporate_tax_rate') }}"; </script>
+        <!--URL for JSON data, politics, top income tax rate-->
+        <script> const jsonDataUrlSixteen = "{{ url_for('get_json_income_tax_rate') }}"; </script>
+        <!--URL for JSON data, intermodal shipping, LPI score-->
+        <script> const jsonDataUrlEleven = "{{ url_for('get_json_LPI') }}"; </script>
+        <!--URL for JSON data, politics, political stability index-->
+        <script> const jsonDataUrlSeventeen = "{{ url_for('get_json_political_stability') }}"; </script>
+        <!--URL for JSON data, politics, social security tax-->
+        <script> const jsonDataUrlEighteen = "{{ url_for('get_json_added_social_security_tax_rate') }}"; </script>
+        <!--URL for JSON data, politics, ease of doing business-->
+        <script> const jsonDataUrlNineteen = "{{ url_for('get_json_data_ease_of_doing_business') }}"; </script>
+
+        {% block search_placeholder %}
+        <!--Disables placeholeder for search box-->
+        <script src="{{ url_for('static', filename='js/placeholder-search.js') }}"></script>
+        {% endblock %}
+
+        <!--Bootstrap Functions-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!--Sticky Header Function-->
+        <script src="{{ url_for('static', filename='js/sticky-header.js') }}"></script>
+        <!--Country Search Function-->
+        <script src="{{ url_for('static', filename='js/search.js') }}"></script>
+    </body>
+</html>

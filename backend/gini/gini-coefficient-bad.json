@@ -1,0 +1,1241 @@
+[
+  {
+    "name": "India",
+    "giniCoefficientByname_giniWB": 34.2,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 35.7,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "China",
+    "giniCoefficientByname_giniWB": 37.1,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 38.2,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "United States",
+    "giniCoefficientByname_giniWB": 39.8,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 41.5,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Indonesia",
+    "giniCoefficientByname_giniWB": 37.9,
+    "giniCoefficientByname_yearWB": 2022,
+    "gini": 37.9,
+    "giniCoefficientByname_yearCIA": 2021
+  },
+  {
+    "name": "Pakistan",
+    "giniCoefficientByname_giniWB": 29.6,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 29.6,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Nigeria",
+    "giniCoefficientByname_giniWB": 35.1,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 35.1,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Brazil",
+    "giniCoefficientByname_giniWB": 52.9,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 48.9,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Bangladesh",
+    "giniCoefficientByname_giniWB": 31.8,
+    "giniCoefficientByname_yearWB": 2022,
+    "gini": 32.4,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Russia",
+    "giniCoefficientByname_giniWB": 36,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 36,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Ethiopia",
+    "giniCoefficientByname_giniWB": 35,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 35,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Mexico",
+    "giniCoefficientByname_giniWB": 45.4,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 45.4,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Japan",
+    "giniCoefficientByname_giniWB": 32.9,
+    "giniCoefficientByname_yearWB": 2013,
+    "gini": 32.9,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Egypt",
+    "giniCoefficientByname_giniWB": 31.9,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 31.5,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Philippines",
+    "giniCoefficientByname_giniWB": 40.7,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 42.3,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "DR Congo",
+    "giniCoefficientByname_giniWB": 42.1,
+    "giniCoefficientByname_yearWB": 2012,
+    "gini": 42.1,
+    "giniCoefficientByname_yearCIA": 2012
+  },
+  {
+    "name": "Vietnam",
+    "giniCoefficientByname_giniWB": 36.8,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 35.7,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Iran",
+    "giniCoefficientByname_giniWB": 40.9,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 40.9,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Turkey",
+    "giniCoefficientByname_giniWB": 41.9,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 41.9,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Germany",
+    "giniCoefficientByname_giniWB": 31.7,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 31.7,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Thailand",
+    "giniCoefficientByname_giniWB": 35.1,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 35,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "United Kingdom",
+    "giniCoefficientByname_giniWB": 32.6,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 35.1,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Tanzania",
+    "giniCoefficientByname_giniWB": 40.5,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 40.5,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "France",
+    "giniCoefficientByname_giniWB": 30.7,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 32.4,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "South Africa",
+    "giniCoefficientByname_giniWB": 63,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 63,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Italy",
+    "giniCoefficientByname_giniWB": 35.2,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 35.2,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Kenya",
+    "giniCoefficientByname_giniWB": 38.7,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 40.8,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Myanmar",
+    "giniCoefficientByname_giniWB": 30.7,
+    "giniCoefficientByname_yearWB": 2017,
+    "gini": 30.7,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Colombia",
+    "giniCoefficientByname_giniWB": 51.5,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 54.2,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "South Korea",
+    "giniCoefficientByname_giniWB": 31.4,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 31.4,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Sudan",
+    "giniCoefficientByname_giniWB": 34.2,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 34.2,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Uganda",
+    "giniCoefficientByname_giniWB": 42.7,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 42.7,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Spain",
+    "giniCoefficientByname_giniWB": 34.9,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 34.3,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Algeria",
+    "giniCoefficientByname_giniWB": 27.6,
+    "giniCoefficientByname_yearWB": 2011,
+    "gini": 27.6,
+    "giniCoefficientByname_yearCIA": 2011
+  },
+  {
+    "name": "Iraq",
+    "giniCoefficientByname_giniWB": 29.5,
+    "giniCoefficientByname_yearWB": 2012,
+    "gini": 29.5,
+    "giniCoefficientByname_yearCIA": 2012
+  },
+  {
+    "name": "Argentina",
+    "giniCoefficientByname_giniWB": 42,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 42.3,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Afghanistan",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 29.4,
+    "giniCoefficientByname_yearCIA": 2008
+  },
+  {
+    "name": "Yemen",
+    "giniCoefficientByname_giniWB": 36.7,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 36.7,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Canada",
+    "giniCoefficientByname_giniWB": 31.7,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 33.3,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Poland",
+    "giniCoefficientByname_giniWB": 28.8,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 30.2,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Morocco",
+    "giniCoefficientByname_giniWB": 39.5,
+    "giniCoefficientByname_yearWB": 2013,
+    "gini": 39.5,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Angola",
+    "giniCoefficientByname_giniWB": 51.3,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 51.3,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Ukraine",
+    "giniCoefficientByname_giniWB": 25.6,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 25.6,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Uzbekistan",
+    "giniCoefficientByname_giniWB": 35.3,
+    "giniCoefficientByname_yearWB": 2003,
+    "gini": 36.8,
+    "giniCoefficientByname_yearCIA": 2003
+  },
+  {
+    "name": "Malaysia",
+    "giniCoefficientByname_giniWB": 41.2,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 41.1,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Mozambique",
+    "giniCoefficientByname_giniWB": 50.5,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 54,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Ghana",
+    "giniCoefficientByname_giniWB": 43.5,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 43.5,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Peru",
+    "giniCoefficientByname_giniWB": 40.2,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 43.8,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Saudi Arabia",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 45.9,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Madagascar",
+    "giniCoefficientByname_giniWB": 42.6,
+    "giniCoefficientByname_yearWB": 2012,
+    "gini": 42.6,
+    "giniCoefficientByname_yearCIA": 2012
+  },
+  {
+    "name": "Ivory Coast",
+    "giniCoefficientByname_giniWB": 37.2,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 37.2,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Nepal",
+    "giniCoefficientByname_giniWB": 32.8,
+    "giniCoefficientByname_yearWB": 2010,
+    "gini": 32.8,
+    "giniCoefficientByname_yearCIA": 2010
+  },
+  {
+    "name": "Cameroon",
+    "giniCoefficientByname_giniWB": 46.6,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 46.6,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Venezuela",
+    "giniCoefficientByname_giniWB": 44.8,
+    "giniCoefficientByname_yearWB": 2006,
+    "gini": 39,
+    "giniCoefficientByname_yearCIA": 2011
+  },
+  {
+    "name": "Niger",
+    "giniCoefficientByname_giniWB": 37.3,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 37.3,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Australia",
+    "giniCoefficientByname_giniWB": 34.3,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 34.3,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Syria",
+    "giniCoefficientByname_giniWB": 37.5,
+    "giniCoefficientByname_yearWB": 2003,
+    "gini": null,
+    "giniCoefficientByname_yearCIA": null
+  },
+  {
+    "name": "Mali",
+    "giniCoefficientByname_giniWB": 36,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 36.1,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Burkina Faso",
+    "giniCoefficientByname_giniWB": 43,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 47.3,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Taiwan",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 33.6,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Sri Lanka",
+    "giniCoefficientByname_giniWB": 37.7,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 39.3,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Malawi",
+    "giniCoefficientByname_giniWB": 38.5,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 38.5,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Zambia",
+    "giniCoefficientByname_giniWB": 55.9,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 57.1,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Kazakhstan",
+    "giniCoefficientByname_giniWB": 27.8,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 27.8,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Chad",
+    "giniCoefficientByname_giniWB": 37.5,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 37.6,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Chile",
+    "giniCoefficientByname_giniWB": 44.9,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 44.9,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Romania",
+    "giniCoefficientByname_giniWB": 34.6,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 34.8,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Somalia",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 36.8,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Senegal",
+    "giniCoefficientByname_giniWB": 38.3,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 38.1,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Guatemala",
+    "giniCoefficientByname_giniWB": 48.3,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 48.3,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Netherlands",
+    "giniCoefficientByname_giniWB": 26,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 29.2,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Ecuador",
+    "giniCoefficientByname_giniWB": 45.5,
+    "giniCoefficientByname_yearWB": 2022,
+    "gini": 47.3,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Cambodia",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 37.9,
+    "giniCoefficientByname_yearCIA": 2008
+  },
+  {
+    "name": "Zimbabwe",
+    "giniCoefficientByname_giniWB": 50.3,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 50.3,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Guinea",
+    "giniCoefficientByname_giniWB": 48.3,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 29.6,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Benin",
+    "giniCoefficientByname_giniWB": 37.9,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 37.8,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Rwanda",
+    "giniCoefficientByname_giniWB": 43.7,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 43.7,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Burundi",
+    "giniCoefficientByname_giniWB": 38.6,
+    "giniCoefficientByname_yearWB": 2013,
+    "gini": 38.6,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Bolivia",
+    "giniCoefficientByname_giniWB": 40.9,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 43.6,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Tunisia",
+    "giniCoefficientByname_giniWB": 32.8,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 32.8,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "South Sudan",
+    "giniCoefficientByname_giniWB": 44.1,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 44.1,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Haiti",
+    "giniCoefficientByname_giniWB": 41.1,
+    "giniCoefficientByname_yearWB": 2012,
+    "gini": 41.1,
+    "giniCoefficientByname_yearCIA": 2012
+  },
+  {
+    "name": "Belgium",
+    "giniCoefficientByname_giniWB": 26,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 27.2,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Jordan",
+    "giniCoefficientByname_giniWB": 33.7,
+    "giniCoefficientByname_yearWB": 2010,
+    "gini": 33.7,
+    "giniCoefficientByname_yearCIA": 2010
+  },
+  {
+    "name": "Dominican Republic",
+    "giniCoefficientByname_giniWB": 38.5,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 39.6,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Honduras",
+    "giniCoefficientByname_giniWB": 48.2,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 48.2,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Czech Republic",
+    "giniCoefficientByname_giniWB": 26.2,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 25.3,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Sweden",
+    "giniCoefficientByname_giniWB": 28.9,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 29.3,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Tajikistan",
+    "giniCoefficientByname_giniWB": 34,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 34,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Papua New Guinea",
+    "giniCoefficientByname_giniWB": 41.9,
+    "giniCoefficientByname_yearWB": 2009,
+    "gini": 41.9,
+    "giniCoefficientByname_yearCIA": 2009
+  },
+  {
+    "name": "Portugal",
+    "giniCoefficientByname_giniWB": 34.7,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 32.8,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Greece",
+    "giniCoefficientByname_giniWB": 33.6,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 33.1,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Hungary",
+    "giniCoefficientByname_giniWB": 29.7,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 30,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Togo",
+    "giniCoefficientByname_giniWB": 42.5,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 42.4,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Israel",
+    "giniCoefficientByname_giniWB": 38.6,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 38.6,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Austria",
+    "giniCoefficientByname_giniWB": 29.8,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 30.2,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Belarus",
+    "giniCoefficientByname_giniWB": 24.4,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": null,
+    "giniCoefficientByname_yearCIA": null
+  },
+  {
+    "name": "Switzerland",
+    "giniCoefficientByname_giniWB": 33.1,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 33.1,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Sierra Leone",
+    "giniCoefficientByname_giniWB": 35.7,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 35.7,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Laos",
+    "giniCoefficientByname_giniWB": 38.8,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 38.8,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Turkmenistan",
+    "giniCoefficientByname_giniWB": 40.8,
+    "giniCoefficientByname_yearWB": 1998,
+    "gini": 40.8,
+    "giniCoefficientByname_yearCIA": 1998
+  },
+  {
+    "name": "Hong Kong",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 53.9,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Kyrgyzstan",
+    "giniCoefficientByname_giniWB": 29,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 29,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Paraguay",
+    "giniCoefficientByname_giniWB": 45.1,
+    "giniCoefficientByname_yearWB": 2022,
+    "gini": 43.5,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Nicaragua",
+    "giniCoefficientByname_giniWB": 46.2,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 46.2,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Bulgaria",
+    "giniCoefficientByname_giniWB": 40.5,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 40.3,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Serbia",
+    "giniCoefficientByname_giniWB": 35,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 34.5,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "El Salvador",
+    "giniCoefficientByname_giniWB": 38.8,
+    "giniCoefficientByname_yearWB": 2022,
+    "gini": 38.8,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Republic of the Congo",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 48.9,
+    "giniCoefficientByname_yearCIA": 2011
+  },
+  {
+    "name": "Denmark",
+    "giniCoefficientByname_giniWB": 27.5,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 27.7,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Singapore",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 45.9,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Lebanon",
+    "giniCoefficientByname_giniWB": 31.8,
+    "giniCoefficientByname_yearWB": 2011,
+    "gini": 31.8,
+    "giniCoefficientByname_yearCIA": 2011
+  },
+  {
+    "name": "Finland",
+    "giniCoefficientByname_giniWB": 27.1,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 27.7,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Liberia",
+    "giniCoefficientByname_giniWB": 35.3,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 35.3,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Norway",
+    "giniCoefficientByname_giniWB": 22.7,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 27.7,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Slovakia",
+    "giniCoefficientByname_giniWB": 23.2,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": null,
+    "giniCoefficientByname_yearCIA": null
+  },
+  {
+    "name": "Palestine",
+    "giniCoefficientByname_giniWB": 33.7,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 33.7,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Central African Republic",
+    "giniCoefficientByname_giniWB": 43,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 56.2,
+    "giniCoefficientByname_yearCIA": 2008
+  },
+  {
+    "name": "Ireland",
+    "giniCoefficientByname_giniWB": 29.2,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 30.6,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "New Zealand",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 36.2,
+    "giniCoefficientByname_yearCIA": 1997
+  },
+  {
+    "name": "Mauritania",
+    "giniCoefficientByname_giniWB": 32.6,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 32.6,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Costa Rica",
+    "giniCoefficientByname_giniWB": 47.2,
+    "giniCoefficientByname_yearWB": 2022,
+    "gini": 49.3,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Panama",
+    "giniCoefficientByname_giniWB": 50.9,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 49.8,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Croatia",
+    "giniCoefficientByname_giniWB": 29.5,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 28.9,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Georgia",
+    "giniCoefficientByname_giniWB": 34.2,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 34.5,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Mongolia",
+    "giniCoefficientByname_giniWB": 32.7,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 32.7,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Uruguay",
+    "giniCoefficientByname_giniWB": 40.8,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 40.2,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "giniCoefficientByname_giniWB": 33,
+    "giniCoefficientByname_yearWB": 2011,
+    "gini": 33,
+    "giniCoefficientByname_yearCIA": 2011
+  },
+  {
+    "name": "Qatar",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 41.1,
+    "giniCoefficientByname_yearCIA": 2007
+  },
+  {
+    "name": "Moldova",
+    "giniCoefficientByname_giniWB": 25.7,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 26,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Namibia",
+    "giniCoefficientByname_giniWB": 59.1,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 59.1,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Armenia",
+    "giniCoefficientByname_giniWB": 27.9,
+    "giniCoefficientByname_yearWB": 2021,
+    "gini": 25.2,
+    "giniCoefficientByname_yearCIA": 2020
+  },
+  {
+    "name": "Lithuania",
+    "giniCoefficientByname_giniWB": 36,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 35.3,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Jamaica",
+    "giniCoefficientByname_giniWB": 45.5,
+    "giniCoefficientByname_yearWB": 2004,
+    "gini": 35,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Albania",
+    "giniCoefficientByname_giniWB": 29.4,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 30.8,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Gambia",
+    "giniCoefficientByname_giniWB": 38.8,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 35.9,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Gabon",
+    "giniCoefficientByname_giniWB": 38,
+    "giniCoefficientByname_yearWB": 2017,
+    "gini": 38,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Botswana",
+    "giniCoefficientByname_giniWB": 53.3,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 53.3,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Lesotho",
+    "giniCoefficientByname_giniWB": 44.9,
+    "giniCoefficientByname_yearWB": 2017,
+    "gini": 44.9,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Guinea-Bissau",
+    "giniCoefficientByname_giniWB": 34.8,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 34.8,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Slovenia",
+    "giniCoefficientByname_giniWB": 24,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 23.2,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Latvia",
+    "giniCoefficientByname_giniWB": 35.7,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 34.5,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "North Macedonia",
+    "giniCoefficientByname_giniWB": 33.5,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 33,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "giniCoefficientByname_giniWB": 40.3,
+    "giniCoefficientByname_yearWB": 1992,
+    "gini": null,
+    "giniCoefficientByname_yearCIA": null
+  },
+  {
+    "name": "Timor-Leste",
+    "giniCoefficientByname_giniWB": 28.7,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 28.7,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Estonia",
+    "giniCoefficientByname_giniWB": 30.7,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 30.8,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Cyprus",
+    "giniCoefficientByname_giniWB": 31.7,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 31.2,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Mauritius",
+    "giniCoefficientByname_giniWB": 36.8,
+    "giniCoefficientByname_yearWB": 2017,
+    "gini": 36.8,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Eswatini",
+    "giniCoefficientByname_giniWB": 54.6,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 54.6,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Djibouti",
+    "giniCoefficientByname_giniWB": 41.6,
+    "giniCoefficientByname_yearWB": 2017,
+    "gini": 41.6,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Fiji",
+    "giniCoefficientByname_giniWB": 30.7,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 30.7,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Comoros",
+    "giniCoefficientByname_giniWB": 45.3,
+    "giniCoefficientByname_yearWB": 2014,
+    "gini": 45.3,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Guyana",
+    "giniCoefficientByname_giniWB": 45.1,
+    "giniCoefficientByname_yearWB": 1998,
+    "gini": 44.6,
+    "giniCoefficientByname_yearCIA": 2007
+  },
+  {
+    "name": "Solomon Islands",
+    "giniCoefficientByname_giniWB": 37.1,
+    "giniCoefficientByname_yearWB": 2012,
+    "gini": 37.1,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Bhutan",
+    "giniCoefficientByname_giniWB": 28.5,
+    "giniCoefficientByname_yearWB": 2022,
+    "gini": 37.4,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Macau",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 35,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Montenegro",
+    "giniCoefficientByname_giniWB": 36.8,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 36.8,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Suriname",
+    "giniCoefficientByname_giniWB": 57.9,
+    "giniCoefficientByname_yearWB": 1999,
+    "gini": null,
+    "giniCoefficientByname_yearCIA": null
+  },
+  {
+    "name": "Malta",
+    "giniCoefficientByname_giniWB": 31.4,
+    "giniCoefficientByname_yearWB": 2020,
+    "gini": 31,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Maldives",
+    "giniCoefficientByname_giniWB": 29.3,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 29.3,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Cape Verde",
+    "giniCoefficientByname_giniWB": 42.4,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 42.4,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Belize",
+    "giniCoefficientByname_giniWB": 53.3,
+    "giniCoefficientByname_yearWB": 1999,
+    "gini": null,
+    "giniCoefficientByname_yearCIA": null
+  },
+  {
+    "name": "Iceland",
+    "giniCoefficientByname_giniWB": 26.1,
+    "giniCoefficientByname_yearWB": 2017,
+    "gini": 26.1,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Vanuatu",
+    "giniCoefficientByname_giniWB": 32.3,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 32.3,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "giniCoefficientByname_giniWB": 40.7,
+    "giniCoefficientByname_yearWB": 2017,
+    "gini": 40.7,
+    "giniCoefficientByname_yearCIA": 2017
+  },
+  {
+    "name": "Samoa",
+    "giniCoefficientByname_giniWB": 38.7,
+    "giniCoefficientByname_yearWB": 2013,
+    "gini": 38.7,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Saint Lucia",
+    "giniCoefficientByname_giniWB": 51.2,
+    "giniCoefficientByname_yearWB": 2016,
+    "gini": 51.2,
+    "giniCoefficientByname_yearCIA": 2016
+  },
+  {
+    "name": "Kiribati",
+    "giniCoefficientByname_giniWB": 27.8,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 27.8,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Seychelles",
+    "giniCoefficientByname_giniWB": 32.1,
+    "giniCoefficientByname_yearWB": 2018,
+    "gini": 32.1,
+    "giniCoefficientByname_yearCIA": 2018
+  },
+  {
+    "name": "Micronesia",
+    "giniCoefficientByname_giniWB": 40.1,
+    "giniCoefficientByname_yearWB": 2013,
+    "gini": 40.1,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Tonga",
+    "giniCoefficientByname_giniWB": 33.5,
+    "giniCoefficientByname_yearWB": 2015,
+    "gini": 37.6,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Jersey",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 0.3,
+    "giniCoefficientByname_yearCIA": 2014
+  },
+  {
+    "name": "Greenland",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 33.9,
+    "giniCoefficientByname_yearCIA": 2015
+  },
+  {
+    "name": "Faroe Islands",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 22.7,
+    "giniCoefficientByname_yearCIA": 2013
+  },
+  {
+    "name": "Marshall Islands",
+    "giniCoefficientByname_giniWB": 35.5,
+    "giniCoefficientByname_yearWB": 2019,
+    "gini": 35.5,
+    "giniCoefficientByname_yearCIA": 2019
+  },
+  {
+    "name": "Nauru",
+    "giniCoefficientByname_giniWB": 32.4,
+    "giniCoefficientByname_yearWB": 2012,
+    "gini": 34.8,
+    "giniCoefficientByname_yearCIA": 2012
+  },
+  {
+    "name": "Tuvalu",
+    "giniCoefficientByname_giniWB": 39.1,
+    "giniCoefficientByname_yearWB": 2010,
+    "gini": 39.1,
+    "giniCoefficientByname_yearCIA": 2010
+  },
+  {
+    "name": "Falkland Islands",
+    "giniCoefficientByname_giniWB": null,
+    "giniCoefficientByname_yearWB": null,
+    "gini": 36,
+    "giniCoefficientByname_yearCIA": 2015
+  }
+]

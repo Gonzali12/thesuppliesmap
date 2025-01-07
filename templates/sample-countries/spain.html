@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} spain {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Spain</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/spain-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Spain, a country in southwestern Europe on the Iberian Peninsula, has a population of around 47.35 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.904, highlighting its high standards of living, education, and healthcare. <br><br>Spanning a geographical area of 505,992 square kilometers, Spain is known for its rich cultural heritage, historic cities, and diverse landscapes from beaches to mountains.<br><br> The country is currently led by Prime Minister Pedro Sánchez, who holds a center-left political stance, focusing on social justice, economic recovery, and environmental sustainability. <br><br>Spain’s robust economy, cultural influence, and strategic position in Europe make it a key player on the global stage.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Spain's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Spain's logistics sector is a vital component of its economy, supporting domestic distribution and international trade. The industry benefits from Spain's strategic location as a gateway between Europe, Africa, and the Americas.</p>
+
+        <h1>The biggest logistics companies in Spain are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Logista</h5> 
+                    <p class="card-text">Grupo Logista is one of the largest logistics companies in Spain, offering a wide range of services including transportation, warehousing, and distribution. The company operates across various sectors including tobacco, pharmaceuticals, and food.</p>
+                    <div class="specialty">Specialty: Transportation & Distribution Services</div>
+                    <a href="https://www.logista.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Seur</h5> 
+                    <p class="card-text">Seur is a leading express delivery and logistics company in Spain, providing parcel delivery, freight services, and e-commerce logistics solutions. The company is known for its extensive network and commitment to sustainability.</p>
+                    <div class="specialty">Specialty: Express Delivery & E-commerce Logistics</div>
+                    <a href="https://www.seur.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Spain</h5> 
+                    <p class="card-text">DHL Spain is a branch of the global DHL network, offering a comprehensive range of logistics services including express delivery, freight forwarding, and supply chain management. The company is known for its efficiency and global reach.</p>
+                    <div class="specialty">Specialty: Global Logistics & Supply Chain Management</div>
+                    <a href="https://www.dhl.com/es-en/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">XPO Logistics Spain</h5> 
+                    <p class="card-text">XPO Logistics Spain is a major logistics provider in Spain, offering transportation, warehousing, and supply chain solutions. The company is recognized for its innovative logistics technology and extensive network across Spain and Europe.</p>
+                    <div class="specialty">Specialty: Transportation & Supply Chain Solutions</div>
+                    <a href="https://www.xpo.com/es/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte Ochoa</h5> 
+                    <p class="card-text">Transporte Ochoa is a well-known Spanish logistics company specializing in freight transport, warehousing, and distribution services. The company is known for its reliability and customer-oriented approach.</p>
+                    <div class="specialty">Specialty: Freight Transport & Distribution</div>
+                    <a href="https://www.transporteochoa.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Spain are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Inditex</h5> 
+                    <p class="card-text">Inditex is the largest fashion retailer in the world, based in Spain, and is the parent company of brands such as Zara, Massimo Dutti, and Bershka. The company is known for its fast-fashion model and extensive global presence.</p>
+                    <div class="specialty">Specialty: Fashion Retail & Manufacturing</div>
+                    <a href="https://www.inditex.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Repsol</h5> 
+                    <p class="card-text">Repsol is a leading global energy company based in Spain, involved in the exploration, production, refining, and distribution of oil and gas. The company is also expanding into renewable energy and is a key player in the global energy market.</p>
+                    <div class="specialty">Specialty: Oil & Gas Exploration & Refining</div>
+                    <a href="https://www.repsol.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Telefónica</h5> 
+                    <p class="card-text">Telefónica is one of the largest telecommunications companies in the world, based in Spain. The company provides a wide range of services including fixed and mobile telephony, broadband, and digital services, with a strong presence in Europe and Latin America.</p>
+                    <div class="specialty">Specialty: Telecommunications & Digital Services</div>
+                    <a href="https://www.telefonica.com/en/home/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Iberdrola</h5> 
+                    <p class="card-text">Iberdrola is a global leader in renewable energy, headquartered in Spain. The company is involved in the generation, transmission, and distribution of electricity, with a strong focus on wind energy and sustainability.</p>
+                    <div class="specialty">Specialty: Renewable Energy & Electricity Distribution</div>
+                    <a href="https://www.iberdrola.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CEPSA</h5> 
+                    <p class="card-text">CEPSA is a Spanish multinational oil and gas company, involved in the exploration, production, refining, and distribution of petroleum products. The company is also expanding into renewable energy and biofuels.</p>
+                    <div class="specialty">Specialty: Oil & Gas Exploration & Biofuels</div>
+                    <a href="https://www.cepsa.com/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Spain are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">McCann Spain</h5> 
+                    <p class="card-text">McCann Spain is part of the global McCann Worldgroup network, providing comprehensive marketing and advertising services. The agency is known for its creative campaigns and strategic approach to brand communication in the Spanish market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.mccann.es/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Spain</h5> 
+                    <p class="card-text">Ogilvy Spain is part of the global Ogilvy network, offering a wide range of marketing services including advertising, digital marketing, and brand strategy. The agency is recognized for its creativity and strategic marketing solutions.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Digital Marketing</div>
+                    <a href="https://www.ogilvy.es/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TBWA Spain</h5> 
+                    <p class="card-text">TBWA Spain is part of the global TBWA network, providing innovative marketing and advertising solutions. The agency is known for its disruptive approach to brand building and creative excellence in the Spanish market.</p>
+                    <div class="specialty">Specialty: Disruptive Advertising & Brand Strategy</div>
+                    <a href="https://www.tbwa.es/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Havas Spain</h5> 
+                    <p class="card-text">Havas Spain is part of the global Havas network, offering integrated marketing services including advertising, digital marketing, and media planning. The agency is known for its innovative campaigns and strong client relationships.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Media Planning</div>
+                    <a href="https://es.havas.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grey Spain</h5> 
+                    <p class="card-text">Grey Spain is a leading advertising agency, part of the global Grey network. The agency offers a wide range of services including creative advertising, digital marketing, and brand strategy, known for its impactful campaigns in Spain.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Digital Marketing</div>
+                    <a href="https://grey.com/spain/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Spain are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Santander</h5> 
+                    <p class="card-text">Banco Santander is the largest bank in Spain and one of the largest in the world, offering a wide range of financial services including retail banking, corporate banking, and investment management. The bank has a strong presence in Europe, Latin America, and the United States.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bancosantander.es/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBVA</h5> 
+                    <p class="card-text">BBVA is one of the largest financial institutions in Spain, offering a broad range of services including retail banking, corporate banking, and asset management. The bank is known for its innovation in digital banking and strong global presence.</p>
+                    <div class="specialty">Specialty: Retail & Digital Banking</div>
+                    <a href="https://www.bbva.es/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CaixaBank</h5> 
+                    <p class="card-text">CaixaBank is a leading financial institution in Spain, offering a comprehensive range of banking services including personal banking, corporate banking, and insurance. The bank is known for its extensive branch network and customer-oriented services.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.caixabank.es/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Sabadell</h5> 
+                    <p class="card-text">Banco Sabadell is one of Spain's largest banks, providing a full range of financial services including retail banking, corporate banking, and wealth management. The bank is recognized for its innovation and strong market presence in Spain.</p>
+                    <div class="specialty">Specialty: Retail & Wealth Management</div>
+                    <a href="https://www.bancsabadell.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bankinter</h5> 
+                    <p class="card-text">Bankinter is a major Spanish bank offering a wide range of financial services including personal banking, corporate banking, and investment services. The bank is known for its customer-centric approach and innovative products.</p>
+                    <div class="specialty">Specialty: Personal & Investment Banking</div>
+                    <a href="https://www.bankinter.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Spain are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Metrovacesa</h5> 
+                    <p class="card-text">Metrovacesa is one of the largest real estate developers in Spain, specializing in residential and commercial properties. The company is known for its innovative projects and strong focus on sustainability and urban regeneration.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate Development</div>
+                    <a href="https://www.metrovacesa.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Colonial</h5> 
+                    <p class="card-text">Colonial is a leading real estate investment company in Spain, focusing on the development and management of prime office spaces. The company is recognized for its high-quality assets and strong presence in the European market.</p>
+                    <div class="specialty">Specialty: Office Real Estate Development & Management</div>
+                    <a href="https://www.inmocolonial.com/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Merlin Properties</h5> 
+                    <p class="card-text">Merlin Properties is one of Spain's largest real estate investment trusts (REITs), focusing on commercial properties including offices, shopping centers, and logistics assets. The company is known for its strong portfolio and strategic investments.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Investment & Management</div>
+                    <a href="https://www.merlinproperties.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Neinor Homes</h5> 
+                    <p class="card-text">Neinor Homes is a leading residential real estate developer in Spain, known for its high-quality housing projects and innovative designs. The company focuses on sustainable development and customer satisfaction.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Development</div>
+                    <a href="https://www.neinorhomes.com/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Lar</h5> 
+                    <p class="card-text">Grupo Lar is a prominent Spanish real estate developer and investment company, with a focus on residential and commercial properties. The company is known for its strategic investments and commitment to quality and sustainability.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Development</div>
+                    <a href="https://www.grupolar.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

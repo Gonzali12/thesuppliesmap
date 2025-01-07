@@ -1,0 +1,125 @@
+.bg-primary{
+    background-color: rgb(243, 246, 251) !important;
+}
+
+.upgrade-account{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 100%;
+    padding-bottom: 50px;
+    margin: 0;
+}
+.col-lg-4{
+    max-width: fit-content;
+}
+
+.row{
+    justify-content: center;
+}
+
+.card.bg-success.mb-5.mb-lg-0.rounded-lg.shadow, .card.bg-warning.mb-5.mb-lg-0.rounded-lg.shadow, .card.bg-danger.mb-5.mb-lg-0.rounded-lg.shadow{
+    width: fit-content;
+}
+
+.card.bg-success.mb-5.mb-lg-0.rounded-lg.shadow .btn.btn-block.btn-primary.text-uppercase.rounded-lg.py-3{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.text-muted.mb-3{
+    text-decoration:line-through;
+}
+
+.bottom-container{
+    display: flex;
+    gap: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cancellation, .discount-box, .company{
+    background-color: white;
+}
+
+.info{
+    font-weight:bold;
+    color: black;
+}
+
+.description{
+    text-align: center;
+    color: black;
+}
+
+.cancellation{
+    padding: 25px 15px 15px 15px;
+    width: 50%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.discount-box{
+    width: 50%;
+    padding: 25px;
+    border-radius: 5%;
+}
+
+.company{
+    width: 45%;
+    height: 20%;
+    padding: 25px 10px 15px 10px;
+    border-radius: 5%;
+}
+
+.quote-container{
+    display: flex;
+    justify-content: center;
+}
+
+.quote{
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media(max-width: 1400px){
+    .quote{
+        width: 75%;
+    }
+
+    .bottom-container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .cancellation, .discount-box, .company{
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+}
+
+@media(max-width: 700px){
+    .bottom-container{
+        flex-direction: column;
+    }
+    .cancellation, .discount-box, .company{
+        width: 75%;
+        margin-left: 12.5%;
+        margin-bottom: 10%;
+    }
+
+    .container{
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .quote{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+

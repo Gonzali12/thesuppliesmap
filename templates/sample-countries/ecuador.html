@@ -1,0 +1,350 @@
+{% extends "base.html" %}
+
+{% block title %} Ecuador {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Ecuador</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/ecuador-flag.png') }}" alt="ecuador flag">
+</div>
+<hr/>
+
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Ecuador, a diverse and geographically varied country in South America, has a population of approximately 17.64 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.759, reflecting moderate levels of income, health, and education.<br><br>Covering a geographical area of 283,561 square kilometers, Ecuador is known for its rich biodiversity, including the Amazon rainforest, Andean highlands, and the Galápagos Islands. <br><br>The current president, Guillermo Lasso, holds a center-right political stance, focusing on economic liberalization, investment, and social policies. <br><br>Ecuador’s strategic location, cultural diversity, and natural resources play significant roles in its economy and international relations.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Ecuador's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+
+    </div>
+</div>
+<hr/>
+
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Ecuador, a diverse and geographically varied country in South America, has a population of approximately 17.64 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.759, reflecting moderate levels of income, health, and education.<br><br>Covering a geographical area of 283,561 square kilometers, Ecuador is known for its rich biodiversity, including the Amazon rainforest, Andean highlands, and the Galápagos Islands. <br><br>The current president, Guillermo Lasso, holds a center-right political stance, focusing on economic liberalization, investment, and social policies. <br><br>Ecuador’s strategic location, cultural diversity, and natural resources play significant roles in its economy and international relations.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada-and-etf">
+        <div class="country-metada">
+            <h3 class="etf-title">Ecuador's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+        <div class="etf">
+            <h3 class="etf-title">Ecuador's Stock Exchange Latest Data</h3>
+            <div class="ytd-etf-graph"></div>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Ecuador's logistics sector plays a crucial role in its economy, supporting its major exports such as bananas, seafood, and oil. The industry is focused on enhancing efficiency and expanding its reach within the region.</p>
+
+        <h1>The biggest logistics companies in Ecuador are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tramaco</h5> 
+                    <p class="card-text">Tramaco is a leading logistics and freight forwarding company in Ecuador, offering comprehensive transportation, warehousing, and customs brokerage services. The company is known for its reliable and efficient logistics solutions.</p>
+                    <div class="specialty">Specialty: Freight Forwarding & Customs Brokerage</div>
+                    <a href="https://www.tramaco.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte Noroccidental</h5> 
+                    <p class="card-text">Transporte Noroccidental is a prominent logistics and transportation company in Ecuador, specializing in the transportation of goods across the country. The company is known for its extensive fleet and nationwide coverage.</p>
+                    <div class="specialty">Specialty: Nationwide Goods Transportation</div>
+                    <a href="https://www.transnoro.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Servientrega Ecuador</h5> 
+                    <p class="card-text">Servientrega Ecuador is part of the larger Servientrega network, providing logistics and courier services throughout Ecuador. The company offers parcel delivery, freight forwarding, and e-commerce logistics solutions.</p>
+                    <div class="specialty">Specialty: Courier & E-commerce Logistics</div>
+                    <a href="https://www.servientrega.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cooperativa de Transportes Noroccidental</h5> 
+                    <p class="card-text">Cooperativa de Transportes Noroccidental is a major transportation cooperative in Ecuador, providing logistics services focused on the safe and timely delivery of goods across various regions.</p>
+                    <div class="specialty">Specialty: Regional Goods Transportation</div>
+                    <a href="https://www.noroccidental.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Entregas</h5> 
+                    <p class="card-text">Grupo Entregas is a logistics and delivery services company in Ecuador, known for its reliable and efficient parcel delivery services across the country. The company also offers warehousing and distribution services.</p>
+                    <div class="specialty">Specialty: Parcel Delivery & Warehousing</div>
+                    <a href="https://www.grupoentregas.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Ecuador are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Corporación Favorita</h5> 
+                    <p class="card-text">Corporación Favorita is one of Ecuador's largest retail and manufacturing companies, operating supermarkets and producing a wide range of food products. The company is a key player in the Ecuadorian economy.</p>
+                    <div class="specialty">Specialty: Food Manufacturing & Retail</div>
+                    <a href="https://www.corporacionfavorita.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">La Fabril</h5> 
+                    <p class="card-text">La Fabril is a leading manufacturing company in Ecuador, specializing in the production of oils, fats, and margarine. The company also produces cleaning products and is known for its commitment to quality and sustainability.</p>
+                    <div class="specialty">Specialty: Oils, Fats & Cleaning Products</div>
+                    <a href="https://www.lafabril.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Pronaca</h5> 
+                    <p class="card-text">Pronaca is a major food processing company in Ecuador, producing a wide range of products including poultry, pork, and processed foods. The company is one of the largest food producers in the country.</p>
+                    <div class="specialty">Specialty: Food Processing</div>
+                    <a href="https://www.pronaca.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cementos Chimborazo</h5> 
+                    <p class="card-text">Cementos Chimborazo is one of Ecuador's largest cement manufacturers, supplying high-quality cement for construction projects across the country. The company is known for its reliability and innovation in construction materials.</p>
+                    <div class="specialty">Specialty: Cement Manufacturing</div>
+                    <a href="https://www.cementoschimborazo.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Nestlé Ecuador</h5> 
+                    <p class="card-text">Nestlé Ecuador, a subsidiary of the global Nestlé Group, is a leading food and beverage company in Ecuador, producing a wide range of products including dairy, coffee, and infant nutrition.</p>
+                    <div class="specialty">Specialty: Food & Beverage Production</div>
+                    <a href="https://www.nestle.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Ecuador are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">MullenLowe Delta</h5> 
+                    <p class="card-text">MullenLowe Delta is a leading advertising agency in Ecuador, part of the global MullenLowe Group. The agency is known for its creative and strategic campaigns that resonate with Ecuadorian consumers.</p>
+                    <div class="specialty">Specialty: Creative Advertising</div>
+                    <a href="https://www.mullenlowedel.net/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Ecuador</h5> 
+                    <p class="card-text">Ogilvy Ecuador is part of the global Ogilvy network, providing a wide range of marketing and advertising services, including digital marketing, brand strategy, and public relations in the Ecuadorian market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing Solutions</div>
+                    <a href="https://www.ogilvy.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grey Ecuador</h5> 
+                    <p class="card-text">Grey Ecuador is part of the global Grey Group, offering comprehensive marketing services including advertising, digital marketing, and brand management. The agency is known for its creativity and strategic approach.</p>
+                    <div class="specialty">Specialty: Advertising & Brand Management</div>
+                    <a href="https://www.grey.com/ecuador" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Maruri Grey</h5> 
+                    <p class="card-text">Maruri Grey is a top advertising agency in Ecuador, recognized for its creative excellence and innovative marketing campaigns. The agency is part of the global Grey network and has a strong presence in the Ecuadorian market.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Branding</div>
+                    <a href="https://www.marurigrey.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBDO Ecuador</h5> 
+                    <p class="card-text">BBDO Ecuador is part of the global BBDO network, offering a wide range of advertising and marketing services. The agency is known for its strategic and creative approach to brand communication in the Ecuadorian market.</p>
+                    <div class="specialty">Specialty: Strategic Advertising & Brand Communication</div>
+                    <a href="https://www.bbdo.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Ecuador are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Pichincha</h5> 
+                    <p class="card-text">Banco Pichincha is the largest private bank in Ecuador, offering a comprehensive range of financial services including personal banking, corporate banking, and wealth management. The bank has a strong presence across the country.</p>
+                    <div class="specialty">Specialty: Comprehensive Financial Services</div>
+                    <a href="https://www.pichincha.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco del Pacífico</h5> 
+                    <p class="card-text">Banco del Pacífico is one of the largest banks in Ecuador, providing a wide range of financial services including retail banking, corporate banking, and investment services.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bancodelpacifico.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Guayaquil</h5> 
+                    <p class="card-text">Banco Guayaquil is a leading financial institution in Ecuador, known for its innovative financial products and customer-focused services. The bank offers a variety of services including loans, mortgages, and savings accounts.</p>
+                    <div class="specialty">Specialty: Retail Banking & Innovation</div>
+                    <a href="https://www.bancoguayaquil.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Produbanco</h5> 
+                    <p class="card-text">Produbanco is a major financial institution in Ecuador, offering a wide range of banking services including personal banking, corporate banking, and wealth management. The bank is known for its customer-centric approach.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.produbanco.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Internacional</h5> 
+                    <p class="card-text">Banco Internacional is a prominent bank in Ecuador, providing a range of financial services including retail banking, business banking, and investment services. The bank is recognized for its reliability and innovation.</p>
+                    <div class="specialty">Specialty: Retail & Business Banking</div>
+                    <a href="https://www.bancointernacional.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Ecuador are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Uribe & Schwarzkopf</h5> 
+                    <p class="card-text">Uribe & Schwarzkopf is one of the leading real estate developers in Ecuador, specializing in high-end residential and commercial projects. The company is known for its innovative architectural designs and sustainable construction practices.</p>
+                    <div class="specialty">Specialty: High-End Residential & Commercial Real Estate</div>
+                    <a href="https://www.us.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Pronobis</h5> 
+                    <p class="card-text">Pronobis is a major real estate developer in Ecuador, focusing on residential, commercial, and mixed-use developments. The company is known for its commitment to quality and innovation in the real estate market.</p>
+                    <div class="specialty">Specialty: Residential & Mixed-Use Developments</div>
+                    <a href="https://www.pronobis.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Corporación Favorita Inmobiliaria</h5> 
+                    <p class="card-text">Corporación Favorita Inmobiliaria is a key player in Ecuador's real estate market, involved in the development and management of commercial properties, particularly shopping malls and retail spaces.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Development</div>
+                    <a href="https://www.corporacionfavorita.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ekos Real Estate</h5> 
+                    <p class="card-text">Ekos Real Estate is a prominent real estate development company in Ecuador, specializing in residential and commercial projects. The company is recognized for its innovative approach to real estate and quality construction.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate</div>
+                    <a href="https://www.ekosrealestate.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Semaica</h5> 
+                    <p class="card-text">Semaica is a leading construction and real estate company in Ecuador, involved in large-scale residential and commercial projects. The company is known for its commitment to sustainability and innovation in construction.</p>
+                    <div class="specialty">Specialty: Sustainable Real Estate Development</div>
+                    <a href="https://www.semaica.com.ec/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

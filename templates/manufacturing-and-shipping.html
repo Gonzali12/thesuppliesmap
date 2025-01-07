@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %} Manufacturing And Shipping {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/manufacturing-and-shipping-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container" style="margin: 0; padding: 0; max-width: 100%;">
+    <video muted autoplay id="window-video">
+        <source src="{{ url_for('static', filename='video/manufacturing-and-shipping/5488780-uhd_3840_2160_30fps.mp4') }}">
+        Your video could not start playing
+    </video>
+    <div class="singapore-and-japan">
+        <div class="singapore">
+            <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/singaporeflag.png') }}" alt="flag of Singapore" id="singapore-flag" height="100">
+            <a href="{{ url_for('shipping_singapore') }}">
+                <button id="shipping-Singapore">Shipping's history and importance, explained through Singapore</button>
+            </a>
+        </div>
+        <div class="japan">
+            <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/japanflag.png') }}" alt="flag of Japan" id="japan-flag" height="100">
+            <a href="{{ url_for('manufacturing_japan') }}">
+                <button id="manufacturing-Japan">Manufacturing's history and importance, explained through Japan</button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block title %} China {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>China</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/china-flag.png') }}" alt="china flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            China, officially the People's Republic of China, is a major country in East Asia with an HDI of 0.768, indicating high human development. It is classified as a More Economically Developed Country (MEDC) due to its significant economic growth and global influence. <br><br>Covering approximately 9.6 million square kilometers, China is the fourth-largest country by land area.<br><br> Xi Jinping currently serves as the President. With a population exceeding 1.4 billion, China is the most populous country globally. <br><br>Rich in natural resources such as coal, iron ore, petroleum, and natural gas, China is also a leading producer of agricultural products like rice and wheat, underpinning its economic stability and global standing.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">China's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">China's logistics industry is the backbone of the world's largest manufacturing economy, supporting its massive export and domestic markets. The sector is highly advanced, with extensive infrastructure and technology integration.</p>
+
+        <h1>The biggest logistics companies in China are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">China COSCO Shipping Corporation</h5> 
+                    <p class="card-text">China COSCO Shipping Corporation is one of the largest integrated shipping and logistics companies in the world. It offers a comprehensive range of services, including container shipping, terminal operations, and supply chain management.</p>
+                    <div class="specialty">Specialty: Integrated Shipping & Logistics</div>
+                    <a href="http://en.coscoshipping.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SF Express</h5> 
+                    <p class="card-text">SF Express is a leading courier and logistics services provider in China, specializing in express delivery, freight forwarding, and e-commerce logistics. The company is known for its extensive network and fast delivery times.</p>
+                    <div class="specialty">Specialty: Express Delivery & E-commerce Logistics</div>
+                    <a href="http://www.sf-express.com/cn/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">China Post Group</h5> 
+                    <p class="card-text">China Post Group is the state-owned postal service provider in China, offering a wide range of services including mail delivery, parcel delivery, and logistics solutions. The company has a vast network across the country.</p>
+                    <div class="specialty">Specialty: Postal & Logistics Services</div>
+                    <a href="http://english.chinapost.com.cn/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ZTO Express</h5> 
+                    <p class="card-text">ZTO Express is a leading express delivery company in China, known for its efficient and reliable courier services. The company plays a significant role in supporting China's booming e-commerce sector.</p>
+                    <div class="specialty">Specialty: Express Delivery Services</div>
+                    <a href="http://www.zto.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JD Logistics</h5> 
+                    <p class="card-text">JD Logistics, a subsidiary of JD.com, is a leading provider of integrated logistics services in China, offering warehousing, transportation, and last-mile delivery solutions, with a strong focus on technology and automation.</p>
+                    <div class="specialty">Specialty: Integrated E-commerce Logistics</div>
+                    <a href="https://www.jdwl.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in China are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Huawei Technologies</h5> 
+                    <p class="card-text">Huawei Technologies is one of the world's leading technology companies, specializing in telecommunications equipment, consumer electronics, and smart devices. The company is known for its innovation in 5G and AI technologies.</p>
+                    <div class="specialty">Specialty: Telecommunications & Consumer Electronics</div>
+                    <a href="https://www.huawei.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">China National Petroleum Corporation (CNPC)</h5> 
+                    <p class="card-text">CNPC is one of the largest oil and gas companies in China, involved in the exploration, production, refining, and distribution of oil and natural gas. The company is a key player in the global energy market.</p>
+                    <div class="specialty">Specialty: Oil & Gas Exploration and Production</div>
+                    <a href="http://www.cnpc.com.cn/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">China Railway Construction Corporation (CRCC)</h5> 
+                    <p class="card-text">CRCC is a leading construction company in China, specializing in infrastructure projects such as railways, highways, bridges, and tunnels. The company is a global leader in railway construction.</p>
+                    <div class="specialty">Specialty: Infrastructure Construction</div>
+                    <a href="http://english.crcc.cn/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BYD Company</h5> 
+                    <p class="card-text">BYD Company is a major manufacturer of electric vehicles (EVs) and renewable energy products in China. The company is known for its innovations in battery technology and sustainable transportation.</p>
+                    <div class="specialty">Specialty: Electric Vehicles & Renewable Energy</div>
+                    <a href="http://www.byd.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SAIC Motor</h5> 
+                    <p class="card-text">SAIC Motor is the largest automotive manufacturer in China, producing a wide range of vehicles, including passenger cars, commercial vehicles, and electric vehicles. The company has joint ventures with major global automakers.</p>
+                    <div class="specialty">Specialty: Automotive Manufacturing</div>
+                    <a href="https://www.saicmotor.com/english/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in China are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BlueFocus Communication Group</h5> 
+                    <p class="card-text">BlueFocus Communication Group is one of the largest marketing and communications companies in China, offering a full range of services including public relations, digital marketing, and brand strategy.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Communications</div>
+                    <a href="http://www.bluefocusgroup.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy China</h5> 
+                    <p class="card-text">Ogilvy China is part of the global Ogilvy network, providing a wide range of marketing and advertising services, including digital marketing, brand strategy, and public relations in the Chinese market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing Solutions</div>
+                    <a href="https://www.ogilvy.com.cn/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cheil Greater China</h5> 
+                    <p class="card-text">Cheil Greater China is a leading marketing agency, part of the Samsung Group, offering creative advertising, digital marketing, and brand experience services across China.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Experience</div>
+                    <a href="https://www.cheil.com.cn/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Dentsu Aegis Network China</h5> 
+                    <p class="card-text">Dentsu Aegis Network China is part of the global Dentsu network, providing comprehensive marketing services including digital marketing, media buying, and content creation in China.</p>
+                    <div class="specialty">Specialty: Digital Marketing & Media Buying</div>
+                    <a href="https://www.dentsu.com/en/china/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">We Are Social China</h5> 
+                    <p class="card-text">We Are Social China is a leading social media agency, specializing in social media strategy, content creation, and influencer marketing. The agency works with global brands to enhance their social presence in China.</p>
+                    <div class="specialty">Specialty: Social Media Marketing</div>
+                    <a href="https://wearesocial.cn/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in China are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Industrial and Commercial Bank of China (ICBC)</h5> 
+                    <p class="card-text">ICBC is the largest bank in the world by total assets, providing a full range of financial services including retail banking, corporate banking, and wealth management. The bank has a strong international presence.</p>
+                    <div class="specialty">Specialty: Comprehensive Financial Services</div>
+                    <a href="http://www.icbc.com.cn/icbc/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">China Construction Bank (CCB)</h5> 
+                    <p class="card-text">China Construction Bank (CCB) is one of the largest banks in China, offering a wide range of financial services including personal banking, corporate banking, and investment services.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="http://www.ccb.com/en/home/index.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Agricultural Bank of China (ABC)</h5> 
+                    <p class="card-text">The Agricultural Bank of China (ABC) is one of China's largest banks, providing financial services to rural and urban areas, with a focus on agricultural financing and retail banking.</p>
+                    <div class="specialty">Specialty: Agricultural Financing & Retail Banking</div>
+                    <a href="http://www.abchina.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bank of China (BOC)</h5> 
+                    <p class="card-text">Bank of China (BOC) is a major state-owned commercial bank, offering a comprehensive range of financial services including personal banking, corporate banking, and international trade financing.</p>
+                    <div class="specialty">Specialty: International Trade & Finance</div>
+                    <a href="https://www.boc.cn/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ping An Bank</h5> 
+                    <p class="card-text">Ping An Bank is a leading commercial bank in China, part of the Ping An Insurance Group. The bank offers a wide range of financial products including personal loans, mortgages, and wealth management services.</p>
+                    <div class="specialty">Specialty: Personal Banking & Wealth Management</div>
+                    <a href="https://bank.pingan.com/en/index.shtml" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in China are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">China Evergrande Group</h5> 
+                    <p class="card-text">China Evergrande Group is one of the largest real estate developers in China, known for its large-scale residential and commercial projects. The company is a major player in China's property market.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate</div>
+                    <a href="http://www.evergrande.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Country Garden Holdings</h5> 
+                    <p class="card-text">Country Garden Holdings is a leading property developer in China, specializing in the development of residential communities. The company is known for its large-scale projects in urban and suburban areas.</p>
+                    <div class="specialty">Specialty: Residential Community Development</div>
+                    <a href="http://www.countrygarden.com.cn/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">China Vanke</h5> 
+                    <p class="card-text">China Vanke is one of the largest residential real estate developers in China, focusing on the development and management of residential properties, as well as urban redevelopment projects.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Development</div>
+                    <a href="http://www.vanke.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Poly Real Estate Group</h5> 
+                    <p class="card-text">Poly Real Estate Group is a major state-owned property developer in China, specializing in residential and commercial real estate projects. The company is known for its high-quality developments and strong market presence.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate</div>
+                    <a href="http://www.polycn.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sunac China Holdings</h5> 
+                    <p class="card-text">Sunac China Holdings is a leading real estate developer in China, focusing on high-end residential properties and commercial real estate projects. The company is recognized for its luxury developments in major cities.</p>
+                    <div class="specialty">Specialty: High-End Residential & Commercial Real Estate</div>
+                    <a href="http://www.sunac.com.cn/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

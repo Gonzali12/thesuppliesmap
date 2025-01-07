@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block title %} Paraguay {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Argentina</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/paraguay-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Paraguay, a landlocked country in South America, has a population of around 7.13 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.728, reflecting moderate levels of income, health, and education. <br><br>Covering a geographical area of 406,752 square kilometers, Paraguay is known for its vast plains, subtropical forests, and significant river systems. <br><br>The country is currently led by President Mario Abdo Benítez, who holds a center-right political stance, focusing on economic growth, infrastructure development, and social stability.<br><br> Paraguay’s strategic location, agricultural productivity, and cultural heritage play crucial roles in its economy and regional influence.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Paraguay's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Paraguay's logistics sector is essential for its economy, supporting both domestic and international trade. The industry is vital for the distribution of goods across the country and its neighboring regions.</p>
+
+        <h1>The biggest logistics companies in Paraguay are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte Guarani</h5> 
+                    <p class="card-text">Transporte Guarani is a leading logistics and transportation company in Paraguay, offering freight services, distribution, and supply chain solutions. The company is known for its reliability and extensive network across the country.</p>
+                    <div class="specialty">Specialty: Freight & Transportation Services</div>
+                    <a href="https://www.transporteguarani.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Interlogística</h5> 
+                    <p class="card-text">Interlogística is a major logistics provider in Paraguay, specializing in customs brokerage, freight forwarding, and integrated logistics solutions. The company is recognized for its expertise in handling complex logistics operations.</p>
+                    <div class="specialty">Specialty: Customs Brokerage & Freight Forwarding</div>
+                    <a href="https://www.interlogistica.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Navesur</h5> 
+                    <p class="card-text">Navesur is a prominent logistics and maritime transportation company in Paraguay, offering services that include river transportation, cargo handling, and supply chain management. The company is known for its specialization in river logistics.</p>
+                    <div class="specialty">Specialty: River Transportation & Cargo Handling</div>
+                    <a href="https://www.navesur.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Translogistica S.A.</h5> 
+                    <p class="card-text">Translogistica S.A. is a key player in the logistics sector in Paraguay, providing a range of services including freight transportation, warehousing, and distribution. The company is known for its efficiency and customer-oriented approach.</p>
+                    <div class="specialty">Specialty: Freight Transportation & Warehousing</div>
+                    <a href="https://www.translogistica.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Paraguay</h5> 
+                    <p class="card-text">DHL Paraguay is a branch of the global DHL network, offering express courier services, logistics, and supply chain management solutions. The company is recognized for its reliability and comprehensive service offerings in Paraguay.</p>
+                    <div class="specialty">Specialty: Express Courier & Supply Chain Management</div>
+                    <a href="https://www.dhl.com/py-es/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Paraguay are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cervepar</h5> 
+                    <p class="card-text">Cervepar (Cervecería Paraguaya) is the largest brewery in Paraguay, producing a wide range of beer and beverage products. The company is a key player in the Paraguayan market and is known for its popular brands such as Pilsen and Brahma.</p>
+                    <div class="specialty">Specialty: Beverage & Beer Manufacturing</div>
+                    <a href="https://www.cervepar.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Industria Nacional del Cemento (INC)</h5> 
+                    <p class="card-text">Industria Nacional del Cemento (INC) is the leading cement manufacturer in Paraguay, providing essential building materials for the construction industry. The company plays a vital role in the country's infrastructure development.</p>
+                    <div class="specialty">Specialty: Cement Manufacturing</div>
+                    <a href="https://www.inc.gov.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Acepar S.A.</h5> 
+                    <p class="card-text">Acepar S.A. (Aceros del Paraguay) is the largest steel producer in Paraguay, specializing in the production of steel products for construction and industrial applications. The company is a major supplier in the Paraguayan market.</p>
+                    <div class="specialty">Specialty: Steel Manufacturing</div>
+                    <a href="https://www.acepar.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Frigorífico Concepción</h5> 
+                    <p class="card-text">Frigorífico Concepción is a leading meat processing company in Paraguay, specializing in the production and export of beef products. The company is known for its high-quality standards and significant contribution to the agricultural sector.</p>
+                    <div class="specialty">Specialty: Meat Processing & Export</div>
+                    <a href="https://www.frigorificoconcepcion.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ADM Paraguay</h5> 
+                    <p class="card-text">ADM Paraguay, a branch of the global Archer Daniels Midland Company, is a key player in the agricultural processing industry, specializing in the production of soy and other agricultural products. The company is a major contributor to Paraguay's export economy.</p>
+                    <div class="specialty">Specialty: Agricultural Processing</div>
+                    <a href="https://www.adm.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Paraguay are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Paraguay</h5> 
+                    <p class="card-text">Ogilvy Paraguay is part of the global Ogilvy network, providing comprehensive marketing and advertising services. The agency is known for its creativity and strategic approach to brand communication in the Paraguayan market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.ogilvy.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Nasta Comunicación</h5> 
+                    <p class="card-text">Nasta Comunicación is a leading advertising agency in Paraguay, offering creative services, brand strategy, and digital marketing. The agency is recognized for its innovative campaigns and strong understanding of the local market.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Digital Marketing</div>
+                    <a href="https://www.nasta.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Oniria\TBWA</h5> 
+                    <p class="card-text">Oniria\TBWA is part of the global TBWA network, providing cutting-edge advertising and marketing solutions in Paraguay. The agency is known for its disruptive approach to brand building and its creative excellence.</p>
+                    <div class="specialty">Specialty: Disruptive Advertising & Brand Building</div>
+                    <a href="https://www.oniria.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Biedermann Publicidad</h5> 
+                    <p class="card-text">Biedermann Publicidad is one of the oldest and most respected advertising agencies in Paraguay, offering a wide range of services including creative advertising, media planning, and brand management.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Media Planning</div>
+                    <a href="https://www.biedermann.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Kausa/Havas</h5> 
+                    <p class="card-text">Kausa/Havas is part of the global Havas network, offering integrated marketing services in Paraguay. The agency is known for its innovative solutions, digital marketing expertise, and strong client relationships.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Digital Marketing</div>
+                    <a href="https://www.kausahavas.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Paraguay are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Nacional de Fomento (BNF)</h5> 
+                    <p class="card-text">Banco Nacional de Fomento (BNF) is a state-owned bank in Paraguay, providing a wide range of financial services including retail banking, corporate banking, and agricultural financing. The bank plays a key role in the country's economic development.</p>
+                    <div class="specialty">Specialty: Retail & Agricultural Banking</div>
+                    <a href="https://www.bnf.gov.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Regional</h5> 
+                    <p class="card-text">Banco Regional is one of the largest private banks in Paraguay, offering a wide range of financial services including retail banking, corporate banking, and wealth management. The bank is known for its strong focus on the agricultural sector.</p>
+                    <div class="specialty">Specialty: Corporate & Agricultural Banking</div>
+                    <a href="https://www.bancoregional.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Itaú Paraguay</h5> 
+                    <p class="card-text">Banco Itaú Paraguay is part of the global Itaú Group, offering a comprehensive range of banking services including personal banking, corporate banking, and investment services. The bank is recognized for its innovation and customer service.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.itau.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Visión Banco</h5> 
+                    <p class="card-text">Visión Banco is a major financial institution in Paraguay, focusing on retail banking, microfinance, and SME banking. The bank is known for its commitment to financial inclusion and its extensive branch network.</p>
+                    <div class="specialty">Specialty: Retail Banking & Microfinance</div>
+                    <a href="https://www.visionbanco.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sudameris Bank</h5> 
+                    <p class="card-text">Sudameris Bank is one of Paraguay's oldest banks, offering a wide range of financial services including retail banking, corporate banking, and investment banking. The bank is known for its strong market position and customer focus.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.sudameris.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Paraguay are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Raices Real Estate</h5> 
+                    <p class="card-text">Raices Real Estate is one of Paraguay's leading real estate companies, specializing in the development and management of residential and commercial properties. The company is known for its high-quality projects and innovative developments.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate Development</div>
+                    <a href="https://www.raices.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo AGB</h5> 
+                    <p class="card-text">Grupo AGB is a major real estate developer in Paraguay, focusing on residential, commercial, and mixed-use projects. The company is recognized for its commitment to quality and sustainable development.</p>
+                    <div class="specialty">Specialty: Mixed-Use Real Estate Development</div>
+                    <a href="https://www.grupoagb.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Rieder Group</h5> 
+                    <p class="card-text">Rieder Group is a leading construction and real estate development company in Paraguay, specializing in large-scale residential and commercial projects. The company is known for its innovative construction methods and high standards.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Construction</div>
+                    <a href="https://www.rieder.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Alberdin S.A.</h5> 
+                    <p class="card-text">Alberdin S.A. is a prominent real estate development company in Paraguay, known for its luxury residential projects and high-end commercial developments. The company is a leader in the premium real estate market.</p>
+                    <div class="specialty">Specialty: Luxury Real Estate Development</div>
+                    <a href="https://www.alberdin.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Inmobiliaria del Este</h5> 
+                    <p class="card-text">Inmobiliaria del Este is a key player in Paraguay's real estate sector, focusing on residential and commercial property development. The company is known for its commitment to quality and customer satisfaction.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Property Development</div>
+                    <a href="https://www.inmobiliariadeleste.com.py/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

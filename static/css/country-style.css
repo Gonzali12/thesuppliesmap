@@ -1,0 +1,434 @@
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    color: transparent;
+}
+
+h2{
+    font-size: 30px;
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.country-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.country-flag{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+
+    margin-top: 10px;
+}
+
+.introduction-box {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-right: 4%;
+    margin-left: 4%;
+
+    margin-bottom: 25px;
+}
+
+.introduction-paragraph { 
+    font-size: 13px;
+    width: 300px;
+    text-align: center;
+}
+
+.graph { 
+    width: 600px;
+}
+
+.graph p {
+    font-size: 7px;
+    text-align: center;
+}
+
+.average-score {
+    width: fit-content;
+    margin: auto;
+    padding: 6px 8px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-size: 10px !important;
+    color: black;
+    background-color: red;
+}
+
+.country-metada {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#finhub-data-1{
+    font-size: small;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 15px;
+
+    border-radius: 5%;
+}
+
+#finhub-data-2 {
+    font-size: small;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 25px;
+
+    border-radius: 5%;
+}
+
+#country-metada-description {
+    font-size: 12px;
+}
+
+.network-description {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn.btn-primary{
+    margin-top: 20px;
+}
+
+.card-body p, .card-body a {
+    font-size: 12.5px;
+}
+
+.main-indicators-scores {
+    margin-bottom: 0px;
+}
+
+.columns{
+    display: flex;
+}
+
+.modal-titles {
+    width: 600px;
+    font-size: 16px;
+}
+
+.modal-title{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.macroeconomics {
+    margin-bottom: 20px;
+}
+
+.macroeconomics-data {
+    text-align: center;
+    width: 600px;
+}
+
+.second-column {
+    width: 350px;
+}
+
+.intermodal-shipping-data {
+    text-align: center;
+    width: 600px;
+}
+
+.politics-data {
+    text-align: center;
+    width: 600px;
+}
+
+.modal-titles-politics {
+    width: 600px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.macroeconomics-data, .intermodal-shipping-data, .politics-data{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.macroeconomics-data p, .intermodal-shipping-data p, .politics-data p{
+    padding: 5px;
+    margin: 0px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.macroeconomics-data p{
+    background-color: orange;
+}
+
+.intermodal-shipping-data p{
+    background-color: silver;
+}
+
+.politics-data p{
+    background-color:#e2bc00;
+}
+
+#countryDetails_6, #countryDetails_6_v, #countryDetails_7, #countryDetails_7_v, #countryDetails_8, #countryDetails_8_v, #countryDetails_extra, #countryDetails_extra_v, #countryDetails_extra_real_return, #countryDetails_extra_extra_real_return_v {
+    background-color: red;
+    color: white;
+}
+
+.scores-and-values {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.extra-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.extra-info-link {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+}
+
+.specialty{
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+
+    color: goldenrod;
+    background-color: beige;
+}
+
+.extra-info-link:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-announcement {
+    font-size: 20px !important;
+    margin-top: 15px;
+}
+
+@media(max-width: 1410px){
+    .introduction-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    hr {
+        display: none;
+    }
+
+    h3 {
+        margin-top: 0px;
+    }
+
+    .graph-title {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .introduction-paragraph {
+        margin: auto;
+        width: 80%;
+    }
+
+    .graph {
+        width: 100%;
+    }
+
+    svg{
+        width: 100%;
+    }
+
+    .scores-and-values{
+        flex-direction: column;
+    }
+
+    .macroeconomics, .modal-titles, .macroeconomics-data, .second-column, .intermodal-shipping-data, .modal-titles-politics, .politics-data, .intermodal-shipping{ 
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .country-title{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .country-flag {
+        margin: auto;
+    }
+}
+/*
+
+
+    <div class="extra-links">
+        <a class="extra-info-link"></a>
+        <a class="extra-info-link"></a>
+        <a class="extra-info-link"></a>
+    </div> 
+
+<h3>Introduction</h3>
+<div class="introduction-container">
+    <p class="introduction-paragraph">
+        Argentina, a vibrant country located in South America, boasts a population of approximately 45.38 million people. Classified as a More Economically Developed Country (MEDC), it has a Human Development Index (HDI) of 0.845, reflecting its relatively high standard of living and educational attainment. Covering a vast geographical area of 2,780,400 square kilometers, Argentina is known for its diverse landscapes ranging from the Andes mountains to the fertile Pampas plains. The current president, Javier Milei, leads the nation with a political stance that is far right, focusing on conservative social policies and libertarian economic reforms aimed at addressing the country’s economic challenges. Argentina's rich cultural heritage, strong emphasis on education, and significant natural resources make it an influential player in the region.
+    </p>
+    <img src="images/argentina-flag.png">
+</div>
+
+<h3>Main Indications</h3>
+<div class="indicators">
+    <div class="macroeconomics">
+        <h3 class="modal-titles">Macroeconomics</h3>
+        <div class="macroeconomics-data">
+            <p id="countryDetails_1"></p>
+            <p id="countryDetails_2"></p>
+            <p id="countryDetails_3"></p>
+            <p id="countryDetails_4"></p>
+            <p id="countryDetails_5"></p>
+            <p id="countryDetails_6">Live API</p>
+            <p id="countryDetails_7">Live API</p>
+            <p id="countryDetails_8">Live API</p>
+            <p id="countryDetails_extra">Live API</p>
+        </div>
+    </div>
+    <div class="second-column">
+        <div class="intermodal-shipping">
+            <h3 class="modal-titles">Intermodal Shipping</h3>
+            <div class="intermodal-shipping-data">
+                <p id="countryDetails_9"></p>
+                <p id="countryDetails_10"></p>
+                <p id="countryDetails_11"></p>
+            </div>
+        </div>
+        <div class="politics">
+            <h3 class="modal-titles-politics">Politics</h3>
+            <div class="politics-data">
+                <p id="countryDetails_14"></p>
+                <p id="countryDetails_15"></p>
+                <p id="countryDetails_16"></p>
+                <p id="countryDetails_17"></p>
+                <p id="countryDetails_19"></p>
+                <p id="countryDetails_18"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="first-row">
+    <div class="distrbution">
+        <h3>Distribution Networks...</h3>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <img>
+    </div>
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <img>
+    </div>
+    <div class="manufacturing">
+        <h3>Marketing Networks...</h3>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <img>
+    </div>
+</div>
+
+<div class="second-row">
+    <div class="manufacturing">
+        <h3>Finance Networks...</h3>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <img>
+    </div>
+    <div class="manufacturing">
+        <h3>Real Estate...</h3>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <img>
+    </div>
+</div>
+
+<div class="external-content">
+    <h3>For more information, visit the attached sources:</h3>
+    <p></p> 
+</div>
+
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+{% endblock %}
+*/

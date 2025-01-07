@@ -1,0 +1,156 @@
+body{
+    background: #f6f9fc;
+}
+
+.stars-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#main-wrapper{
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 7%;
+}
+
+.account-block {
+    padding: 0;
+    background-image: url(https://bootdey.com/img/Content/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.h5.mb-0{
+    font-size: 19px;
+}
+
+.mb-5, .text-muted.mt-2.mb-5{
+    margin-bottom: 30px !important;
+}
+
+.p-5{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.text-theme {
+    color: black !important;
+}
+
+.btn-theme {
+    background-color: #FFBD59;
+    border-color: #B87333;
+    color: #000000;
+}
+
+.south-america-map-svg{
+    width: 350px; 
+    height: auto;
+    margin: 15px;
+    margin-left: 50px;
+}
+
+.atlas-logo{
+    display: flex;
+    justify-content: center;    
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.call-to-action{
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 430px;
+}
+
+.text-muted.text-center.mt-3.mb-0{
+    padding-bottom: 25px;
+}
+
+@keyframes fillColor {
+    0% {
+        fill: #ececec; /* Initial color */
+    }
+    100% {
+        fill: #FFBD59; /* Final color */
+    }
+}
+
+path[name="Peru"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 1s forwards; /* Fill Peru quickly after 2 seconds */
+}
+
+path[name="Ecuador"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 2s forwards; /* Fill Ecuador quickly after 4 seconds */
+}
+
+path[name="Bolivia"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 4s forwards; /* Fill Bolivia quickly after 6 seconds */
+}
+
+path[name="Colombia"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 6s forwards; /* Fill Colombia quickly after 8 seconds */
+}
+
+path[name="Brazil"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 8s forwards; /* Fill Brazil quickly after 10 seconds */
+}
+
+.Chile {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 10s forwards; /* Fill Chile quickly after 12 seconds */
+}
+
+path[name="Venezuela"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 12.5s forwards; /* Fill Venezuela quickly after 14 seconds */
+}
+
+path[name="Guyana"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 15s forwards; /* Fill Guyana quickly after 16 seconds */
+}
+
+path[name="Suriname"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 17.5s forwards; /* Fill Suriname quickly after 18 seconds */
+}
+
+#GF {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 20s forwards; /* Fill French Guiana quickly after 20 seconds */
+}
+
+.Argentina {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 22.5s forwards; /* Fill Argentina quickly after 22 seconds */
+}
+
+path[name="Uruguay"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 25s forwards; /* Fill Uruguay quickly after 24 seconds */
+}
+
+path[name="Paraguay"] {
+    animation: fillColor 0.2s cubic-bezier(0.75, 0, 0.75, 1) 27.5s forwards; /* Fill Paraguay quickly after 26 seconds */
+}

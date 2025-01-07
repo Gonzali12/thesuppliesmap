@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block title %} Germany {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Germany</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/germany-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Germany, located in Central Europe, has a population of around 83.24 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.947, highlighting its high standard of living, education, and healthcare systems. <br><br>Covering a geographical area of 357,022 square kilometers, Germany is known for its advanced economy, historic cities, and diverse landscapes from the Alps to the North Sea coast. <br><br>The country is currently led by Chancellor Olaf Scholz, who holds a center-left political stance, focusing on social justice, economic stability, and environmental sustainability. <br><br>Germany’s strong industrial base, technological innovation, and leadership in the European Union underscore its global influence.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Germany's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Germany's logistics sector is one of the most advanced in the world, supporting its role as a leading exporter. The industry is characterized by its efficiency, innovation, and extensive infrastructure.</p>
+
+        <h1>The biggest logistics companies in Germany are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Group</h5> 
+                    <p class="card-text">DHL Group is the world's leading logistics company, headquartered in Germany. It offers a wide range of services including express shipping, freight transportation, and supply chain management. DHL is known for its global reach and reliability.</p>
+                    <div class="specialty">Specialty: Global Express Shipping & Logistics</div>
+                    <a href="https://www.dhl.com/global-en/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DB Schenker</h5> 
+                    <p class="card-text">DB Schenker is a leading global logistics provider, offering transportation and logistics solutions including land, air, and sea freight, as well as contract logistics. The company is known for its extensive network and innovative solutions.</p>
+                    <div class="specialty">Specialty: Integrated Transportation & Logistics Solutions</div>
+                    <a href="https://www.dbschenker.com/global" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Kuehne + Nagel Germany</h5> 
+                    <p class="card-text">Kuehne + Nagel is a global logistics company with a strong presence in Germany, offering a wide range of services including sea freight, air freight, and contract logistics. The company is known for its expertise in managing complex supply chains.</p>
+                    <div class="specialty">Specialty: Sea & Air Freight Logistics</div>
+                    <a href="https://de.kuehne-nagel.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Hellmann Worldwide Logistics</h5> 
+                    <p class="card-text">Hellmann Worldwide Logistics is a global logistics provider based in Germany, offering services including freight forwarding, contract logistics, and supply chain solutions. The company is known for its customer-centric approach and innovation.</p>
+                    <div class="specialty">Specialty: Freight Forwarding & Supply Chain Solutions</div>
+                    <a href="https://www.hellmann.com/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Rhenus Logistics</h5> 
+                    <p class="card-text">Rhenus Logistics is a global logistics service provider with operations in Germany, offering comprehensive services including freight logistics, warehousing, and customs brokerage. The company is known for its efficiency and reliability.</p>
+                    <div class="specialty">Specialty: Freight Logistics & Customs Brokerage</div>
+                    <a href="https://www.rhenus.group/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Germany are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Volkswagen Group</h5> 
+                    <p class="card-text">Volkswagen Group is one of the world's leading automotive manufacturers, headquartered in Germany. The company produces a wide range of vehicles under brands like Volkswagen, Audi, Porsche, and Bentley.</p>
+                    <div class="specialty">Specialty: Automotive Manufacturing</div>
+                    <a href="https://www.volkswagenag.com/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Siemens AG</h5> 
+                    <p class="card-text">Siemens AG is a global leader in industrial manufacturing, based in Germany. The company specializes in electrification, automation, and digitalization, serving industries like energy, healthcare, and infrastructure.</p>
+                    <div class="specialty">Specialty: Industrial Manufacturing & Automation</div>
+                    <a href="https://www.siemens.com/global/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BASF SE</h5> 
+                    <p class="card-text">BASF SE is the largest chemical producer in the world, headquartered in Germany. The company produces a wide range of chemicals, including agricultural products, plastics, and performance products, serving various industries globally.</p>
+                    <div class="specialty">Specialty: Chemical Manufacturing</div>
+                    <a href="https://www.basf.com/global/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Robert Bosch GmbH</h5> 
+                    <p class="card-text">Robert Bosch GmbH is a leading global supplier of technology and services, specializing in automotive components, industrial technology, consumer goods, and energy solutions. The company is known for its innovation and quality.</p>
+                    <div class="specialty">Specialty: Automotive & Industrial Technology</div>
+                    <a href="https://www.bosch.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BMW Group</h5> 
+                    <p class="card-text">BMW Group is a world-renowned automotive manufacturer based in Germany, producing luxury vehicles and motorcycles under brands such as BMW, Mini, and Rolls-Royce. The company is known for its commitment to innovation and sustainability.</p>
+                    <div class="specialty">Specialty: Luxury Automotive Manufacturing</div>
+                    <a href="https://www.bmwgroup.com/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Germany are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBDO Germany</h5> 
+                    <p class="card-text">BBDO Germany is part of the global BBDO network, offering a wide range of marketing and advertising services. The agency is known for its creative campaigns and strategic approach to brand communication.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Branding</div>
+                    <a href="https://www.bbdo.de/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Jung von Matt</h5> 
+                    <p class="card-text">Jung von Matt is one of Germany's most prestigious creative agencies, known for its innovative and impactful advertising campaigns. The agency works with major brands across various industries, delivering creative solutions that resonate with audiences.</p>
+                    <div class="specialty">Specialty: Creative Advertising</div>
+                    <a href="https://www.jvm.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Serviceplan Group</h5> 
+                    <p class="card-text">Serviceplan Group is one of the largest independent marketing and communications agencies in Europe, headquartered in Germany. The company offers integrated marketing solutions, including digital marketing, media planning, and public relations.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Communications</div>
+                    <a href="https://www.serviceplan.com/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Scholz & Friends</h5> 
+                    <p class="card-text">Scholz & Friends is a leading advertising agency in Germany, known for its creative and strategic campaigns. The agency provides a wide range of services, including brand management, advertising, and digital marketing.</p>
+                    <div class="specialty">Specialty: Brand Management & Advertising</div>
+                    <a href="https://www.s-f.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Germany</h5> 
+                    <p class="card-text">Ogilvy Germany is part of the global Ogilvy network, offering comprehensive marketing services including advertising, digital marketing, and public relations. The agency is known for its creativity and strategic insights.</p>
+                    <div class="specialty">Specialty: Integrated Marketing Solutions</div>
+                    <a href="https://www.ogilvy.de/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Germany are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Deutsche Bank</h5> 
+                    <p class="card-text">Deutsche Bank is one of the world's leading financial services providers, headquartered in Germany. The bank offers a wide range of services including investment banking, asset management, and retail banking.</p>
+                    <div class="specialty">Specialty: Investment Banking & Financial Services</div>
+                    <a href="https://www.db.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Commerzbank</h5> 
+                    <p class="card-text">Commerzbank is a major German bank, providing a wide range of financial services including retail banking, corporate banking, and investment banking. The bank is known for its strong customer focus and innovative solutions.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.commerzbank.com/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">KfW Bankengruppe</h5> 
+                    <p class="card-text">KfW Bankengruppe is Germany's development bank, providing financial support for projects in Germany and abroad. The bank is involved in economic development, housing, education, and environmental protection.</p>
+                    <div class="specialty">Specialty: Development Banking & Economic Support</div>
+                    <a href="https://www.kfw.de/kfw.de-EN/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DZ Bank</h5> 
+                    <p class="card-text">DZ Bank is one of Germany's largest banks, serving as the central institution for more than 1,000 cooperative banks. The bank offers a wide range of financial services including corporate banking, retail banking, and asset management.</p>
+                    <div class="specialty">Specialty: Cooperative Banking & Asset Management</div>
+                    <a href="https://www.dzbank.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Allianz</h5> 
+                    <p class="card-text">Allianz is a leading global financial services company based in Germany, specializing in insurance and asset management. The company offers a wide range of insurance products and investment services worldwide.</p>
+                    <div class="specialty">Specialty: Insurance & Asset Management</div>
+                    <a href="https://www.allianz.com/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Germany are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Vonovia</h5> 
+                    <p class="card-text">Vonovia is the largest residential real estate company in Germany, specializing in the management and development of residential properties. The company is known for its commitment to quality and customer service.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Management</div>
+                    <a href="https://www.vonovia.de/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">LEG Immobilien</h5> 
+                    <p class="card-text">LEG Immobilien is a major real estate company in Germany, focusing on the management and development of residential properties. The company is known for its large portfolio and commitment to sustainable development.</p>
+                    <div class="specialty">Specialty: Residential Property Management & Development</div>
+                    <a href="https://www.leg-wohnen.de/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Deutsche Wohnen</h5> 
+                    <p class="card-text">Deutsche Wohnen is one of Germany's largest real estate companies, specializing in the management and development of residential properties. The company focuses on high-quality, sustainable housing solutions.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Development</div>
+                    <a href="https://www.deutsche-wohnen.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TAG Immobilien</h5> 
+                    <p class="card-text">TAG Immobilien is a German real estate company that focuses on the acquisition, development, and management of residential properties. The company is known for its efficient property management and customer focus.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Management</div>
+                    <a href="https://www.tag-ag.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Patrizia AG</h5> 
+                    <p class="card-text">Patrizia AG is a global real estate investment company based in Germany, specializing in the acquisition, development, and management of residential and commercial properties. The company is known for its innovative approach to real estate investment.</p>
+                    <div class="specialty">Specialty: Real Estate Investment & Development</div>
+                    <a href="https://www.patrizia.ag/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %} Manufacturing And Japan {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/japan-style.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<div class="text-block">
+    <div class="header-title">
+        <a href="{{ url_for('manufacturing_and_shipping') }}" id="arrow-button">
+            <span class="arrow-back-icon material-symbols-outlined">arrow_back</span>
+        </a>
+        <h2 id="description-title">Manufacturing's History And Importance, explained through Japan</h2>
+    </div>
+    <hr/>
+    <div class="history-of-manufacturing-japan">
+        <ul id="unordered-list-japan-manufacturing-history">
+            <h3>Post-War Reconstruction (Late 1940s - 1950s)</h3>
+            <li>
+                <div class="text-image">
+                    <p>
+                        By 1946, Japan was at risk of a nationwide famine; the country's industrial and agricultural capabilities had plummeted, and morale was at an all-time low. By 1947, the overwhelmingly progressive and free-trade constitution drafted by the US had come into effect. It emphasizes equality before the law, free trade, and renounced war. For instance, Article 13: <i>All the people shall be respected as individuals. Their right to life, liberty, and the pursuit of happiness shall, to the extent that it does not interfere with the public welfare, be the supreme consideration in legislation and in other governmental affairs.</i> With the foundations of an open and free economy, Japan began reconstructing its economy. Emphasis was initially on light industries such as textiles, which required less capital and could leverage Japan’s skilled labor force.
+                    </p>
+                    <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/japan/post-world-war-japan.jpg') }}" alt="post-world war-japan">
+                </div>
+            </li>
+            <h3>Heavy Industrialization (Late 1950s - 1960s)</h3>
+            <li>
+                <div class="text-image">
+                    <p>
+                        As the economy stabilized, Japan shifted its focus toward heavy industries like steel, shipbuilding, and chemicals. The Korean War (1950-1953) played a significant role during this phase, as Japan became a principal supplier for the UN forces, boosting its steel and other heavy industries. The government played a crucial role through MITI (Ministry of International Trade and Industry), which facilitated industrial policy and supported key sectors by providing subsidies and protecting them from foreign competition. This export-led model would prove to be essential for the revival of Japanese manufacturing, and  would lay the foundations of the Japanese economic miracle we know today.
+                    </p>
+                    <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/japan/Shigeru_Yoshida.jpg') }}" alt="japan-economic-miracle">
+                </div>
+            </li>
+            <h3>High Technology and Quality Improvement (1970s - 1980s)</h3>
+            <li>
+                <div class="text-image">
+                    <p>
+                        In the 1970s, Japan began focusing on high-tech industries such as electronics and automobiles. Japanese companies invested heavily in research and development (R&D) and adopted rigorous quality improvement practices like Total Quality Management (TQM) and the Toyota Production System, which included Just-In-Time (JIT) manufacturing. These practices not only improved efficiency and reduced waste but also led to superior product quality that became globally recognized. It was a combination of the cultural emphasis on quality and precision, perfectionism, seen through the Kaizen philosophy, a strong customer-centric approach, and the pursuit of hyperefficiency that made Japanese's manufactured products known for their quality and durability.
+                    </p>
+                    <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/japan/tokyo-1977.webp') }}" alt="japan-technology">
+                </div>
+            </li>
+            <h3>The Asset Price Bubble and its Burst (Late 1980s - Early 1990s)</h3>
+            <li>
+                <div class="text-image">
+                    <p>
+                        Up to the 1980s, Japan had managed to avoid a middle-income trap through heavy investments in education, technological advancements and innovation, and export diversification. The late 1980s marked the peak of Japan’s economic miracle, characterized by an asset price bubble in real estate and stock markets. During this period, excessive speculation and overly confident investment in domestic markets led to inflated asset prices. The bubble burst in the early 1990s, leading to a prolonged economic stagnation known as the "Lost Decade." Manufacturing growth slowed, and Japan faced new challenges such as price deflation and a rapidly aging population. The next ten years came to be know as the "lost decade". In March 2024, the Japanese stock market reached its highest peak since 1989. That was 45 years of a stagnated stock market.
+                    </p>
+                    <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/japan/1980scrash.jpg') }}" alt="japan-asset-bubble">
+                </div>
+            </li>
+            <h3>Revival and Innovation (2000s - Present)</h3>
+            <li>
+                <div class="text-image">
+                    <p>
+                        In response to the challenges of the Lost Decade, Japan focused on innovation to revive its economy. The government initiated structural reforms and continued to support technological advancement. Japanese manufacturing today is characterized by its leadership in precision engineering, robotics, and clean technology. Japan remains a world leader in sectors such as robotics, semiconductor manufacturing, and automotive, with a focus on electric vehicles and smart manufacturing technologies. Furthermore, Japan has the world's most complex economy, and is within the countries with the most advanced manufacturing facilities in the world. The current state of manufacturing in Japan reflects a mix of emphasis on the production of motor vehicles, semiconductors, integrated circuits, clean energy, and machinery.
+                    </p>
+                    <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/japan/japanesemanufacturing.png') }}" alt="japan-manufacturing">
+                </div>
+            </li>
+        </ul>
+        <h2 id="quote">The Toyota style is not to create results by working hard. It is a system that says there is no limit to people's creativity. People don't go to Toyota to 'work' they go there to 'think'. <br><br> — Taiichi Ohno</h2>
+        <div class="images-manufacturing-bottom">
+            <img src="{{ url_for('static', filename='img/manufacturing-and-shipping/japan/HS4-Exports-for-World-2022.png') }}" id="global-exports" alt="world-exports">
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

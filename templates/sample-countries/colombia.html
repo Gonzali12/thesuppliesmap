@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block title %} Colombia {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Colombia</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/colombia-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Colombia, located in the northwest region of South America, has a population of approximately 50.88 million people. Classified as a More Economically Developed Country (MEDC), it has a Human Development Index (HDI) of 0.767, indicating a moderate to high standard of living. <br><br>Spanning a geographical area of 1,141,748 square kilometers, Colombia boasts diverse landscapes, including the Andes mountains, Amazon rainforest, and Caribbean and Pacific coastlines.<br><br> The country is currently led by President Gustavo Petro, who is positioned on the left of the political spectrum, focusing on social justice, peace, and sustainable development. <br><br>Colombia's rich cultural heritage, strategic economic policies, and natural resources contribute to its growing influence in the region.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Colombia's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Colombia's logistics sector is vital to its economy, supporting its position as a major exporter of coffee, flowers, and other goods. The sector is developing rapidly, with a focus on improving infrastructure and efficiency.</p>
+
+        <h1>The biggest logistics companies in Colombia are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Coordinadora</h5> 
+                    <p class="card-text">Coordinadora is one of Colombia's leading logistics companies, specializing in parcel delivery, freight transportation, and integrated logistics solutions. The company has a strong national presence with a focus on reliability and speed.</p>
+                    <div class="specialty">Specialty: Parcel Delivery & Freight Transportation</div>
+                    <a href="https://www.coordinadora.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Servientrega</h5> 
+                    <p class="card-text">Servientrega is a major logistics provider in Colombia, offering a wide range of services including courier, parcel delivery, freight forwarding, and supply chain management. The company is known for its extensive network and customer-centric approach.</p>
+                    <div class="specialty">Specialty: Courier & Logistics Services</div>
+                    <a href="https://www.servientrega.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Deprisa</h5> 
+                    <p class="card-text">Deprisa is a logistics and transportation company in Colombia, providing express delivery, cargo handling, and logistics solutions. The company is a subsidiary of Avianca, specializing in air freight and quick deliveries.</p>
+                    <div class="specialty">Specialty: Air Freight & Express Delivery</div>
+                    <a href="https://www.deprisa.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TCC</h5> 
+                    <p class="card-text">TCC is a well-established logistics company in Colombia, offering integrated logistics services including transportation, warehousing, and distribution. The company is known for its nationwide coverage and efficient service.</p>
+                    <div class="specialty">Specialty: Integrated Logistics Services</div>
+                    <a href="https://www.tcc.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Inter Rapidísimo</h5> 
+                    <p class="card-text">Inter Rapidísimo is a prominent logistics and courier company in Colombia, providing nationwide coverage with a focus on fast and reliable delivery services for parcels and documents.</p>
+                    <div class="specialty">Specialty: Courier & Parcel Delivery</div>
+                    <a href="https://www.interrapidisimo.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Colombia are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ecopetrol</h5> 
+                    <p class="card-text">Ecopetrol is the largest company in Colombia and a major player in the oil and gas industry. The company is involved in the exploration, production, refining, and transportation of oil and natural gas.</p>
+                    <div class="specialty">Specialty: Oil & Gas Exploration and Production</div>
+                    <a href="https://www.ecopetrol.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cementos Argos</h5> 
+                    <p class="card-text">Cementos Argos is a leading cement and concrete producer in Colombia, with a strong presence in the Americas. The company is known for its high-quality construction materials and sustainable practices.</p>
+                    <div class="specialty">Specialty: Cement & Concrete Production</div>
+                    <a href="https://www.argos.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Nutresa</h5> 
+                    <p class="card-text">Grupo Nutresa is a leading food processing company in Colombia, producing a wide range of food products including processed meats, chocolates, cookies, and coffee. The company is known for its strong brands and market presence.</p>
+                    <div class="specialty">Specialty: Food Processing</div>
+                    <a href="https://www.gruponutresa.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Avianca Holdings</h5> 
+                    <p class="card-text">Avianca Holdings is one of the largest airline companies in Latin America, headquartered in Colombia. The company operates domestic and international flights and is known for its extensive network and quality service.</p>
+                    <div class="specialty">Specialty: Air Transportation</div>
+                    <a href="https://www.avianca.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tecnoglass</h5> 
+                    <p class="card-text">Tecnoglass is a leading manufacturer of architectural glass, windows, and aluminum products in Colombia. The company exports its products to North America, providing high-quality solutions for the construction industry.</p>
+                    <div class="specialty">Specialty: Architectural Glass & Aluminum Products</div>
+                    <a href="https://www.tecnoglass.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Colombia are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sancho BBDO</h5> 
+                    <p class="card-text">Sancho BBDO is one of Colombia's most prominent advertising agencies, known for its creative and impactful campaigns. The agency is part of the global BBDO network and serves major brands in the region.</p>
+                    <div class="specialty">Specialty: Creative Advertising</div>
+                    <a href="https://www.sanchobbdo.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DDB Colombia</h5> 
+                    <p class="card-text">DDB Colombia is a leading creative agency, part of the global DDB network. The agency is known for delivering innovative and effective advertising campaigns for major clients in Colombia and Latin America.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Branding</div>
+                    <a href="https://ddb.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Colombia</h5> 
+                    <p class="card-text">Ogilvy Colombia is part of the global Ogilvy network, providing a wide range of marketing and advertising services, including digital marketing, brand strategy, and public relations in the Colombian market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing Solutions</div>
+                    <a href="https://www.ogilvy.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">MullenLowe SSP3</h5> 
+                    <p class="card-text">MullenLowe SSP3 is a top advertising agency in Colombia, recognized for its creative excellence and strategic approach to brand communication. The agency is part of the global MullenLowe Group.</p>
+                    <div class="specialty">Specialty: Strategic Brand Communication</div>
+                    <a href="https://www.mullenlowessp3.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Burnett Colombia</h5> 
+                    <p class="card-text">Leo Burnett Colombia is part of the global Leo Burnett network, offering integrated marketing services that include advertising, digital marketing, and brand strategy. The agency is known for its creativity and effectiveness.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.leoburnett.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Colombia are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bancolombia</h5> 
+                    <p class="card-text">Bancolombia is the largest bank in Colombia, offering a comprehensive range of financial services including retail banking, corporate banking, and wealth management. The bank has a strong presence in Colombia and Central America.</p>
+                    <div class="specialty">Specialty: Comprehensive Financial Services</div>
+                    <a href="https://www.grupobancolombia.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco de Bogotá</h5> 
+                    <p class="card-text">Banco de Bogotá is one of Colombia's oldest and largest banks, providing a wide range of financial services including personal banking, corporate banking, and investment services.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bancodebogota.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Davivienda</h5> 
+                    <p class="card-text">Davivienda is a leading bank in Colombia, known for its innovative financial products and customer-centric services. The bank offers a variety of financial services including loans, mortgages, and savings accounts.</p>
+                    <div class="specialty">Specialty: Retail Banking & Innovation</div>
+                    <a href="https://www.davivienda.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco de Occidente</h5> 
+                    <p class="card-text">Banco de Occidente is a major financial institution in Colombia, offering a wide range of banking services including personal banking, corporate banking, and investment banking.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.bancodeoccidente.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBVA Colombia</h5> 
+                    <p class="card-text">BBVA Colombia, a subsidiary of the global BBVA Group, is a major financial institution in Colombia, providing a wide range of financial services including retail banking, investment banking, and insurance.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.bbva.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Colombia are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Amarilo</h5> 
+                    <p class="card-text">Amarilo is one of Colombia's leading real estate developers, specializing in residential and commercial projects. The company is known for its high-quality developments and innovative urban planning.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate</div>
+                    <a href="https://www.amarilo.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Constructora Bolívar</h5> 
+                    <p class="card-text">Constructora Bolívar is a major real estate company in Colombia, focusing on the development of residential properties. The company is known for its commitment to quality and customer satisfaction.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Development</div>
+                    <a href="https://www.constructorabolivar.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Oikos Constructora</h5> 
+                    <p class="card-text">Oikos Constructora is a leading real estate development company in Colombia, specializing in commercial and residential projects. The company is recognized for its quality construction and innovative design.</p>
+                    <div class="specialty">Specialty: Commercial & Residential Real Estate</div>
+                    <a href="https://www.oikos.com.co/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Prodesa</h5> 
+                    <p class="card-text">Prodesa is a prominent real estate developer in Colombia, focusing on residential projects that offer quality living spaces with modern amenities. The company is known for its commitment to sustainability and innovation.</p>
+                    <div class="specialty">Specialty: Sustainable Residential Development</div>
+                    <a href="https://www.prodesa.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Aval Inmobiliario</h5> 
+                    <p class="card-text">Grupo Aval Inmobiliario is a major player in Colombia's real estate market, involved in the development of residential, commercial, and mixed-use properties. The company is part of Grupo Aval, one of the largest financial conglomerates in Colombia.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate Development</div>
+                    <a href="https://www.grupoaval.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

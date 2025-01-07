@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} Peru {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Peru</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/peru-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Peru, a country in western South America, has a population of approximately 33.72 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.777, indicating moderate to high levels of income, health, and education.<br><br>Spanning a geographical area of 1,285,216 square kilometers, Peru is known for its diverse geography, including the Andes mountains, Amazon rainforest, and Pacific coastline. <br><br>The current president, Dina Boluarte, holds a center-left political stance, focusing on social inclusion, economic stability, and environmental protection. <br><br>Peru’s rich cultural heritage, strategic economic policies, and natural resources contribute to its significant role in the region.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Peru's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Peru's logistics sector is a critical part of its economy, driven by its diverse geography and strategic location along the Pacific coast. The industry is vital for the efficient distribution of goods both domestically and internationally.</p>
+
+        <h1>The biggest logistics companies in Peru are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ransa Comercial S.A.</h5> 
+                    <p class="card-text">Ransa Comercial S.A. is a leading logistics company in Peru, offering integrated logistics services including warehousing, distribution, and supply chain management. The company is known for its extensive network and reliability.</p>
+                    <div class="specialty">Specialty: Integrated Logistics & Supply Chain Management</div>
+                    <a href="https://www.ransa.net/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Express Peru</h5> 
+                    <p class="card-text">DHL Express Peru is a branch of the global DHL network, providing express delivery, freight forwarding, and logistics services. The company is known for its efficiency and comprehensive service offerings in Peru.</p>
+                    <div class="specialty">Specialty: Express Delivery & Freight Forwarding</div>
+                    <a href="https://www.dhl.com/pe-es/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Shalom Empresarial</h5> 
+                    <p class="card-text">Shalom Empresarial is a prominent logistics company in Peru, offering parcel delivery, freight services, and supply chain management. The company is known for its strong network and customer-focused approach.</p>
+                    <div class="specialty">Specialty: Parcel Delivery & Freight Services</div>
+                    <a href="https://www.shalom.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transaltisa</h5> 
+                    <p class="card-text">Transaltisa is a key player in Peru's logistics sector, providing services such as freight transportation, heavy haulage, and logistics solutions. The company is known for its expertise in handling large-scale logistics projects.</p>
+                    <div class="specialty">Specialty: Freight Transportation & Heavy Haulage</div>
+                    <a href="https://www.transaltisa.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Rochabus</h5> 
+                    <p class="card-text">Rochabus is a leading Peruvian company in logistics and passenger transportation, offering services across various regions. The company is recognized for its reliability and efficient service delivery.</p>
+                    <div class="specialty">Specialty: Logistics & Passenger Transportation</div>
+                    <a href="https://www.rochabus.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Peru are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Alicorp</h5> 
+                    <p class="card-text">Alicorp is one of Peru's largest consumer goods companies, producing a wide range of food products, home care, and personal care items. The company is a leader in the Peruvian market and is expanding its presence across Latin America.</p>
+                    <div class="specialty">Specialty: Consumer Goods Manufacturing</div>
+                    <a href="https://www.alicorp.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cementos Pacasmayo</h5> 
+                    <p class="card-text">Cementos Pacasmayo is a leading cement manufacturer in Peru, providing essential building materials for the construction industry. The company is known for its high-quality products and significant contribution to infrastructure development.</p>
+                    <div class="specialty">Specialty: Cement Manufacturing</div>
+                    <a href="https://www.cementospacasmayo.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Backus and Johnston</h5> 
+                    <p class="card-text">Backus and Johnston is the largest brewery in Peru, producing a wide range of beer and beverage products. The company is famous for its popular brands such as Cristal and Pilsen Callao, and is a key player in the Peruvian market.</p>
+                    <div class="specialty">Specialty: Beverage & Beer Manufacturing</div>
+                    <a href="https://www.backus.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Gloria S.A.</h5> 
+                    <p class="card-text">Gloria S.A. is a major Peruvian company specializing in the production of dairy products, food, and beverages. The company is known for its iconic brands and significant presence in the Peruvian and international markets.</p>
+                    <div class="specialty">Specialty: Dairy & Food Manufacturing</div>
+                    <a href="https://www.gloria.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Southern Copper Corporation</h5> 
+                    <p class="card-text">Southern Copper Corporation is one of the largest copper producers in the world, with significant mining operations in Peru. The company is a key player in the global mining industry and a major contributor to Peru's economy.</p>
+                    <div class="specialty">Specialty: Copper Mining & Production</div>
+                    <a href="https://www.southernperu.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Peru are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Peru</h5> 
+                    <p class="card-text">Ogilvy Peru is part of the global Ogilvy network, providing a full range of marketing and advertising services. The agency is known for its creativity and strategic approach to brand communication in the Peruvian market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.ogilvy.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Young & Rubicam Peru</h5> 
+                    <p class="card-text">Young & Rubicam Peru is a leading advertising agency, part of the global Y&R network. The agency is known for its innovative campaigns and strong ability to connect with Peruvian consumers through creative storytelling.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Building</div>
+                    <a href="https://www.yr.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Publicis Groupe Peru</h5> 
+                    <p class="card-text">Publicis Groupe Peru is part of the global Publicis Groupe, offering a wide range of marketing services including advertising, digital marketing, and media planning. The agency is recognized for its strategic approach to brand communication.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Digital Marketing</div>
+                    <a href="https://www.publicisgroupe.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">McCann Lima</h5> 
+                    <p class="card-text">McCann Lima is a leading advertising agency in Peru, part of the global McCann Worldgroup. The agency is known for its creative solutions and strategic marketing services, helping brands connect with consumers in Peru.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.mccann.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JWT Peru</h5> 
+                    <p class="card-text">JWT Peru, part of the global J. Walter Thompson network, is a leading advertising agency offering creative services and brand strategy. The agency is known for its innovative campaigns and strong market understanding in Peru.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Strategy</div>
+                    <a href="https://www.jwt.com/peru" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Peru are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco de Crédito del Perú (BCP)</h5> 
+                    <p class="card-text">Banco de Crédito del Perú (BCP) is the largest commercial bank in Peru, offering a wide range of financial services including retail banking, corporate banking, and wealth management. The bank is known for its extensive network and customer-centric services.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.viabcp.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Interbank</h5> 
+                    <p class="card-text">Interbank is one of Peru's leading financial institutions, providing a comprehensive range of services including personal banking, corporate banking, and investment banking. The bank is recognized for its innovation and strong digital banking platform.</p>
+                    <div class="specialty">Specialty: Personal & Digital Banking</div>
+                    <a href="https://interbank.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBVA Peru</h5> 
+                    <p class="card-text">BBVA Peru, part of the global BBVA Group, is a major financial institution in Peru, offering services such as retail banking, corporate banking, and investment management. The bank is known for its customer-focused approach and strong market presence.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.bbva.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Scotiabank Peru</h5> 
+                    <p class="card-text">Scotiabank Peru, a subsidiary of the Canadian Scotiabank, provides a wide range of financial services including personal banking, corporate banking, and wealth management. The bank is known for its strong customer relationships and financial stability.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.scotiabank.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Continental</h5> 
+                    <p class="card-text">Banco Continental is one of Peru's oldest and most established banks, offering a range of services including retail banking, corporate banking, and credit services. The bank is a key player in the Peruvian financial sector.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.continental.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Peru are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Graña y Montero</h5> 
+                    <p class="card-text">Grupo Graña y Montero is one of Peru's largest real estate and construction companies, specializing in the development of residential, commercial, and infrastructure projects. The company is known for its high-quality construction and innovative designs.</p>
+                    <div class="specialty">Specialty: Real Estate Development & Construction</div>
+                    <a href="https://www.granaymontero.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Centenario</h5> 
+                    <p class="card-text">Centenario is a leading real estate company in Peru, focusing on the development and management of residential, commercial, and industrial properties. The company is recognized for its commitment to sustainability and community development.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate Development</div>
+                    <a href="https://www.centenario.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Los Portales</h5> 
+                    <p class="card-text">Los Portales is a major real estate developer in Peru, specializing in the construction of residential and commercial properties. The company is known for its innovative projects and focus on creating sustainable communities.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Property Development</div>
+                    <a href="https://www.losportales.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Imagina Grupo Inmobiliario</h5> 
+                    <p class="card-text">Imagina Grupo Inmobiliario is a prominent real estate company in Peru, focusing on high-end residential and commercial developments. The company is known for its luxury projects and attention to detail in construction.</p>
+                    <div class="specialty">Specialty: High-End Residential & Commercial Development</div>
+                    <a href="https://www.imaginarpe.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Viva GyM</h5> 
+                    <p class="card-text">Viva GyM is a real estate subsidiary of Graña y Montero, specializing in the development of residential properties. The company focuses on creating affordable and sustainable housing solutions for the Peruvian market.</p>
+                    <div class="specialty">Specialty: Affordable Housing Development</div>
+                    <a href="https://www.vivagym.com.pe/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

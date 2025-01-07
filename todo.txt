@@ -1,0 +1,9 @@
+Finish network analysis for sample countries, 25/7 -> 31/7
+Finish the registration system, 31/7 -> 4/8
+Testing, last touches, and launch product, 4/8 -> 7/8 
+Finish CS50, 7/8
+
+Then... 
+    ML premier league prediction || Warehouse live camera ML analysis || ML stock predictor
+
+

@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} Philippines {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Philippines</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/philippines-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            The Philippines, an archipelagic country in Southeast Asia, has a population of approximately 113.12 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.718, reflecting moderate levels of income, health, and education.<br><br> Covering a geographical area of 300,000 square kilometers, the Philippines is known for its thousands of islands, tropical climate, and rich biodiversity. <br><br>The country is currently led by President Ferdinand Marcos Jr., who holds a center-right political stance, focusing on economic growth, infrastructure development, and social welfare. <br><br>The Philippines' strategic location, cultural diversity, and natural resources play crucial roles in its economy and regional influence.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Philippines's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">The logistics sector in the Philippines is vital for the country's economic growth, supporting domestic distribution and international trade. The industry is integral to the supply chain, with significant contributions from both local and global companies.</p>
+
+        <h1>The biggest logistics companies in the Philippines are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">2GO Group, Inc.</h5> 
+                    <p class="card-text">2GO Group, Inc. is the largest logistics provider in the Philippines, offering a wide range of services including freight, express delivery, warehousing, and supply chain management. The company is known for its extensive network and reliability.</p>
+                    <div class="specialty">Specialty: Freight & Supply Chain Management</div>
+                    <a href="https://www.2go.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">LBC Express</h5> 
+                    <p class="card-text">LBC Express is a leading courier and logistics company in the Philippines, offering parcel delivery, freight forwarding, and logistics solutions. The company is recognized for its strong network and customer-centric services.</p>
+                    <div class="specialty">Specialty: Courier & Logistics Solutions</div>
+                    <a href="https://www.lbcexpress.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Air21</h5> 
+                    <p class="card-text">Air21 is a major logistics company in the Philippines, providing services such as express delivery, freight forwarding, and supply chain management. The company is known for its efficiency and comprehensive service offerings.</p>
+                    <div class="specialty">Specialty: Express Delivery & Freight Forwarding</div>
+                    <a href="https://www.air21.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Philippines</h5> 
+                    <p class="card-text">DHL Philippines is a branch of the global DHL network, providing a wide range of logistics services including express delivery, freight forwarding, and supply chain management. The company is known for its global reach and reliability.</p>
+                    <div class="specialty">Specialty: Global Logistics & Express Delivery</div>
+                    <a href="https://www.dhl.com/ph-en/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">XDE Logistics</h5> 
+                    <p class="card-text">XDE Logistics is a leading logistics company in the Philippines, offering freight forwarding, warehousing, and distribution services. The company is recognized for its efficiency and strong commitment to customer service.</p>
+                    <div class="specialty">Specialty: Freight Forwarding & Distribution</div>
+                    <a href="https://www.xdelogistics.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in the Philippines are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">San Miguel Corporation</h5> 
+                    <p class="card-text">San Miguel Corporation is one of the largest and most diversified conglomerates in the Philippines, with significant operations in food, beverage, packaging, and energy. The company is known for its iconic brands and extensive market reach.</p>
+                    <div class="specialty">Specialty: Food, Beverage & Packaging Manufacturing</div>
+                    <a href="https://www.sanmiguel.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Jollibee Foods Corporation</h5> 
+                    <p class="card-text">Jollibee Foods Corporation is the largest fast-food chain in the Philippines, known for its popular brands like Jollibee, Chowking, and Mang Inasal. The company has a strong international presence and is a leader in the food manufacturing sector.</p>
+                    <div class="specialty">Specialty: Food Manufacturing & Fast Food Operations</div>
+                    <a href="https://www.jollibee.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Universal Robina Corporation</h5> 
+                    <p class="card-text">Universal Robina Corporation (URC) is one of the largest food and beverage manufacturing companies in the Philippines, known for its extensive product portfolio including snacks, beverages, and instant noodles.</p>
+                    <div class="specialty">Specialty: Food & Beverage Manufacturing</div>
+                    <a href="https://www.urc.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ayala Corporation</h5> 
+                    <p class="card-text">Ayala Corporation is one of the oldest and largest conglomerates in the Philippines, with diversified operations including real estate, banking, telecommunications, and manufacturing. The company is a leader in the Philippine market.</p>
+                    <div class="specialty">Specialty: Diversified Manufacturing & Industrial Conglomerate</div>
+                    <a href="https://www.ayala.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SM Investments Corporation</h5> 
+                    <p class="card-text">SM Investments Corporation is a major conglomerate in the Philippines with interests in retail, banking, and property development. The company also has significant operations in the manufacturing sector, particularly in retail-related products.</p>
+                    <div class="specialty">Specialty: Retail & Property Development</div>
+                    <a href="https://www.sminvestments.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in the Philippines are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Philippines</h5> 
+                    <p class="card-text">Ogilvy Philippines is part of the global Ogilvy network, offering a wide range of marketing and advertising services. The agency is known for its creativity and strategic approach to brand communication in the Philippine market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.ogilvy.com/ph-en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TBWA\Santiago Mangada Puno</h5> 
+                    <p class="card-text">TBWA\Santiago Mangada Puno is one of the leading advertising agencies in the Philippines, known for its creative campaigns and innovative marketing strategies. The agency is part of the global TBWA network.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Strategy</div>
+                    <a href="https://www.tbwa.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Burnett Manila</h5> 
+                    <p class="card-text">Leo Burnett Manila is a leading advertising agency in the Philippines, part of the global Leo Burnett network. The agency is recognized for its impactful campaigns and strategic brand building efforts.</p>
+                    <div class="specialty">Specialty: Strategic Brand Building & Advertising</div>
+                    <a href="https://www.leoburnett.com/manila" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">McCann Worldgroup Philippines</h5> 
+                    <p class="card-text">McCann Worldgroup Philippines is part of the global McCann network, offering comprehensive marketing services including advertising, digital marketing, and brand strategy. The agency is known for its creativity and innovation.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Digital Strategy</div>
+                    <a href="https://www.mccannworldgroup.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Publicis Manila</h5> 
+                    <p class="card-text">Publicis Manila is part of the global Publicis Groupe, providing a wide range of marketing and advertising services in the Philippines. The agency is known for its innovative solutions and strong market presence.</p>
+                    <div class="specialty">Specialty: Marketing & Advertising Solutions</div>
+                    <a href="https://www.publicisgroupe.com/en/services/Publicis-Manila" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in the Philippines are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BDO Unibank, Inc.</h5> 
+                    <p class="card-text">BDO Unibank, Inc. is the largest bank in the Philippines, offering a full range of banking services including retail banking, corporate banking, and wealth management. The bank is known for its extensive network and customer-centric services.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bdo.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bank of the Philippine Islands (BPI)</h5> 
+                    <p class="card-text">The Bank of the Philippine Islands (BPI) is one of the oldest and most established banks in the Philippines, providing a comprehensive range of financial services including personal banking, corporate banking, and investment services.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.bpi.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Metrobank</h5> 
+                    <p class="card-text">Metropolitan Bank and Trust Company (Metrobank) is one of the largest banks in the Philippines, offering a full range of banking services including retail banking, corporate banking, and investment services. The bank is recognized for its strong market presence.</p>
+                    <div class="specialty">Specialty: Corporate & Investment Banking</div>
+                    <a href="https://www.metrobank.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Philippine National Bank (PNB)</h5> 
+                    <p class="card-text">The Philippine National Bank (PNB) is a major financial institution in the Philippines, offering a broad range of services including retail banking, corporate banking, and foreign exchange services. The bank is known for its wide branch network.</p>
+                    <div class="specialty">Specialty: Retail Banking & Foreign Exchange Services</div>
+                    <a href="https://www.pnb.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Security Bank Corporation</h5> 
+                    <p class="card-text">Security Bank Corporation is a leading bank in the Philippines, providing a wide range of financial services including retail banking, corporate banking, and trust services. The bank is recognized for its innovation and customer service.</p>
+                    <div class="specialty">Specialty: Retail Banking & Trust Services</div>
+                    <a href="https://www.securitybank.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in the Philippines are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ayala Land, Inc.</h5> 
+                    <p class="card-text">Ayala Land, Inc. is the largest real estate developer in the Philippines, known for its large-scale residential, commercial, and mixed-use developments. The company is a leader in sustainable development and innovative urban planning.</p>
+                    <div class="specialty">Specialty: Real Estate Development & Urban Planning</div>
+                    <a href="https://www.ayalaland.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SM Prime Holdings, Inc.</h5> 
+                    <p class="card-text">SM Prime Holdings, Inc. is one of the largest integrated property developers in the Philippines, with significant investments in malls, residential, commercial, and hospitality properties. The company is known for its large-scale developments.</p>
+                    <div class="specialty">Specialty: Integrated Property Development</div>
+                    <a href="https://www.smprime.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Megaworld Corporation</h5> 
+                    <p class="card-text">Megaworld Corporation is a leading real estate developer in the Philippines, specializing in township developments that integrate residential, commercial, and leisure facilities. The company is known for its innovative approach to real estate.</p>
+                    <div class="specialty">Specialty: Township & Mixed-Use Developments</div>
+                    <a href="https://www.megaworldcorp.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Robinsons Land Corporation</h5> 
+                    <p class="card-text">Robinsons Land Corporation is one of the leading real estate companies in the Philippines, involved in residential, commercial, and mixed-use developments. The company is recognized for its commitment to quality and sustainability.</p>
+                    <div class="specialty">Specialty: Residential & Mixed-Use Real Estate Development</div>
+                    <a href="https://www.robinsonsland.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Filinvest Land, Inc.</h5> 
+                    <p class="card-text">Filinvest Land, Inc. is a major real estate developer in the Philippines, known for its extensive portfolio of residential and commercial properties. The company focuses on affordable housing and sustainable developments.</p>
+                    <div class="specialty">Specialty: Affordable Housing & Sustainable Development</div>
+                    <a href="https://www.filinvest.com.ph/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

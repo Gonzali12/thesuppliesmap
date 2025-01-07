@@ -1,0 +1,32 @@
+{
+  "name": "thesuppliesmap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss static/css/404-style.css -o static/css/output.css",
+    "watch:css": "postcss static/css/404-style.css -o static/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "next": "^14.2.4",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "postcss-cli": "^11.0.0",
+    "promise-throttle": "^1.1.2",
+    "puppeteer": "^23.10.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.7.5",
+    "tailwindcss": "^3.4.7"
+  },
+  "description": ""
+}

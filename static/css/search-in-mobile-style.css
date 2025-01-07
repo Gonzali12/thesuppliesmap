@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(33, 37, 41);
+}
+
+.search-and-results{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 950px;
+}
+
+.search{
+    width: 85%;
+    padding: 15px;
+}
+
+.search-icon.material-symbols-outlined{
+    padding-right: 10px;
+}
+
+#search-bar{
+    width: 100%;
+    font-size: 15px;
+}
+
+.search-results-main-menu{
+    width: 82%;
+    margin-top: 17%;
+}
+
+#search-results li{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/*
+
+.search-and-results{
+    z-index: 1000;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.search{
+    display: flex;
+    width: 345px;
+    padding: 4px 16px;
+    border-radius: 28px;
+    background-color: rgb(243, 238, 226);
+}
+
+#search-bar{
+    font-family: 'Poppins';
+    font-size: small;
+    margin-left: 16px;
+    width: 345px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search-results-main-menu{
+    position: fixed;
+    margin-top: 5px;
+    width: 345px;
+    padding: 2px;
+    border-radius: 12px;
+    background-color: rgb(243, 238, 226);
+}
+
+#search-results{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+}
+
+#search-results li{
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+*/

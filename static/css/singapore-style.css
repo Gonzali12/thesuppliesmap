@@ -1,0 +1,182 @@
+.header-title{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description-title{
+    font-size: 30px;
+    margin: 15px auto 15px 0px;
+}
+
+#arrow-back-button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 5%;
+    cursor: pointer;
+    background-color: black;
+}
+
+.arrow-back-icon{
+    color: rgb(243, 238, 226);
+}
+
+.history-of-shipping-singapore{
+    text-align: center;
+}
+
+#unordered-list-singapore-shipping-history h3 {
+    margin: 50px 0px 50px 0px;
+}
+
+.text-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    gap: 40px;
+}
+
+#unordered-list-singapore-shipping-history li{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#unordered-list-singapore-shipping-history li img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.images-chapter-five{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    gap: 40px;
+    margin: 50px;
+}
+
+.images-chapter-five img{
+    border-radius: 8%;
+}
+
+#quote{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1600px) {
+    .text-image {
+        width: 65%;
+    }
+}
+
+@media(max-width: 1400px){
+    .text-image {
+        flex-direction: column;
+        width: 80%;
+    }
+    h3{
+        margin: 30px 0px 15px 0px;
+    }
+}
+
+@media (max-width: 1080px) {
+    #arrow-back-button{
+        width: 35px;
+        height: 35px;
+    }
+
+    #description-title {
+        font-size: 25px;
+    }
+
+    #quote{
+        font-size: 25px;
+
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (max-width: 900px) {
+    #arrow-back-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    #description-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .images-chapter-five{
+        height: 200px;
+        gap: 30px;
+        margin: 30px;
+    }
+
+    #unordered-list-singapore-shipping-history h3 {
+        margin: 35px 0px 35px 0px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    #arrow-back-button{
+        margin-left: 4.5%;
+        width: 90%;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .header-title{
+        display: block;
+    }
+
+    .images-chapter-five{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .images-chapter-five img{
+        width: auto;
+        height: 1%;
+    }
+
+    #quote{
+        font-size: 15px;
+        margin-top: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media(max-width: 490px){
+    #unordered-list-singapore-shipping-history h3 {
+        margin: 35px 0px 35px 0px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 465px){
+    #singapore-flag{
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} Uruguay {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Uruguay</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/uruguay-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Uruguay, a small country in South America, has a population of approximately 3.54 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.817, reflecting high levels of income, education, and healthcare. <br><br>Spanning a geographical area of 176,215 square kilometers, Uruguay is known for its rolling plains, Atlantic coastline, and vibrant cultural scene. <br><br>The country is currently led by President Luis Lacalle Pou, who holds a center-right political stance, focusing on economic liberalization, investment, and social policies. <br><br>Uruguay’s stable democracy, robust economy, and progressive social policies make it a notable player in the region.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Uruguay's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Uruguay's logistics sector is a key component of its economy, facilitating trade and the movement of goods both within the country and across its borders. The industry benefits from Uruguay's strategic location in the Southern Cone of South America.</p>
+
+        <h1>The biggest logistics companies in Uruguay are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tiempost</h5> 
+                    <p class="card-text">Tiempost is one of Uruguay's leading logistics companies, specializing in courier and express delivery services. The company is known for its efficient services and extensive network across Uruguay.</p>
+                    <div class="specialty">Specialty: Courier & Express Delivery</div>
+                    <a href="https://www.tiempost.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DAC</h5> 
+                    <p class="card-text">DAC is a major logistics company in Uruguay, offering a wide range of services including parcel delivery, freight transportation, and warehousing. The company is recognized for its reliability and customer service.</p>
+                    <div class="specialty">Specialty: Parcel Delivery & Freight Transportation</div>
+                    <a href="https://www.dac.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transcargo</h5> 
+                    <p class="card-text">Transcargo is a leading logistics provider in Uruguay, specializing in road transport, warehousing, and distribution services. The company is known for its extensive network and efficient operations across the country.</p>
+                    <div class="specialty">Specialty: Road Transport & Distribution</div>
+                    <a href="https://www.transcargo.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Uruguay Logistics</h5> 
+                    <p class="card-text">Uruguay Logistics is a key player in the logistics sector, providing comprehensive services including freight forwarding, warehousing, and customs brokerage. The company is recognized for its expertise in handling complex logistics operations.</p>
+                    <div class="specialty">Specialty: Freight Forwarding & Customs Brokerage</div>
+                    <a href="https://www.uruguaylogistics.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Stuttgart Cargo</h5> 
+                    <p class="card-text">Stuttgart Cargo is a prominent logistics company in Uruguay, offering services such as air freight, sea freight, and road transport. The company is known for its reliable services and commitment to customer satisfaction.</p>
+                    <div class="specialty">Specialty: Air, Sea, & Road Freight</div>
+                    <a href="https://www.stuttgartcargo.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Uruguay are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">UPM Uruguay</h5> 
+                    <p class="card-text">UPM Uruguay is a leading paper and pulp manufacturing company in Uruguay, part of the Finnish UPM-Kymmene Corporation. The company is known for its sustainable forestry practices and high-quality pulp production.</p>
+                    <div class="specialty">Specialty: Paper & Pulp Manufacturing</div>
+                    <a href="https://www.upmpulp.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Montes del Plata</h5> 
+                    <p class="card-text">Montes del Plata is a major forestry and pulp production company in Uruguay, a joint venture between Arauco and Stora Enso. The company is known for its state-of-the-art pulp mill and commitment to sustainability.</p>
+                    <div class="specialty">Specialty: Forestry & Pulp Production</div>
+                    <a href="https://www.montesdelplata.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Conaprole</h5> 
+                    <p class="card-text">Conaprole is Uruguay's largest dairy cooperative and one of the leading dairy producers in Latin America. The company produces a wide range of dairy products including milk, cheese, and yogurt, known for their quality.</p>
+                    <div class="specialty">Specialty: Dairy Products Manufacturing</div>
+                    <a href="https://www.conaprole.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Frigorífico Tacuarembó</h5> 
+                    <p class="card-text">Frigorífico Tacuarembó is a leading meat processing company in Uruguay, specializing in the production and export of high-quality beef. The company is known for its modern facilities and commitment to food safety.</p>
+                    <div class="specialty">Specialty: Meat Processing & Export</div>
+                    <a href="https://www.frigotacuarembo.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Isusa</h5> 
+                    <p class="card-text">Isusa is a leading Uruguayan company in the production of fertilizers, helping to support the agricultural sector. The company is recognized for its high-quality products and innovative solutions for agriculture.</p>
+                    <div class="specialty">Specialty: Fertilizer Manufacturing</div>
+                    <a href="https://www.isusa.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Uruguay are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Publicis Impetu</h5> 
+                    <p class="card-text">Publicis Impetu is one of the leading advertising agencies in Uruguay, part of the global Publicis network. The agency is known for its creative campaigns and strategic brand management services in the Uruguayan market.</p>
+                    <div class="specialty">Specialty: Advertising & Brand Management</div>
+                    <a href="https://www.publicisgroupe.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Young & Rubicam Uruguay</h5> 
+                    <p class="card-text">Young & Rubicam Uruguay is part of the global Y&R network, providing a wide range of marketing services including advertising, digital marketing, and brand strategy. The agency is known for its innovative and impactful campaigns.</p>
+                    <div class="specialty">Specialty: Advertising & Digital Marketing</div>
+                    <a href="https://www.yr.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">LATERAL</h5> 
+                    <p class="card-text">LATERAL is a leading Uruguayan marketing agency, specializing in creative advertising, brand strategy, and digital marketing. The agency is known for its innovative solutions and strong presence in the local market.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Strategy</div>
+                    <a href="https://www.lateral.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Notable Publicidad</h5> 
+                    <p class="card-text">Notable Publicidad is a prominent advertising agency in Uruguay, offering a range of marketing services including creative advertising, digital marketing, and media planning. The agency is recognized for its innovative campaigns and strong client relationships.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Media Planning</div>
+                    <a href="https://www.notable.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grey Uruguay</h5> 
+                    <p class="card-text">Grey Uruguay is part of the global Grey network, offering comprehensive marketing services including advertising, digital marketing, and brand strategy. The agency is known for its creativity and strategic approach to marketing in Uruguay.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Brand Strategy</div>
+                    <a href="https://www.grey.com/uruguay" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Uruguay are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco República (BROU)</h5> 
+                    <p class="card-text">Banco República (BROU) is the largest and oldest state-owned bank in Uruguay, offering a wide range of financial services including personal banking, corporate banking, and investment services. The bank is known for its extensive branch network and strong market presence.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.brou.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Santander Uruguay</h5> 
+                    <p class="card-text">Banco Santander Uruguay is a major financial institution in the country, offering a comprehensive range of services including retail banking, corporate banking, and wealth management. The bank is a subsidiary of the global Santander Group.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.santander.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Itaú Uruguay</h5> 
+                    <p class="card-text">Banco Itaú Uruguay is a subsidiary of the Brazilian Itaú Unibanco, offering a range of financial services including personal banking, corporate banking, and investment services. The bank is known for its customer-centric approach and innovation in financial services.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.itau.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBVA Uruguay</h5> 
+                    <p class="card-text">BBVA Uruguay is part of the global BBVA Group, providing a wide range of financial services including retail banking, corporate banking, and investment management. The bank is recognized for its strong customer focus and digital banking solutions.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.bbva.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Scotiabank Uruguay</h5> 
+                    <p class="card-text">Scotiabank Uruguay is a subsidiary of the Canadian Scotiabank, offering a range of banking services including personal banking, corporate banking, and wealth management. The bank is known for its global expertise and strong presence in the Uruguayan market.</p>
+                    <div class="specialty">Specialty: Personal & Wealth Management</div>
+                    <a href="https://www.scotiabank.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Uruguay are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Torre Ejecutiva</h5> 
+                    <p class="card-text">Torre Ejecutiva is a leading real estate development company in Uruguay, specializing in the construction and management of commercial properties. The company is known for its high-quality office spaces and strategic locations.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Development</div>
+                    <a href="https://www.torreejecutiva.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Saceem</h5> 
+                    <p class="card-text">Grupo Saceem is one of the largest construction and real estate companies in Uruguay, involved in the development of infrastructure, residential, and commercial projects. The company is recognized for its innovation and quality in construction.</p>
+                    <div class="specialty">Specialty: Infrastructure & Real Estate Development</div>
+                    <a href="https://www.saceem.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Campiglia Construcciones</h5> 
+                    <p class="card-text">Campiglia Construcciones is a prominent Uruguayan real estate developer, focusing on the construction of residential and commercial properties. The company is known for its high-quality developments and commitment to customer satisfaction.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Development</div>
+                    <a href="https://www.campiglia.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Altius Group</h5> 
+                    <p class="card-text">Altius Group is a leading real estate development company in Uruguay, specializing in the construction of residential, commercial, and mixed-use properties. The company is recognized for its innovative projects and sustainable practices.</p>
+                    <div class="specialty">Specialty: Mixed-Use Development & Sustainability</div>
+                    <a href="https://www.altius.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Estudio Luis E. Lecueder</h5> 
+                    <p class="card-text">Estudio Luis E. Lecueder is a renowned real estate management and development company in Uruguay, known for its expertise in the management of shopping centers and commercial properties. The company is a key player in Uruguay's retail real estate sector.</p>
+                    <div class="specialty">Specialty: Retail Real Estate Management & Development</div>
+                    <a href="https://www.lecueder.com.uy/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

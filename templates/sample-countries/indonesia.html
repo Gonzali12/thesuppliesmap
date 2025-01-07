@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block title %} Indonesia {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Indonesia</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/indonesia-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Indonesia, an archipelagic country in Southeast Asia, has a population of approximately 273.52 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.718, reflecting moderate levels of income, health, and education. <br><br>Covering a geographical area of 1,904,569 square kilometers, Indonesia is known for its thousands of islands, tropical rainforests, and rich biodiversity.<br><br> The country is currently led by President Joko Widodo, who holds a center-left political stance, focusing on infrastructure development, economic growth, and social welfare.<br><br> Indonesia’s strategic location, diverse culture, and abundant natural resources play crucial roles in its economy and regional influence.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Indonesia's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Indonesia's logistics sector is growing rapidly, supported by its strategic location and expanding infrastructure. The industry plays a crucial role in the country's trade and economic development.</p>
+
+        <h1>The biggest logistics companies in Indonesia are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JNE Express</h5> 
+                    <p class="card-text">JNE Express is one of Indonesia's leading logistics companies, specializing in courier and package delivery services. The company is known for its extensive network and reliable delivery solutions across the country.</p>
+                    <div class="specialty">Specialty: Courier & Package Delivery</div>
+                    <a href="https://www.jne.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TIKI</h5> 
+                    <p class="card-text">TIKI is a well-established logistics company in Indonesia, offering a wide range of services including express delivery, freight forwarding, and logistics solutions. The company is known for its efficient and customer-centric services.</p>
+                    <div class="specialty">Specialty: Express Delivery & Logistics Solutions</div>
+                    <a href="https://www.tiki.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Pos Indonesia</h5> 
+                    <p class="card-text">Pos Indonesia is the state-owned postal service in Indonesia, providing comprehensive mail and parcel delivery services across the country. The company also offers financial services, logistics, and e-commerce solutions.</p>
+                    <div class="specialty">Specialty: Postal & Logistics Services</div>
+                    <a href="https://www.posindonesia.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SERA (Serasi Autoraya)</h5> 
+                    <p class="card-text">SERA (Serasi Autoraya) is a leading transportation and logistics service provider in Indonesia, offering a wide range of services including car rental, logistics, and transportation management. The company is part of the Astra Group and is known for its innovative solutions.</p>
+                    <div class="specialty">Specialty: Transportation & Logistics Services</div>
+                    <a href="https://sera.astra.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Samudera Indonesia</h5> 
+                    <p class="card-text">Samudera Indonesia is a major logistics and shipping company in Indonesia, providing services including shipping, freight forwarding, and supply chain management. The company has a strong presence in the Asia-Pacific region.</p>
+                    <div class="specialty">Specialty: Shipping & Supply Chain Management</div>
+                    <a href="https://www.samudera.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Indonesia are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Unilever Indonesia</h5> 
+                    <p class="card-text">Unilever Indonesia is one of the largest consumer goods companies in the country, producing a wide range of products including food, beverages, cleaning agents, and personal care items. The company is known for its strong brand portfolio and market leadership.</p>
+                    <div class="specialty">Specialty: Consumer Goods Manufacturing</div>
+                    <a href="https://www.unilever.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Indofood</h5> 
+                    <p class="card-text">Indofood is one of Indonesia's largest food and beverage companies, producing a wide range of products including instant noodles, dairy products, snacks, and beverages. The company is a major player in the Indonesian food industry.</p>
+                    <div class="specialty">Specialty: Food & Beverage Manufacturing</div>
+                    <a href="https://www.indofood.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Gudang Garam</h5> 
+                    <p class="card-text">Gudang Garam is one of Indonesia's largest tobacco companies, producing a wide range of products including kretek cigarettes. The company is a major player in the Indonesian tobacco industry and is known for its quality and innovation.</p>
+                    <div class="specialty">Specialty: Tobacco Manufacturing</div>
+                    <a href="https://www.gudanggaramtbk.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">PT Astra International</h5> 
+                    <p class="card-text">PT Astra International is one of Indonesia's largest conglomerates, with significant interests in automotive manufacturing, financial services, heavy equipment, agribusiness, and infrastructure. The company is a leader in the Indonesian market.</p>
+                    <div class="specialty">Specialty: Automotive & Industrial Manufacturing</div>
+                    <a href="https://www.astra.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">PT Indo Tambangraya Megah</h5> 
+                    <p class="card-text">PT Indo Tambangraya Megah is a leading coal mining company in Indonesia, engaged in the exploration, mining, and marketing of coal. The company plays a significant role in the country's mining industry and energy sector.</p>
+                    <div class="specialty">Specialty: Coal Mining & Energy Production</div>
+                    <a href="https://itmg.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Indonesia are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Indonesia</h5> 
+                    <p class="card-text">Ogilvy Indonesia is part of the global Ogilvy network, offering a comprehensive range of marketing and advertising services. The agency is known for its creativity and effectiveness in building brands in the Indonesian market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.ogilvy.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Dentsu Indonesia</h5> 
+                    <p class="card-text">Dentsu Indonesia is part of the global Dentsu Aegis Network, providing a wide range of services including advertising, digital marketing, and media planning. The agency is known for its data-driven approach and innovative solutions.</p>
+                    <div class="specialty">Specialty: Digital Marketing & Media Planning</div>
+                    <a href="https://www.dentsu.com/id/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JWT Indonesia</h5> 
+                    <p class="card-text">JWT Indonesia, part of the global J. Walter Thompson network, is a leading advertising agency offering creative services and brand strategy. The agency is known for its innovative campaigns and strong local market understanding.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Strategy</div>
+                    <a href="https://www.jwt.com/en/indonesia" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Burnett Indonesia</h5> 
+                    <p class="card-text">Leo Burnett Indonesia is part of the global Leo Burnett network, offering creative advertising and marketing services. The agency is known for its powerful storytelling and ability to connect with Indonesian audiences.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Storytelling</div>
+                    <a href="https://www.leoburnett.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grey Indonesia</h5> 
+                    <p class="card-text">Grey Indonesia is part of the global Grey network, offering a full range of marketing services including advertising, digital marketing, and brand management. The agency is known for its creativity and strategic approach to brand building.</p>
+                    <div class="specialty">Specialty: Advertising & Brand Management</div>
+                    <a href="https://www.grey.com/id/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Indonesia are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bank Mandiri</h5> 
+                    <p class="card-text">Bank Mandiri is the largest bank in Indonesia, offering a wide range of banking services including retail banking, corporate banking, and investment services. The bank is known for its strong financial performance and extensive branch network.</p>
+                    <div class="specialty">Specialty: Comprehensive Banking Services</div>
+                    <a href="https://www.bankmandiri.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bank Central Asia (BCA)</h5> 
+                    <p class="card-text">Bank Central Asia (BCA) is one of Indonesia's leading private sector banks, known for its strong retail banking presence, digital banking innovations, and customer-centric approach. The bank offers a wide range of financial services including loans, credit cards, and wealth management.</p>
+                    <div class="specialty">Specialty: Retail & Digital Banking</div>
+                    <a href="https://www.bca.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bank Negara Indonesia (BNI)</h5> 
+                    <p class="card-text">Bank Negara Indonesia (BNI) is a major state-owned bank in Indonesia, offering a comprehensive range of financial services including retail banking, corporate banking, and investment banking. The bank is known for its innovation and customer-focused services.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bni.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bank Rakyat Indonesia (BRI)</h5> 
+                    <p class="card-text">Bank Rakyat Indonesia (BRI) is one of the oldest and largest banks in Indonesia, focusing on microfinance, retail banking, and SME banking. The bank has a strong presence in rural areas and is known for its commitment to financial inclusion.</p>
+                    <div class="specialty">Specialty: Microfinance & SME Banking</div>
+                    <a href="https://www.bri.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CIMB Niaga</h5> 
+                    <p class="card-text">CIMB Niaga is one of Indonesia's leading private banks, offering a comprehensive range of banking services including personal banking, corporate banking, and wealth management. The bank is part of the CIMB Group and is known for its innovative financial solutions.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.cimbniaga.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Indonesia are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Agung Podomoro Group</h5> 
+                    <p class="card-text">Agung Podomoro Group is one of Indonesia's largest real estate developers, specializing in the development of commercial, residential, and mixed-use properties. The company is known for its high-quality construction and significant contribution to Indonesia's real estate sector.</p>
+                    <div class="specialty">Specialty: Commercial & Residential Real Estate Development</div>
+                    <a href="https://www.agungpodomoro.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ciputra Group</h5> 
+                    <p class="card-text">Ciputra Group is a leading real estate developer in Indonesia, known for its innovation and excellence in residential and commercial projects. The company is involved in the development of large-scale townships, shopping malls, and office buildings.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate Development</div>
+                    <a href="https://www.ciputra.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lippo Group</h5> 
+                    <p class="card-text">Lippo Group is one of Indonesia's largest conglomerates with significant interests in real estate, healthcare, education, and retail. The company is known for its large-scale integrated developments, including residential complexes, shopping malls, and hospitals.</p>
+                    <div class="specialty">Specialty: Integrated Real Estate & Commercial Development</div>
+                    <a href="https://www.lippo.co.id/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sinar Mas Land</h5> 
+                    <p class="card-text">Sinar Mas Land is a leading real estate developer in Indonesia, known for its large-scale residential, commercial, and industrial projects. The company is part of the Sinar Mas Group and is committed to sustainable development and innovation.</p>
+                    <div class="specialty">Specialty: Residential & Industrial Real Estate Development</div>
+                    <a href="https://www.sinarmasland.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Summarecon Agung</h5> 
+                    <p class="card-text">Summarecon Agung is a major real estate developer in Indonesia, specializing in the development of residential townships, commercial properties, and retail spaces. The company is known for its commitment to quality and innovation.</p>
+                    <div class="specialty">Specialty: Residential Township & Commercial Development</div>
+                    <a href="https://www.summarecon.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

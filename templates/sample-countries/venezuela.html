@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} venezuela {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Venezuela</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/venezuela-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Venezuela, located in northern South America, has a population of approximately 28.52 million people. It is classified as a Less Economically Developed Country (LEDC) with a Human Development Index (HDI) of 0.711, reflecting moderate levels of income, health, and education. <br><br>Covering a geographical area of 916,445 square kilometers, Venezuela is known for its extensive oil reserves, diverse landscapes, and rich cultural heritage. <br><br>The country is currently led by President Nicolás Maduro, who holds a far-left political stance, focusing on socialist policies, economic reform, and social programs. <br><br>Venezuela’s significant natural resources, political challenges, and economic issues play crucial roles in its regional and global interactions.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Venezuela's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Venezuela's logistics sector plays a crucial role in supporting the country's domestic trade and distribution, despite challenges related to infrastructure and economic conditions. The industry focuses on essential goods and regional trade.</p>
+
+        <h1>The biggest logistics companies in Venezuela are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Zoom International Services</h5> 
+                    <p class="card-text">Zoom International Services is one of Venezuela's leading logistics companies, offering courier services, freight forwarding, and distribution across the country. The company is known for its reliability and extensive network.</p>
+                    <div class="specialty">Specialty: Courier & Freight Forwarding</div>
+                    <a href="https://www.grupozoom.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Liberty Express</h5> 
+                    <p class="card-text">Liberty Express is a major logistics provider in Venezuela, specializing in express delivery and package handling services. The company operates both domestically and internationally, offering reliable shipping solutions.</p>
+                    <div class="specialty">Specialty: Express Delivery & International Shipping</div>
+                    <a href="https://www.libertyexpress.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TEALCA</h5> 
+                    <p class="card-text">TEALCA is a prominent logistics and courier company in Venezuela, providing a wide range of services including parcel delivery, freight forwarding, and warehousing. The company is recognized for its extensive network and efficient services.</p>
+                    <div class="specialty">Specialty: Parcel Delivery & Warehousing</div>
+                    <a href="https://www.tealca.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">MRW Venezuela</h5> 
+                    <p class="card-text">MRW Venezuela is part of the MRW network, offering courier and logistics services across the country. The company is known for its express delivery solutions and customer-oriented services.</p>
+                    <div class="specialty">Specialty: Courier & Express Delivery</div>
+                    <a href="https://www.mrw.com.ve/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte Saet</h5> 
+                    <p class="card-text">Transporte Saet is a key logistics provider in Venezuela, specializing in road transportation and distribution services. The company is known for its reliable operations and commitment to timely deliveries.</p>
+                    <div class="specialty">Specialty: Road Transportation & Distribution</div>
+                    <a href="https://www.saet.com.ve/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Venezuela are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Empresas Polar</h5> 
+                    <p class="card-text">Empresas Polar is the largest food and beverage company in Venezuela, producing a wide range of products including beer, maize flour, and soft drinks. The company is a household name and a leader in the Venezuelan market.</p>
+                    <div class="specialty">Specialty: Food & Beverage Manufacturing</div>
+                    <a href="https://www.empresas-polar.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">PDVSA</h5> 
+                    <p class="card-text">Petróleos de Venezuela, S.A. (PDVSA) is the state-owned oil and natural gas company, responsible for the exploration, production, refining, and export of petroleum products. PDVSA is a crucial player in the global energy market.</p>
+                    <div class="specialty">Specialty: Oil & Gas Exploration & Refining</div>
+                    <a href="http://www.pdvsa.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ovomar</h5> 
+                    <p class="card-text">Ovomar is a leading producer of egg-based products in Venezuela, including liquid eggs, powdered eggs, and mayonnaise. The company is known for its high standards of quality and innovation in the food industry.</p>
+                    <div class="specialty">Specialty: Egg Products Manufacturing</div>
+                    <a href="https://www.ovomar.com.ve/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Coca-Cola FEMSA Venezuela</h5> 
+                    <p class="card-text">Coca-Cola FEMSA Venezuela is the largest beverage company in Venezuela, producing and distributing Coca-Cola products. The company plays a significant role in the food and beverage sector, with a strong presence nationwide.</p>
+                    <div class="specialty">Specialty: Beverage Manufacturing & Distribution</div>
+                    <a href="https://www.coca-colafemsa.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Mistral</h5> 
+                    <p class="card-text">Grupo Mistral is a leading pharmaceutical company in Venezuela, specializing in the production of medicines and healthcare products. The company is known for its commitment to quality and innovation in the pharmaceutical industry.</p>
+                    <div class="specialty">Specialty: Pharmaceutical Manufacturing</div>
+                    <a href="https://www.grupomistral.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Venezuela are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ars Publicidad</h5> 
+                    <p class="card-text">Ars Publicidad is one of the leading advertising agencies in Venezuela, offering a wide range of marketing services including creative advertising, digital marketing, and brand strategy. The agency is known for its innovative campaigns.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Digital Marketing</div>
+                    <a href="https://www.ars.com.ve/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Concept McCann</h5> 
+                    <p class="card-text">Concept McCann is part of the global McCann network, providing comprehensive marketing services in Venezuela. The agency is recognized for its strategic approach to brand communication and impactful advertising campaigns.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Brand Communication</div>
+                    <a href="https://www.mccann.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">J. Walter Thompson Venezuela</h5> 
+                    <p class="card-text">J. Walter Thompson Venezuela is a well-established marketing agency, part of the global Wunderman Thompson network. The agency offers a full range of services including advertising, digital marketing, and media planning, known for its creative excellence.</p>
+                    <div class="specialty">Specialty: Advertising & Media Planning</div>
+                    <a href="https://www.jwt.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Burnett Venezuela</h5> 
+                    <p class="card-text">Leo Burnett Venezuela is a leading advertising agency, part of the global Leo Burnett network. The agency is known for its creative advertising solutions, strategic brand management, and innovative marketing campaigns.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Management</div>
+                    <a href="https://www.leoburnett.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Venezuela</h5> 
+                    <p class="card-text">Ogilvy Venezuela is part of the global Ogilvy network, providing a wide range of marketing services including advertising, digital marketing, and brand strategy. The agency is recognized for its creativity and strategic marketing solutions in Venezuela.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Brand Strategy</div>
+                    <a href="https://www.ogilvy.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Venezuela are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco de Venezuela</h5> 
+                    <p class="card-text">Banco de Venezuela is one of the largest state-owned banks in the country, offering a wide range of financial services including personal banking, corporate banking, and investment services. The bank is a key player in Venezuela's financial sector.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.bancodevenezuela.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Mercantil Banco Universal</h5> 
+                    <p class="card-text">Mercantil Banco Universal is a leading private financial institution in Venezuela, providing a comprehensive range of services including retail banking, corporate banking, and wealth management. The bank is known for its strong market presence and customer service.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.mercantilbanco.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banesco Banco Universal</h5> 
+                    <p class="card-text">Banesco Banco Universal is one of Venezuela's largest banks, offering a wide range of financial services including personal banking, commercial banking, and insurance. The bank is recognized for its innovation and strong customer relationships.</p>
+                    <div class="specialty">Specialty: Personal & Commercial Banking</div>
+                    <a href="https://www.banesco.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco del Tesoro</h5> 
+                    <p class="card-text">Banco del Tesoro is a state-owned financial institution in Venezuela, providing a range of banking services including retail banking, corporate banking, and government financial services. The bank plays a significant role in supporting Venezuela's economic initiatives.</p>
+                    <div class="specialty">Specialty: Retail & Government Banking</div>
+                    <a href="https://www.bt.gob.ve/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Exterior</h5> 
+                    <p class="card-text">Banco Exterior is a prominent private bank in Venezuela, offering a range of financial services including retail banking, corporate banking, and investment services. The bank is known for its customer-centric approach and strong market position.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bancoexterior.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Venezuela are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Constructora Sambil</h5> 
+                    <p class="card-text">Constructora Sambil is one of the largest real estate development companies in Venezuela, known for its construction and management of shopping malls, residential complexes, and commercial properties. The company is recognized for its innovative projects and quality construction.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Development</div>
+                    <a href="https://www.sambil.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Fondo de Valores Inmobiliarios (FVI)</h5> 
+                    <p class="card-text">Fondo de Valores Inmobiliarios (FVI) is a major real estate investment and development company in Venezuela, specializing in the management and development of commercial properties, including office buildings and shopping centers.</p>
+                    <div class="specialty">Specialty: Real Estate Investment & Development</div>
+                    <a href="https://www.fvi.com.ve/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Solsica</h5> 
+                    <p class="card-text">Grupo Solsica is a leading real estate services provider in Venezuela, offering property management, development, and investment services. The company is known for its expertise in commercial and residential real estate markets.</p>
+                    <div class="specialty">Specialty: Property Management & Real Estate Services</div>
+                    <a href="https://www.gruposolsica.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Promotora Tántalo</h5> 
+                    <p class="card-text">Promotora Tántalo is a prominent real estate development company in Venezuela, focusing on the construction of residential and commercial properties. The company is recognized for its high-quality developments and commitment to innovation.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Development</div>
+                    <a href="https://www.promotoratantalo.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Constructora Conkor</h5> 
+                    <p class="card-text">Constructora Conkor is a leading construction and real estate development company in Venezuela, specializing in infrastructure projects, residential developments, and commercial properties. The company is known for its innovation and quality in construction.</p>
+                    <div class="specialty">Specialty: Infrastructure & Real Estate Development</div>
+                    <a href="https://www.constructora-conkor.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

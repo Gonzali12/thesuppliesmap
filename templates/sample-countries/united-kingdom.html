@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+
+{% block title %} United Kingdom {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>United Kingdom</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/united-kingdom-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            The United Kingdom, comprising England, Scotland, Wales, and Northern Ireland, has a population of approximately 67.22 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.932, reflecting high standards of living, education, and healthcare. <br><br>Covering a geographical area of 243,610 square kilometers, the UK is known for its historical landmarks, cultural heritage, and influential role in global politics. <br><br>The country is currently led by Prime Minister Rishi Sunak, who holds a center-right political stance, focusing on economic growth, trade, and national security. <br><br>The UK’s strong economy, cultural impact, and strategic alliances underscore its significant global influence.
+        </p>
+    </div>
+
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">United Kingdom's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">The logistics sector in the United Kingdom is essential to its economy, supporting domestic distribution and international trade. The industry benefits from advanced infrastructure and a strategic location as a global trade hub.</p>
+
+        <h1>The biggest logistics companies in the United Kingdom are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL UK</h5> 
+                    <p class="card-text">DHL UK is part of the global DHL network, offering a comprehensive range of logistics services including express delivery, freight forwarding, and supply chain management. The company is known for its efficiency and global reach.</p>
+                    <div class="specialty">Specialty: Global Logistics & Supply Chain Management</div>
+                    <a href="https://www.dhl.co.uk/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Royal Mail</h5> 
+                    <p class="card-text">Royal Mail is the United Kingdom's national postal service, providing mail collection and delivery services across the UK and internationally. The company is also involved in parcel delivery and logistics services, known for its extensive network and reliability.</p>
+                    <div class="specialty">Specialty: Postal & Parcel Delivery Services</div>
+                    <a href="https://www.royalmail.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">UPS UK</h5> 
+                    <p class="card-text">UPS UK is a major logistics provider in the United Kingdom, offering a wide range of services including parcel delivery, freight transportation, and supply chain management. The company is known for its global reach and reliable services.</p>
+                    <div class="specialty">Specialty: Parcel Delivery & Freight Transportation</div>
+                    <a href="https://www.ups.com/gb/en/Home.page" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Wincanton</h5> 
+                    <p class="card-text">Wincanton is one of the largest logistics companies in the United Kingdom, providing a wide range of services including transportation, warehousing, and supply chain solutions. The company serves various industries including retail, manufacturing, and construction.</p>
+                    <div class="specialty">Specialty: Transportation & Warehousing</div>
+                    <a href="https://www.wincanton.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DPD UK</h5> 
+                    <p class="card-text">DPD UK is a leading express parcel delivery company in the United Kingdom, offering next-day delivery services across the country. The company is known for its innovative technology and customer-centric services.</p>
+                    <div class="specialty">Specialty: Express Parcel Delivery</div>
+                    <a href="https://www.dpd.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in the United Kingdom are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Rolls-Royce Holdings</h5> 
+                    <p class="card-text">Rolls-Royce Holdings is a leading British manufacturer of power systems for aviation, marine, and industrial applications. The company is known for its advanced engineering and plays a significant role in the global aerospace industry.</p>
+                    <div class="specialty">Specialty: Aerospace & Power Systems Manufacturing</div>
+                    <a href="https://www.rolls-royce.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Unilever</h5> 
+                    <p class="card-text">Unilever is one of the largest consumer goods companies in the world, based in the United Kingdom. The company produces a wide range of products including food, beverages, cleaning agents, and personal care items.</p>
+                    <div class="specialty">Specialty: Consumer Goods Manufacturing</div>
+                    <a href="https://www.unilever.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">AstraZeneca</h5> 
+                    <p class="card-text">AstraZeneca is a British-Swedish multinational pharmaceutical and biotechnology company, headquartered in the United Kingdom. The company is involved in the research, development, and manufacture of medicines, particularly for cardiovascular, oncology, and respiratory diseases.</p>
+                    <div class="specialty">Specialty: Pharmaceutical Manufacturing</div>
+                    <a href="https://www.astrazeneca.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">GlaxoSmithKline (GSK)</h5> 
+                    <p class="card-text">GlaxoSmithKline (GSK) is a global healthcare company based in the United Kingdom, specializing in pharmaceuticals, vaccines, and consumer healthcare products. The company is a leader in the development of medicines and vaccines.</p>
+                    <div class="specialty">Specialty: Pharmaceuticals & Vaccines</div>
+                    <a href="https://www.gsk.com/en-gb/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BAE Systems</h5> 
+                    <p class="card-text">BAE Systems is one of the largest defense contractors in the world, based in the United Kingdom. The company is involved in the development and manufacturing of military hardware, including aircraft, submarines, and advanced electronics.</p>
+                    <div class="specialty">Specialty: Defense & Aerospace Manufacturing</div>
+                    <a href="https://www.baesystems.com/en/home" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in the United Kingdom are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">WPP</h5> 
+                    <p class="card-text">WPP is one of the largest advertising and public relations companies in the world, based in London, UK. The company provides a wide range of marketing services including advertising, media buying, public relations, and digital marketing.</p>
+                    <div class="specialty">Specialty: Advertising & Public Relations</div>
+                    <a href="https://www.wpp.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Saatchi & Saatchi</h5> 
+                    <p class="card-text">Saatchi & Saatchi is a global communications and advertising agency headquartered in London, UK. The agency is known for its creative advertising campaigns and strategic approach to brand building, serving clients worldwide.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Strategy</div>
+                    <a href="https://saatchi.com/en-global/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy UK</h5> 
+                    <p class="card-text">Ogilvy UK is part of the global Ogilvy network, offering a wide range of marketing services including advertising, digital marketing, and brand strategy. The agency is recognized for its creativity and strategic marketing solutions.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Digital Marketing</div>
+                    <a href="https://www.ogilvy.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBH London</h5> 
+                    <p class="card-text">BBH London is a leading advertising agency in the UK, known for its innovative and creative campaigns. The agency is part of the global Bartle Bogle Hegarty (BBH) network and has a strong reputation for delivering impactful brand communication.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Communication</div>
+                    <a href="https://www.bartleboglehegarty.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">M&C Saatchi</h5> 
+                    <p class="card-text">M&C Saatchi is a global marketing and communications agency headquartered in London, UK. The agency is known for its creative excellence and strategic approach, serving a diverse range of clients across multiple industries.</p>
+                    <div class="specialty">Specialty: Marketing & Communications</div>
+                    <a href="https://mcsaatchi.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in the United Kingdom are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">HSBC</h5> 
+                    <p class="card-text">HSBC is one of the largest banking and financial services organizations in the world, headquartered in London, UK. The bank offers a comprehensive range of services including retail banking, commercial banking, and wealth management.</p>
+                    <div class="specialty">Specialty: Retail & Commercial Banking</div>
+                    <a href="https://www.hsbc.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Barclays</h5> 
+                    <p class="card-text">Barclays is a British multinational bank and financial services company, providing a wide range of services including retail banking, corporate banking, investment banking, and wealth management. The bank has a strong global presence.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.barclays.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lloyds Banking Group</h5> 
+                    <p class="card-text">Lloyds Banking Group is one of the largest financial institutions in the UK, offering a wide range of services including personal banking, commercial banking, and insurance. The bank is known for its customer-centric approach and extensive branch network.</p>
+                    <div class="specialty">Specialty: Personal & Commercial Banking</div>
+                    <a href="https://www.lloydsbankinggroup.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Standard Chartered</h5> 
+                    <p class="card-text">Standard Chartered is a leading British multinational bank with a strong presence in Asia, Africa, and the Middle East. The bank offers a range of financial services including retail banking, corporate banking, and wealth management.</p>
+                    <div class="specialty">Specialty: International Banking & Wealth Management</div>
+                    <a href="https://www.sc.com/uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">NatWest Group</h5> 
+                    <p class="card-text">NatWest Group is one of the largest banking groups in the UK, offering a broad range of services including personal banking, corporate banking, and insurance. The bank is known for its strong market presence and customer-focused services.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.natwestgroup.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in the United Kingdom are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">British Land</h5> 
+                    <p class="card-text">British Land is one of the largest real estate investment companies in the United Kingdom, specializing in the development and management of commercial properties including offices, retail spaces, and mixed-use developments.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Development & Management</div>
+                    <a href="https://www.britishland.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Landsec</h5> 
+                    <p class="card-text">Landsec is a leading real estate investment trust (REIT) in the United Kingdom, focusing on commercial properties including retail centers, offices, and residential developments. The company is known for its high-quality assets and sustainability initiatives.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate Investment & Development</div>
+                    <a href="https://www.landsec.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Barratt Developments</h5> 
+                    <p class="card-text">Barratt Developments is one of the largest residential property developers in the United Kingdom, specializing in the construction of new homes across the country. The company is known for its commitment to quality and sustainability in residential development.</p>
+                    <div class="specialty">Specialty: Residential Property Development</div>
+                    <a href="https://www.barrattdevelopments.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Taylor Wimpey</h5> 
+                    <p class="card-text">Taylor Wimpey is a leading residential developer in the United Kingdom, known for building a wide range of homes, from affordable housing to luxury developments. The company is recognized for its focus on quality and customer satisfaction.</p>
+                    <div class="specialty">Specialty: Residential Property Development</div>
+                    <a href="https://www.taylorwimpey.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Savills</h5> 
+                    <p class="card-text">Savills is a global real estate services provider based in London, UK, offering a wide range of services including property management, investment advice, and real estate brokerage. The company is known for its expertise in the real estate market.</p>
+                    <div class="specialty">Specialty: Real Estate Services & Investment Advice</div>
+                    <a href="https://www.savills.co.uk/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

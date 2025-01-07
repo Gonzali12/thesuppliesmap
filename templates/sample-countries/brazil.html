@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block title %} Brazil {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Brazil</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/brazil-flag.webp') }}" alt="brazil flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Brazil, the largest country in South America, has a population of approximately 213.99 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.765, reflecting moderate to high levels of income, education, and life expectancy.<br><br> Covering an extensive geographical area of 8,515,767 square kilometers, Brazil is renowned for its vast Amazon rainforest, long Atlantic coastline, and vibrant cities. <br><br>The country is currently under the leadership of President Luiz Inácio Lula da Silva, who is positioned on the left of the political spectrum. His administration focuses on social justice, economic equity, and sustainable development. <br><br>Brazil's diverse culture, significant agricultural and industrial sectors, and natural resources contribute to its status as a major global player.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Brazil's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+\
+    </div>
+</div> 
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Brazil's logistics sector is vast and dynamic, supported by extensive infrastructure and a growing economy. The country's strategic location and diverse industries make it a hub for logistics operations in South America.</p>
+
+        <h1>The biggest logistics companies in Brazil are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JSL</h5> 
+                    <p class="card-text">JSL is one of Brazil's largest logistics companies, providing a wide range of services including road transportation, warehousing, and supply chain management. The company is known for its extensive network and comprehensive logistics solutions.</p>
+                    <div class="specialty">Specialty: Integrated Logistics Services</div>
+                    <a href="https://www.jsl.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tegma</h5> 
+                    <p class="card-text">Tegma is a leading logistics operator in Brazil, specializing in vehicle logistics and transportation. The company has a strong presence in the automotive sector, providing comprehensive solutions for vehicle distribution and supply chain management.</p>
+                    <div class="specialty">Specialty: Vehicle Logistics</div>
+                    <a href="https://www.tegma.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Braspress</h5> 
+                    <p class="card-text">Braspress is a major player in the Brazilian logistics market, specializing in express freight services. The company offers nationwide coverage with a strong focus on timely and efficient delivery of goods.</p>
+                    <div class="specialty">Specialty: Express Freight Services</div>
+                    <a href="https://www.braspress.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Rumo Logística</h5> 
+                    <p class="card-text">Rumo Logística is the largest independent railroad operator in Brazil, providing integrated logistics solutions that include rail transportation, terminal operations, and port services. The company is essential to Brazil's agricultural and industrial supply chains.</p>
+                    <div class="specialty">Specialty: Rail Logistics</div>
+                    <a href="https://www.rumolog.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Mercado Envios</h5> 
+                    <p class="card-text">Mercado Envios, part of Mercado Libre, is a leading logistics company in Brazil's e-commerce sector. It provides comprehensive logistics services, including order fulfillment, warehousing, and last-mile delivery across the country.</p>
+                    <div class="specialty">Specialty: E-commerce Logistics</div>
+                    <a href="https://www.mercadolivre.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Brazil are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Petrobras</h5> 
+                    <p class="card-text">Petrobras is a Brazilian multinational corporation in the petroleum industry, and one of the largest producers of oil and gas in the world. The company is known for its significant role in the global energy market.</p>
+                    <div class="specialty">Specialty: Oil & Gas Production</div>
+                    <a href="https://www.petrobras.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Embraer</h5> 
+                    <p class="card-text">Embraer is one of the world's leading aerospace companies, headquartered in Brazil. The company is known for its production of commercial, military, executive, and agricultural aircraft.</p>
+                    <div class="specialty">Specialty: Aircraft Manufacturing</div>
+                    <a href="https://www.embraer.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Vale S.A.</h5> 
+                    <p class="card-text">Vale S.A. is one of the largest mining companies in the world, with operations in Brazil and across the globe. The company specializes in the production of iron ore, nickel, and other minerals essential to global industries.</p>
+                    <div class="specialty">Specialty: Mining & Metals</div>
+                    <a href="https://www.vale.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ambev</h5> 
+                    <p class="card-text">Ambev is the largest beverage company in Brazil, producing and distributing a wide range of beers, soft drinks, and other beverages. The company is part of the AB InBev group, one of the world's largest brewers.</p>
+                    <div class="specialty">Specialty: Beverage Manufacturing</div>
+                    <a href="https://www.ambev.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Gerdau</h5> 
+                    <p class="card-text">Gerdau is a leading steel manufacturer in Brazil and one of the largest suppliers of long steel in the Americas. The company produces steel products for construction, automotive, industrial, and agricultural sectors.</p>
+                    <div class="specialty">Specialty: Steel Manufacturing</div>
+                    <a href="https://www.gerdau.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Brazil are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DPZ&T</h5> 
+                    <p class="card-text">DPZ&T is one of Brazil's most iconic advertising agencies, known for its creative and impactful campaigns for major brands. The agency is part of the Publicis Groupe and has a strong presence in the Brazilian market.</p>
+                    <div class="specialty">Specialty: Creative Advertising</div>
+                    <a href="https://www.dpz.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">AlmapBBDO</h5> 
+                    <p class="card-text">AlmapBBDO is one of the leading advertising agencies in Brazil, known for its award-winning campaigns and innovative approach to brand communication. The agency is a key player in both traditional and digital advertising.</p>
+                    <div class="specialty">Specialty: Integrated Marketing</div>
+                    <a href="https://www.almapbbdo.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Wunderman Thompson Brasil</h5> 
+                    <p class="card-text">Wunderman Thompson Brasil is a leading digital marketing agency, specializing in data-driven marketing strategies, creative content, and technology solutions to drive brand growth in the digital space.</p>
+                    <div class="specialty">Specialty: Digital Marketing</div>
+                    <a href="https://www.wundermanthompson.com/brasil" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Africa</h5> 
+                    <p class="card-text">Africa is one of Brazil's top advertising agencies, known for its bold and innovative campaigns. The agency works with some of the biggest brands in Brazil and has a reputation for excellence in creative advertising.</p>
+                    <div class="specialty">Specialty: Brand Strategy & Advertising</div>
+                    <a href="https://www.africa.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">VMLY&R Brasil</h5> 
+                    <p class="card-text">VMLY&R Brasil is part of the global VMLY&R network, offering integrated marketing solutions that combine creativity, data, and technology to build strong brands and deliver business results.</p>
+                    <div class="specialty">Specialty: Integrated Marketing Solutions</div>
+                    <a href="https://www.vmlyr.com/brasil" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Brazil are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Itaú Unibanco</h5> 
+                    <p class="card-text">Itaú Unibanco is the largest bank in Brazil and Latin America, offering a wide range of financial services including retail banking, corporate banking, asset management, and insurance.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.itau.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bradesco</h5> 
+                    <p class="card-text">Bradesco is one of the largest banks in Brazil, providing comprehensive financial services including personal banking, corporate banking, insurance, and asset management.</p>
+                    <div class="specialty">Specialty: Comprehensive Financial Services</div>
+                    <a href="https://www.bradesco.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco do Brasil</h5> 
+                    <p class="card-text">Banco do Brasil is the oldest and one of the largest financial institutions in Brazil, offering a wide range of banking services, including personal and corporate banking, as well as government-related services.</p>
+                    <div class="specialty">Specialty: Government & Retail Banking</div>
+                    <a href="https://www.bb.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Santander Brasil</h5> 
+                    <p class="card-text">Santander Brasil is the largest foreign-owned bank in Brazil, providing a wide array of financial services including retail banking, corporate banking, and wealth management.</p>
+                    <div class="specialty">Specialty: Foreign-Owned Banking</div>
+                    <a href="https://www.santander.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Caixa Econômica Federal</h5> 
+                    <p class="card-text">Caixa Econômica Federal is a state-owned financial institution in Brazil, known for its role in social welfare programs, housing finance, and infrastructure development.</p>
+                    <div class="specialty">Specialty: Social Welfare & Housing Finance</div>
+                    <a href="https://www.caixa.gov.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Brazil are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cyrela Brazil Realty</h5> 
+                    <p class="card-text">Cyrela Brazil Realty is one of the largest real estate companies in Brazil, specializing in high-end residential and commercial developments. The company is known for its quality construction and innovative designs.</p>
+                    <div class="specialty">Specialty: High-End Real Estate Development</div>
+                    <a href="https://www.cyrela.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">MRV Engenharia</h5> 
+                    <p class="card-text">MRV Engenharia is the largest real estate developer in Brazil, focusing on affordable housing projects. The company is a key player in Brazil's housing market, providing quality homes at competitive prices.</p>
+                    <div class="specialty">Specialty: Affordable Housing</div>
+                    <a href="https://www.mrv.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tenda</h5> 
+                    <p class="card-text">Tenda is a leading real estate company in Brazil, specializing in the development of affordable housing. The company is committed to delivering high-quality residential projects across the country.</p>
+                    <div class="specialty">Specialty: Affordable Housing Development</div>
+                    <a href="https://www.tenda.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Eztec</h5> 
+                    <p class="card-text">Eztec is a major real estate development company in Brazil, known for its luxury residential and commercial projects. The company is recognized for its attention to detail and premium quality construction.</p>
+                    <div class="specialty">Specialty: Luxury Real Estate Development</div>
+                    <a href="https://www.eztec.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Gafisa</h5> 
+                    <p class="card-text">Gafisa is one of Brazil's most well-known real estate developers, specializing in high-end residential projects. The company has a long-standing reputation for quality and innovation in the real estate market.</p>
+                    <div class="specialty">Specialty: High-End Residential Projects</div>
+                    <a href="https://www.gafisa.com.br/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

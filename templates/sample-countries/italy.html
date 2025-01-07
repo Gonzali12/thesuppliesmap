@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block title %} Italy {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Italy</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/italy-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Italy, a country in Southern Europe, has a population of around 60.36 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.892, highlighting its high standards of living, education, and healthcare. <br><br>Spanning a geographical area of 301,340 square kilometers, Italy is known for its rich cultural heritage, historical landmarks, and diverse landscapes from the Alps to Mediterranean beaches. <br><br>The country is currently led by Prime Minister Giorgia Meloni, who holds a far-right political stance, focusing on national sovereignty, economic reform, and immigration control.<br><br>Italy’s strong cultural influence, economic resilience, and strategic position in Europe underscore its global significance.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Italy's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Italy's logistics sector is a key part of its economy, supported by its strategic location in Europe and its robust infrastructure. The industry is vital for the country's trade and distribution networks.</p>
+
+        <h1>The biggest logistics companies in Italy are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Express Italy</h5> 
+                    <p class="card-text">DHL Express Italy is a leading logistics and express courier service provider in Italy, offering a wide range of services including international express deliveries, freight forwarding, and supply chain management.</p>
+                    <div class="specialty">Specialty: Express Courier & Logistics</div>
+                    <a href="https://www.dhl.com/it-en/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SDA Express Courier</h5> 
+                    <p class="card-text">SDA Express Courier is a major player in Italy's logistics sector, specializing in express courier services, freight transportation, and integrated logistics solutions. The company is part of the Poste Italiane Group.</p>
+                    <div class="specialty">Specialty: Express Courier & Integrated Logistics</div>
+                    <a href="https://www.sda.it/SITO_SDA-INSIDEX-WEB/pages/Home_it/179" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TNT Italy</h5> 
+                    <p class="card-text">TNT Italy is part of the global TNT Express network, offering express delivery and logistics services across Italy. The company is known for its reliable and efficient solutions for both domestic and international shipments.</p>
+                    <div class="specialty">Specialty: Express Delivery & Logistics</div>
+                    <a href="https://www.tnt.com/express/it_it/site/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BRT Bartolini</h5> 
+                    <p class="card-text">BRT Bartolini is one of Italy's leading logistics and transportation companies, providing a wide range of services including parcel delivery, freight forwarding, and supply chain management. The company is known for its extensive national network.</p>
+                    <div class="specialty">Specialty: Parcel Delivery & Freight Forwarding</div>
+                    <a href="https://www.brt.it/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">GLS Italy</h5> 
+                    <p class="card-text">GLS Italy is a major logistics company, providing reliable parcel and express courier services across the country. The company is part of the international GLS Group and is known for its high-quality service and customer focus.</p>
+                    <div class="specialty">Specialty: Parcel & Express Courier Services</div>
+                    <a href="https://gls-group.eu/IT/en/home" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Italy are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Fiat Chrysler Automobiles (FCA)</h5> 
+                    <p class="card-text">Fiat Chrysler Automobiles (FCA) is one of Italy's largest automotive manufacturers, producing a wide range of vehicles under brands like Fiat, Jeep, and Alfa Romeo. The company is known for its innovation and significant global presence.</p>
+                    <div class="specialty">Specialty: Automotive Manufacturing</div>
+                    <a href="https://www.fcagroup.com/en-US/Pages/home.aspx" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Enel</h5> 
+                    <p class="card-text">Enel is a multinational energy company based in Italy, specializing in electricity generation, distribution, and renewable energy. The company is one of the world's largest utilities and a leader in the energy transition.</p>
+                    <div class="specialty">Specialty: Energy Production & Renewable Energy</div>
+                    <a href="https://www.enel.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leonardo S.p.A.</h5> 
+                    <p class="card-text">Leonardo S.p.A. is a global high-tech company and one of Italy's largest industrial groups, specializing in aerospace, defense, and security. The company is known for its innovation and advanced technology solutions.</p>
+                    <div class="specialty">Specialty: Aerospace, Defense & Security</div>
+                    <a href="https://www.leonardocompany.com/en/home" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Pirelli</h5> 
+                    <p class="card-text">Pirelli is a leading global tire manufacturer based in Italy, known for its high-performance tires for cars, motorcycles, and bicycles. The company is renowned for its innovation, quality, and strong brand presence in the automotive industry.</p>
+                    <div class="specialty">Specialty: Tire Manufacturing</div>
+                    <a href="https://www.pirelli.com/global/en-ww/homepage" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrero Group</h5> 
+                    <p class="card-text">Ferrero Group is one of the world's largest confectionery companies, headquartered in Italy. The company is famous for its iconic brands such as Nutella, Ferrero Rocher, and Kinder, and is known for its commitment to quality and innovation.</p>
+                    <div class="specialty">Specialty: Confectionery Manufacturing</div>
+                    <a href="https://www.ferrero.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Italy are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Publicis Italy</h5> 
+                    <p class="card-text">Publicis Italy is part of the global Publicis Groupe, offering a wide range of marketing and advertising services. The agency is known for its creative campaigns and strategic approach to brand communication.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.publicis.it/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Italy</h5> 
+                    <p class="card-text">Ogilvy Italy is part of the global Ogilvy network, providing comprehensive marketing and advertising services. The agency is known for its creativity and effectiveness in building brands in the Italian market.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Advertising</div>
+                    <a href="https://www.ogilvy.it/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Leo Burnett Italy</h5> 
+                    <p class="card-text">Leo Burnett Italy is part of the global Leo Burnett network, offering creative advertising and marketing services. The agency is known for its powerful storytelling and ability to connect with Italian audiences.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Storytelling</div>
+                    <a href="https://www.leoburnett.it/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Havas Milan</h5> 
+                    <p class="card-text">Havas Milan is part of the global Havas network, offering a wide range of marketing services including advertising, digital marketing, and media planning. The agency is known for its innovative and data-driven approach to marketing.</p>
+                    <div class="specialty">Specialty: Advertising & Digital Marketing</div>
+                    <a href="https://it.havas.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">JWT Italy</h5> 
+                    <p class="card-text">JWT Italy, part of the global J. Walter Thompson network, is a leading advertising agency offering creative services and brand strategy. The agency is known for its innovative campaigns and strong local market understanding.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Brand Strategy</div>
+                    <a href="https://www.jwt.com/en/italy" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Italy are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">UniCredit</h5> 
+                    <p class="card-text">UniCredit is one of Europe's leading commercial banks, headquartered in Italy. The bank offers a comprehensive range of financial services including retail banking, corporate banking, and investment banking, with a strong presence across Europe.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.unicreditgroup.eu/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Intesa Sanpaolo</h5> 
+                    <p class="card-text">Intesa Sanpaolo is a major Italian banking group, offering a wide range of services including retail banking, corporate banking, and wealth management. The bank is known for its strong customer base and innovative financial solutions.</p>
+                    <div class="specialty">Specialty: Retail Banking & Wealth Management</div>
+                    <a href="https://www.intesasanpaolo.com/en.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banca Monte dei Paschi di Siena</h5> 
+                    <p class="card-text">Banca Monte dei Paschi di Siena is the oldest bank in the world still in operation, providing a range of financial services including retail banking, corporate banking, and investment services. The bank is a key player in the Italian financial sector.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.mps.it/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Mediobanca</h5> 
+                    <p class="card-text">Mediobanca is a leading Italian investment bank, specializing in corporate and investment banking, asset management, and retail banking. The bank is known for its expertise in financial advisory and capital markets.</p>
+                    <div class="specialty">Specialty: Investment Banking & Asset Management</div>
+                    <a href="https://www.mediobanca.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Generali Group</h5> 
+                    <p class="card-text">Generali Group is one of the world's largest insurance companies, headquartered in Italy. The company offers a wide range of insurance products and financial services, with a strong presence in Europe and beyond.</p>
+                    <div class="specialty">Specialty: Insurance & Financial Services</div>
+                    <a href="https://www.generali.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Italy are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">COIMA SGR</h5> 
+                    <p class="card-text">COIMA SGR is one of Italy's leading real estate investment and management companies, specializing in the development and management of commercial and residential properties. The company is known for its high-quality projects and sustainability focus.</p>
+                    <div class="specialty">Specialty: Real Estate Investment & Development</div>
+                    <a href="https://www.coimasgr.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Prelios Group</h5> 
+                    <p class="card-text">Prelios Group is a major Italian real estate company, offering a wide range of services including asset management, property management, and real estate advisory. The company is known for its expertise in managing complex real estate portfolios.</p>
+                    <div class="specialty">Specialty: Asset & Property Management</div>
+                    <a href="https://prelios.com/en" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Gabetti Property Solutions</h5> 
+                    <p class="card-text">Gabetti Property Solutions is one of Italy's oldest and most established real estate companies, offering services in residential and commercial property sales, leasing, and management. The company is known for its extensive network and market expertise.</p>
+                    <div class="specialty">Specialty: Real Estate Sales & Leasing</div>
+                    <a href="https://www.gabetti.it/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Caltagirone Group</h5> 
+                    <p class="card-text">Caltagirone Group is a diversified Italian conglomerate with significant interests in real estate, construction, and publishing. The company is known for its high-quality construction projects and strong market presence in Italy.</p>
+                    <div class="specialty">Specialty: Real Estate Development & Construction</div>
+                    <a href="https://www.caltagironegroup.it/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">IGD SIIQ</h5> 
+                    <p class="card-text">IGD SIIQ is a leading real estate investment trust in Italy, specializing in the acquisition, development, and management of retail properties, including shopping centers and retail parks. The company is known for its strong focus on sustainability.</p>
+                    <div class="specialty">Specialty: Retail Real Estate Investment & Management</div>
+                    <a href="https://www.gruppoigd.it/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

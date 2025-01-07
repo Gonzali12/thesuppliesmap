@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block title %} Chile {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Chile</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/chile-flag.png') }}" alt="chile flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Chile, a long and narrow country stretching along the western edge of South America, has a population of approximately 19.12 million people. It is classified as a More Economically Developed Country (MEDC) with a Human Development Index (HDI) of 0.851, indicating high levels of human development, income, and education. <br><br>Spanning a geographical area of 756,102 square kilometers, Chile is characterized by its diverse landscapes, including the Atacama Desert, the Andes mountains, and a lengthy Pacific coastline.<br><br> The current president, Gabriel Boric, is politically aligned with the left, advocating for social reforms, economic equality, and environmental protection. <br><br>Chile's stable economy, rich cultural traditions, and strategic economic policies contribute to its significant role in the region.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Chile's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">Chile's logistics sector is a key player in the country's economy, supporting its strong export market, particularly in mining, agriculture, and forestry. The sector is well-integrated with international trade routes.</p>
+
+        <h1>The biggest logistics companies in Chile are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sotraser</h5> 
+                    <p class="card-text">Sotraser is one of the leading logistics companies in Chile, specializing in transportation and distribution services across various industries, including mining, retail, and consumer goods.</p>
+                    <div class="specialty">Specialty: Transportation & Distribution Services</div>
+                    <a href="https://www.sotraser.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Correos de Chile</h5> 
+                    <p class="card-text">Correos de Chile is the national postal service of Chile, providing mail, parcel delivery, and logistics solutions across the country. The company also offers international shipping services.</p>
+                    <div class="specialty">Specialty: Postal & Logistics Services</div>
+                    <a href="https://www.correos.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte Werner</h5> 
+                    <p class="card-text">Transporte Werner is a leading logistics and transportation company in Chile, providing specialized services for the mining and construction industries, including heavy haulage and equipment transportation.</p>
+                    <div class="specialty">Specialty: Heavy Haulage & Equipment Transportation</div>
+                    <a href="https://www.transporte-werner.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Agunsa</h5> 
+                    <p class="card-text">Agunsa is a major player in the logistics and transportation sector in Chile, offering a wide range of services including port operations, freight forwarding, and supply chain management solutions.</p>
+                    <div class="specialty">Specialty: Port Operations & Freight Forwarding</div>
+                    <a href="https://www.agunsa.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TMC Chile</h5> 
+                    <p class="card-text">TMC Chile is a leading logistics company that specializes in transportation and distribution services across Chile. The company is known for its efficient logistics operations and strong presence in the market.</p>
+                    <div class="specialty">Specialty: Transportation & Distribution</div>
+                    <a href="https://www.tmc.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Chile are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Codelco</h5> 
+                    <p class="card-text">Codelco is the largest copper producer in the world, headquartered in Chile. The company plays a critical role in the global mining industry and is a major contributor to Chile's economy.</p>
+                    <div class="specialty">Specialty: Copper Mining & Production</div>
+                    <a href="https://www.codelco.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CMPC</h5> 
+                    <p class="card-text">CMPC is a leading forestry and paper manufacturing company in Chile, producing pulp, paper, tissue, and wood products. The company is a key player in the global paper industry.</p>
+                    <div class="specialty">Specialty: Forestry & Paper Products</div>
+                    <a href="https://www.cmpc.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">SQM (Sociedad Química y Minera de Chile)</h5> 
+                    <p class="card-text">SQM is a leading mining company in Chile, specializing in the production of lithium, potassium, and iodine. The company is a global leader in the lithium market, essential for battery production.</p>
+                    <div class="specialty">Specialty: Lithium & Potassium Production</div>
+                    <a href="https://www.sqm.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Colbún S.A.</h5> 
+                    <p class="card-text">Colbún S.A. is one of the largest energy companies in Chile, specializing in the generation of electricity from hydroelectric, thermal, and renewable sources. The company is a major player in the energy sector.</p>
+                    <div class="specialty">Specialty: Energy Generation</div>
+                    <a href="https://www.colbun.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Soprole</h5> 
+                    <p class="card-text">Soprole is a leading dairy company in Chile, producing a wide range of dairy products including milk, cheese, yogurt, and desserts. The company is well-known for its quality and innovation in the dairy sector.</p>
+                    <div class="specialty">Specialty: Dairy Products</div>
+                    <a href="https://www.soprole.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Chile are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Prolam Y&R</h5> 
+                    <p class="card-text">Prolam Y&R is one of the top marketing and advertising agencies in Chile, known for its creative and strategic campaigns. The agency is part of the global WPP network and serves major brands in the region.</p>
+                    <div class="specialty">Specialty: Advertising & Brand Strategy</div>
+                    <a href="https://prolamyr.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBDO Chile</h5> 
+                    <p class="card-text">BBDO Chile is a leading advertising agency, part of the global BBDO network. The agency is known for delivering impactful and creative advertising campaigns for major clients in Chile and Latin America.</p>
+                    <div class="specialty">Specialty: Creative Advertising</div>
+                    <a href="https://www.bbdo.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Ogilvy Chile</h5> 
+                    <p class="card-text">Ogilvy Chile is a prominent marketing and communications agency, offering a full range of services including advertising, public relations, and digital marketing. The agency is part of the global Ogilvy network.</p>
+                    <div class="specialty">Specialty: Integrated Marketing & Communications</div>
+                    <a href="https://www.ogilvy.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DDB Chile</h5> 
+                    <p class="card-text">DDB Chile is a leading creative agency known for its innovative and effective advertising campaigns. The agency is part of the global DDB network and has a strong presence in the Chilean market.</p>
+                    <div class="specialty">Specialty: Creative Advertising & Branding</div>
+                    <a href="https://www.ddb.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">McCann Chile</h5> 
+                    <p class="card-text">McCann Chile is part of the global McCann network, offering integrated marketing services that include advertising, digital marketing, and brand strategy. The agency is known for its strategic and creative approach to brand building.</p>
+                    <div class="specialty">Specialty: Integrated Marketing Solutions</div>
+                    <a href="https://mccann.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Chile are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco de Chile</h5> 
+                    <p class="card-text">Banco de Chile is one of the largest and oldest banks in Chile, offering a full range of financial services including personal banking, corporate banking, and wealth management.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bancochile.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Santander Chile</h5> 
+                    <p class="card-text">Banco Santander Chile is a subsidiary of the global Santander Group, providing a wide range of financial services including personal banking, corporate banking, and asset management in Chile.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.santander.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BCI (Banco de Crédito e Inversiones)</h5> 
+                    <p class="card-text">BCI is one of the largest banks in Chile, known for its innovative banking services and strong customer focus. The bank offers a wide range of financial products, including loans, mortgages, and investment services.</p>
+                    <div class="specialty">Specialty: Retail Banking & Innovation</div>
+                    <a href="https://www.bci.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BancoEstado</h5> 
+                    <p class="card-text">BancoEstado is a state-owned bank in Chile, offering a variety of financial services focused on promoting social inclusion and financial accessibility across the country.</p>
+                    <div class="specialty">Specialty: Social Impact Banking</div>
+                    <a href="https://www.bancoestado.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Scotiabank Chile</h5> 
+                    <p class="card-text">Scotiabank Chile is part of the global Scotiabank network, offering a comprehensive range of financial services including personal banking, corporate banking, and investment services in Chile.</p>
+                    <div class="specialty">Specialty: International Banking & Wealth Management</div>
+                    <a href="https://www.scotiabankchile.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Chile are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Parque Arauco</h5> 
+                    <p class="card-text">Parque Arauco is one of Chile's largest real estate companies, specializing in the development and management of shopping centers and commercial properties across Latin America.</p>
+                    <div class="specialty">Specialty: Retail & Commercial Real Estate</div>
+                    <a href="https://www.parauco.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cencosud</h5> 
+                    <p class="card-text">Cencosud is a major retail and real estate company in Chile, operating shopping malls, supermarkets, and department stores across Latin America. The company is a key player in the retail and real estate markets.</p>
+                    <div class="specialty">Specialty: Retail & Real Estate Development</div>
+                    <a href="https://www.cencosud.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Inmobiliaria Manquehue</h5> 
+                    <p class="card-text">Inmobiliaria Manquehue is a leading real estate developer in Chile, focusing on residential projects. The company is known for its quality construction and development of residential communities.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Development</div>
+                    <a href="https://www.imanquehue.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Territoria</h5> 
+                    <p class="card-text">Territoria is a prominent real estate development company in Chile, specializing in mixed-use projects that combine residential, commercial, and office spaces in urban areas.</p>
+                    <div class="specialty">Specialty: Mixed-Use Real Estate Development</div>
+                    <a href="https://www.territoria.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sencorp</h5> 
+                    <p class="card-text">Sencorp is a leading real estate company in Chile, specializing in the development and management of commercial and residential properties. The company is known for its innovative projects and quality construction.</p>
+                    <div class="specialty">Specialty: Commercial & Residential Real Estate</div>
+                    <a href="https://www.sencorp.cl/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

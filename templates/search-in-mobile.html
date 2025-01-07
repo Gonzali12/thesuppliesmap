@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} account {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/search-in-mobile-style.css') }}">
+{% endblock %}
+
+{% block header %}
+<!--No search in header-->
+{% endblock %}
+
+{% block content %}
+<div class="search-and-results">
+    <div class="search">
+        <span class="search-icon material-symbols-outlined">Search</span>
+        <input type="search" id="search-bar" name="q" placeholder="Search for a country"/>
+    </div>
+    <div class="search-results-main-menu">
+        <ul id="search-results"></ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block search_placeholder %}
+<!--No placeholder function-->
+{% endblock %}

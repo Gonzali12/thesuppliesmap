@@ -1,0 +1,676 @@
+/*
+<div class="progress-bar-and-call-to-action">
+    <div class="progress-bar"></div>
+    <p id="call-to-action-text">You're right on track! Register your business to finish your progress.</p>
+</div>
+*/
+
+.progress-bar-and-call-to-action{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.progress-bar{
+    width: 25%;
+    height: 24px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 25px;
+}
+
+#call-to-action-text{
+    font-size: 15px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.progress-bar::after{
+    content: '';
+    background: linear-gradient(135deg, #fd0000, #1d00ff);
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    animation: progress 2s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        width: 90%;
+    }
+}
+
+.world-map-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.world-map{
+    width: 75%;
+    height: auto;
+    margin-left: 12%;
+}
+
+svg path{
+    cursor: pointer;
+}
+
+svg path {
+    transition: fill 0.2s ease;
+}
+
+svg path:hover{
+    fill: #e3fcff !important;
+}
+
+.modal.fade.show {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-modal {
+    display: flex;
+}
+
+.modal-content{
+    width: 1000px !important;
+    margin: auto !important;
+}
+
+.columns{
+    display: flex;
+}
+
+.modal-titles {
+    width: 300px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.modal-body-data{
+    display: block !important;
+}
+
+h3, .modal-title{
+    font-weight: bold;
+    font-size: large;
+}
+
+.modal-titles-politics {
+    width: 300px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.macroeconomics {
+    margin-bottom: 20px;
+}
+
+.macroeconomics-data {
+    width: 400px;
+}
+
+.second-column {
+    width: 350px;
+}
+
+.intermodal-shipping-data {
+    width: 450px;
+}
+
+.politics-data {
+    width: 400px;
+}
+
+.macroeconomics-data, .intermodal-shipping-data, .politics-data{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.macroeconomics-data p, .intermodal-shipping-data p, .politics-data p{
+    padding: 5px;
+    margin: 0px;
+    border-radius: 7px;
+    font-size: 10px;
+    
+}
+
+.macroeconomics-data p{
+    background-color: orange;
+}
+
+.intermodal-shipping-data p{
+    background-color: silver;
+}
+
+.politics-data p{
+    background-color:#e2bc00;
+}
+
+h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.next{
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+#countryDetails_6, #countryDetails_7, #countryDetails_8, #countryDetails_extra, #countryDetails_extra_real_return {
+    background-color: red;
+    color: white;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.average-score, .weighted-score {
+    width: fit-content;
+    margin: auto;
+    padding: 6px 8px;
+    border-radius: 12px;
+    font-size: small;
+    color: black;
+    background-color: red;
+}
+
+.graph-title {
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.graph-method-description {
+    font-size: 8px;
+    text-align: center;
+    margin: 20px 5px 10px 5px;
+    flex-wrap: wrap;
+
+}
+
+.country-link{
+    background-color: #FFBD59;
+    color: black;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 735px;
+}
+
+.economic-complexity-spectrum{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten{
+    font-size: x-small;
+    text-align: center;
+    padding: 4px 5px;
+    margin: 0 5px;
+    border-radius: 12px;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+#one{
+    background-color: #ff0000;
+}
+
+#two{
+    background-color: #ef3800;
+}
+
+#three{
+    background-color: #df7100;
+}
+
+#four{
+    background-color: #cf7200;
+}
+
+#five{
+    background-color: #e2bc00 ;
+}
+
+#six{
+    background-color: #e2e200;
+}
+
+#seven{
+    background-color: #ccdf00;
+}
+
+#eight{
+    background-color: #a7c900;
+}
+
+#nine{
+    background-color: #80b400;
+}
+
+#ten{
+    background-color: #719f00;
+}
+
+h4{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media(max-width: 1460px){
+    .world-map{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1300px){
+    .world-map{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1195px){
+    .world-map{
+        width: 95%;
+    }
+}
+
+@media(max-width: 1100px){
+    .world-map{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1025px){
+    .world-map{
+        width: 105%;
+    }
+
+    .close {
+        margin-left: 0px !important;
+    }
+
+    .modal-dialog {
+        width: 700px; 
+    }
+
+    .modal-content {
+        justify-content: center !important;   
+    }
+
+    .box-modal{
+        flex-direction: column;
+    }
+    
+    .modal-header {
+        text-align: center;
+    }
+
+    .second-column {
+        width: 100%;
+    }
+
+    .modal-titles-politics{
+        width: 100%;
+    }
+
+    .macroeconomics-data, .intermodal-shipping-data, .politics-data { 
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap
+    }
+
+    .g-box{
+        transform: translate(130px,60px);
+    }
+
+    .porter-five-forces svg {
+        width: 100%;
+    }
+
+    .modal-footer{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: zero;
+    }
+
+    .graph-method-description {
+        margin-right: 150px !important;
+        margin-left: 150px !important;
+        text-wrap: wrap !important;
+    }
+
+    .country-link {
+        margin-right: 0px !important;
+    }
+
+    .scores {
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 750px) {
+    .scores {
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 950px){
+    .world-map{
+        width: 115%;
+    }
+}
+
+@media(max-width: 900px){
+    #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 893px){
+    .world-map{
+        width: 125%;
+    }
+}
+
+@media(max-width: 845px){
+    .world-map{
+        width: 135%;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 795px){
+    .world-map{
+        width: 145%;
+    }
+}
+
+@media(max-width: 751px){
+    .world-map{
+        width: 155%;
+    }
+
+    .modal-dialog {
+        width: 500px; 
+    }
+
+    .g-box{
+        transform: translate(95px,60px);
+    }
+
+    .porter-five-forces svg {
+        height: 500px;
+    }
+}
+
+@media(max-width: 711px){
+    .world-map{
+        width: 165%;
+    }
+}
+
+@media(max-width: 679px){
+    .world-map{
+        width: 175%;
+    }
+}
+
+@media(max-width: 650px){
+    .world-map{
+        width: 185%;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    .g-box{
+        transform: translate(35px,60px);
+    }
+
+    .modal-dialog {
+        width: 300px;
+    }
+
+    .graph-method-description{
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+}
+
+@media(max-width: 621px){
+    .world-map{
+        width: 195%;
+    }
+}
+
+@media(max-width: 575px){
+    .world-map{
+        width: 205%;
+    }
+
+    .modal-dialog {
+        margin-left: 25%;
+    }
+}
+
+@media(max-width: 535px){
+    .world-map{
+        width: 215%;
+    }
+
+    .modal-dialog {
+        margin-left: 20%;
+    }
+}
+
+@media(max-width: 515px){    
+    .country-link{
+        margin-right: 50%;
+    }
+
+    .world-map{
+        width: 220%;
+    }
+
+    .modal-dialog {
+        margin-left: 15%;
+    }
+}
+
+@media(max-width: 500px){
+    .world-map{
+        width: 225%;
+    }
+
+    .progress-bar{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 472px){
+    .country-link{
+        margin-right: 45%;
+    }
+}
+
+@media(max-width: 465px){
+    .world-map{
+        width: 350%;
+    }
+
+    .modal-dialog {
+        margin-left: 10%;
+    }
+}
+
+@media(max-width: 420px){
+    .world-map{
+        width: 400%;
+    }
+}
+
+@media(max-width: 415px){
+    .world-map{
+        width: 420%;
+    }
+}
+
+@media(max-width: 433px){
+    .country-link{
+        margin-right: 40%;
+    }
+}
+
+@media(max-width: 400px){
+    .country-link{
+        margin-right: 35%;
+    }
+}
+
+@media(max-width: 395px){
+    .world-map{
+        width: 450%;
+    }
+
+    .modal-dialog {
+        margin-left: 5%;
+    }
+}
+
+@media(max-width: 374px){
+    .world-map{
+        width: 500%;
+    }
+
+    .country-link{
+        margin-right: 32%;
+    }
+}
+
+@media(max-width: 358px){
+    .country-link{
+        margin-right: 25%;
+    }
+}
+
+@media(max-width: 355px){
+    .world-map{
+        width: 550%;
+    }
+}
+
+@media(max-width: 342px){
+    .world-map{
+        width: 600%;
+    }
+}
+
+@media(max-width: 329px){
+    .country-link{
+        margin-right: 15%;
+    }
+}
+
+/*
+
+    <!--Modal-->
+    <div class="modal fade" id="countryModal" tabindex="-1" role="dialog" aria-labelledby="countryModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h5 class="modal-title" id="countryModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="box-modal">
+                    <div class="modal-body">
+                        <div class="macroeconomics">
+                            <h3 class="modal-titles">Macroeconomics</h3>
+                            <div class="macroeconomics-data"> 
+                                <p id="countryDetails_1"></p>
+                                <p id="countryDetails_2"></p>
+                                <p id="countryDetails_3"></p>
+                                <p id="countryDetails_4"></p>
+                                <p id="countryDetails_5"></p>
+                                <p id="countryDetails_6">Live API</p>
+                                <p id="countryDetails_7">Live API</p>
+                                <p id="countryDetails_8">Live API</p>
+                                <p id="countryDetails_extra">Live API</p>
+                            </div>
+                        </div>
+                        <div class="second-column">
+                            <div class="intermodal-shipping">
+                                <h3 class="modal-titles">Intermodal Shipping</h3>
+                                <div class="intermodal-shipping-data">
+                                    <p id="countryDetails_9"></p>
+                                    <p id="countryDetails_10"></p>
+                                    <p id="countryDetails_11"></p>
+                                </div>
+                            </div>
+                            <div class="politics">
+                                <h3 class="modal-titles-politics">Politics</h3>
+                                <div class="politics-data">
+                                    <p id="countryDetails_14"></p>
+                                    <p id="countryDetails_15"></p>
+                                    <p id="countryDetails_16"></p>
+                                    <p id="countryDetails_17"></p>
+                                    <p id="countryDetails_19"></p>
+                                    <p id="countryDetails_18"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <h3 class="graph-title">Score per measurement [-1,1], where 1 is most favorable.</h3>
+                        <div class="porter-five-forces"></div>
+                        <div class="scores">
+                            <p class="average-score"></p>
+                            <p class="weighted-score"></p>
+                        </div>
+                        <p class="graph-method-description"> Due to methodological differences in how economic, political, and/or shipping measurements are evaluated, I standardized each metric based on a -1 to 1 score range. There is an average score and a weighted score. The weighted score can be considered more "realistic" but also more dependent on the industry of each company. Whereas the average score is less realistic, but doesn't discriminate between industries. See how the scores were calculated <a a href="{{ url_for('data') }}">here.</a> </p>
+                    </div>    
+                </div>    
+                <div class="modal-footer">
+                    <a class="country-link">
+                        Network Analysis
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+*/

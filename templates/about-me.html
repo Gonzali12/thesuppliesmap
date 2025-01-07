@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} About Me {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about-me-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<h2 id="description-title">About me</h2>
+<hr/>
+<div class="text-block">
+    <p id="personal-description">
+        When we see potholes on the road, filled with water, consequence of a heavy rainfall, do we say that it’s an act of extreme chance that the pothole was specifically made for storing ‘x’ amount of water in that given moment? <br/><br/> No? <br/><br/> Then, why do we say that the chances of you existing in the universe are statistically impossible? <br/><br/> Was the universe, in its entirety, designed for us, or are we just a consequence of it? <br/><br/> You might be asking yourself, “Why the random existential crisis?” Well, the first thing you should know about me is that I am an existentialist—I believe there is no meaning in anything we do beyond the meaning we give it. And what’s the meaning I’m giving to this introduction, website, and project? Through this website and the rest of my projects, I create myself and live accordingly. Which, according to me, is the optimal way to live—living according to oneself and for one's own benefit. <br/><br/> My name is Gonzalo Carpio-Rivero Sousa. I was born in Varese, Italy, and have lived for 18 years in Lima, Peru. I speak fluent English and Spanish. I am 18-years-old. <br/><br/> Some of my favorite reads include "1984", Dovsteyeski’s “Crime and Punishment”, and "Atlas Shrugged," and I have a particular fondness for films that challenge the status quo, and display man as an heroic, highly complex figure, like in the Star Wars prequels and original titles, the Batman trilogy, Interstellar, and The Matrix. My favorite color is wine red. <br/><br/> What distinguishes me? My extremely high openness to experience: my thought processes are highly intuitive, which significantly aids my natural talent for design and my ability to influence others through emotional resonance, and despite my leanings towards the humanities, where my creativity truly shines, I’ve also cultivated a robust competency in STEM fields, ensuring I stay versatile and adaptable. <br/><br/> I’m an introvert, but not in your stereotypical way—I'm highly social, outgoing, and have a keen capacity for understanding others’ emotions. Perhaps it was a curse, but the other thing that sets me apart is my unrealistic ambitions. <br/><br/> I cannot sit still, and have to always be moving towards a supreme goal. Most of the time, I know I’ll fail to reach the goal, but I’m addicted to the thrill of a titanic journey and can’t help myself. On that note, I dream of someday leading as the chief designer and CEO of one of the world's foremost companies, revolutionizing urban infrastructure and trade with projects like maglev highways and maglev in-land container transportation systems, suburban planning through dome houses, and VTOL electric cars with PE to KE conversion mechanisms. <br/><br/> I’m currently honing my skills at Purdue University, where I study industrial engineering with a minor in computer science. <br/><br/> As you can probably already tell, my interests are as broad as they are deep, spanning literature, philosophy, physics, and more. <br/><br/> About computer science... <br/><br/> I am kind of just getting started. I learned some Python when I was 14, but only started getting serious in 2024. I’ve been developing my CS knowledge and programming skills for about six months now, and this is my first great project. I’m proficient in C, Python, CSS, SQL, and HTML. I’m learning JavaScript right now, and I must say I hate this language—the syntax is just the worst. <br/><br/> Anyways, this is me I guess.
+    </p>
+</div>
+<div class="images">
+    <div class="portrait-block" id="portrait-block-id">
+        <img src="{{ url_for('static', filename='img/about-me/me.jpeg') }}" id="me-img" alt="Gonzalo Carpio-Rivero" height="200">
+        <p id="portrait-description">Gonzalo Carpio-Rivero Sousa</p>
+    </div>
+    <div class="desk-block">
+        <img src="{{ url_for('static', filename='img/about-me/desk.jpg') }}" id="desk-img" alt="desk" height="1000">
+        <p id="desk-description">One's desk tells a lot about one's self</p>
+    </div>
+</div>
+<h2 id="quote">Do not let your fire go out, spark by irreplaceable spark in the hopeless swamps of the not-quite, the not-yet, and the not-at-all. Do not let the hero in your soul perish in lonely frustration for the life you deserved and have never been able to reach. The world you desire can be won. It exists.. it is real.. it is possible.. it's yours. <br/><br/> ― Ayn Rand, Atlas Shrugged</h2>
+<br/>
+<div class="video-container">
+    <video controls id="window-video">
+        <source src="{{ url_for('static', filename='video/about-me/about-me-english.mp4') }}">
+        Your video could not start playing
+    </video>
+</div>
+<br>
+{% endblock %}

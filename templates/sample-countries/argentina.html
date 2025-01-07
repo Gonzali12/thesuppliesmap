@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block title %}Argentina{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Argentina</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/argentina-flag.png') }}" alt="argentina flag">
+</div>
+<hr/>
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Argentina, a vibrant country located in South America, boasts a population of approximately 45.38 million people. Classified as a More Economically Developed Country (MEDC), it has a Human Development Index (HDI) of 0.845, reflecting its relatively high standard of living and educational attainment. <br><br> Covering a vast geographical area of 2,780,400 square kilometers, Argentina is known for its diverse landscapes ranging from the Andes mountains to the fertile Pampas plains. <br><br> The current president, Javier Milei, leads the nation with a political stance that is far right, focusing on conservative social policies and libertarian economic reforms aimed at addressing the country’s economic challenges. <br><br> Argentina's rich cultural heritage, strong emphasis on education, and significant natural resources make it an influential player in the region.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <div class="country-metada">
+            <h3 class="etf-title">Argentina's Investment Risk Analysis</h3>
+            <a id="finhub-data-1" href="https://finnhub.io/"></a>
+            <a id="finhub-data-2" href="https://finnhub.io/"></a>
+            <p id="country-metada-description">
+                A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+                The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+            </p>
+        </div>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distrbution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">The logistics market in Argentina is projected to grow significantly, with an estimated market size of USD 26.64 billion in 2024, expected to reach USD 36.62 billion by 2030. This growth is driven by increasing international trade, infrastructure development, and the rise of e-commerce​ <a href="https://www.mordorintelligence.com/industry-reports/argentina-freight-logistics-market-study/market-size">(Mordor Intelligence)​​.</a></p>
+
+        <h1>The biggest logistics companies in Argentina are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TASA Logística</h5> 
+                    <p class="card-text">TASA Logística is a leading logistics company in Latin America, providing comprehensive supply chain solutions. The company specializes in warehousing, distribution, and transportation services, catering to various industries such as automotive, retail, and food & beverage.</p>
+                    <div class="specialty">Specialty: Warehousing & Distribution</div>
+                    <a href="https://www.tasalogistica.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Express</h5> 
+                    <p class="card-text">DHL Express is a global leader in express shipping and logistics, known for its fast and reliable delivery services across more than 220 countries and territories. The company offers a range of services including international express deliveries, freight forwarding, and supply chain management.</p>
+                    <div class="specialty">Specialty: Express Shipping</div>
+                    <a href="https://www.dhl.com/ar-en/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">MAERSK</h5> 
+                    <p class="card-text">MAERSK is the world's largest container shipping company, providing end-to-end logistics solutions. The company operates in over 130 countries, offering ocean and inland freight transportation, supply chain management, and port services. MAERSK is known for its extensive global network and commitment to sustainability.</p>
+                    <div class="specialty">Specialty: Container Shipping</div>
+                    <a href="https://www.maersk.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Kuehne + Nagel</h5> 
+                    <p class="card-text">Kuehne + Nagel is a leading global logistics provider, specializing in airfreight, seafreight, contract logistics, and overland transportation. With a strong presence in over 100 countries, the company is renowned for its innovative logistics solutions and industry expertise.</p>
+                    <div class="specialty">Specialty: Air & Sea Freight</div>
+                    <a href="https://home.kuehne-nagel.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DSV A/S</h5> 
+                    <p class="card-text">DSV A/S is a Danish transport and logistics company, offering services in road, air, and sea transport, as well as warehousing and logistics solutions. Operating in over 90 countries, DSV is known for its customer-centric approach and efficient supply chain management.</p>
+                    <div class="specialty">Specialty: Supply Chain Management</div>
+                    <a href="https://www.dsv.com/en/ar" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Argentina are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Arcor Group</h5> 
+                    <p class="card-text">Arcor Group is one of the largest food manufacturing companies in Argentina, specializing in confectionery, food products, and packaging. The company operates globally, known for its extensive portfolio of consumer goods.</p>
+                    <div class="specialty">Specialty: Food Manufacturing</div>
+                    <a href="https://www.arcor.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Techint Group</h5> 
+                    <p class="card-text">Techint Group is an industrial conglomerate in Argentina, primarily involved in steel production, engineering, and construction. The company is a global leader in its field, with operations in more than 45 countries.</p>
+                    <div class="specialty">Specialty: Steel Production & Engineering</div>
+                    <a href="https://www.techint.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Aluar</h5> 
+                    <p class="card-text">Aluar is the largest aluminum producer in Argentina, specializing in the production of primary aluminum and value-added aluminum products. The company serves a wide range of industries, including automotive and construction.</p>
+                    <div class="specialty">Specialty: Aluminum Production</div>
+                    <a href="https://www.aluar.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Molinos Río de la Plata</h5> 
+                    <p class="card-text">Molinos Río de la Plata is a leading food company in Argentina, producing and distributing a wide range of food products including pasta, rice, and cooking oils. The company is well-known for its quality and innovation in the food industry.</p>
+                    <div class="specialty">Specialty: Food Production</div>
+                    <a href="https://www.molinos.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Siderar</h5> 
+                    <p class="card-text">Siderar, part of the Ternium Group, is a major steel manufacturer in Argentina, specializing in the production of flat and long steel products for a variety of industries, including automotive, construction, and energy.</p>
+                    <div class="specialty">Specialty: Steel Manufacturing</div>
+                    <a href="https://www.ternium.com/en/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Argentina are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Agulla & Baccetti</h5> 
+                    <p class="card-text">Agulla & Baccetti is one of Argentina's most prominent advertising agencies, specializing in creative campaigns and brand strategy. The agency is known for its innovative and impactful marketing solutions.</p>
+                    <div class="specialty">Specialty: Creative Advertising</div>
+                    <a href="https://www.agulla.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">La Comunidad</h5> 
+                    <p class="card-text">La Comunidad is a globally recognized marketing agency based in Argentina, specializing in multicultural and cross-cultural marketing. The agency is known for its expertise in creating campaigns that resonate across diverse audiences.</p>
+                    <div class="specialty">Specialty: Multicultural Marketing</div>
+                    <a href="https://www.lacomunidad.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Don</h5> 
+                    <p class="card-text">Don is a leading digital marketing agency in Argentina, specializing in digital strategy, social media management, and content creation. The agency has a strong reputation for delivering effective online marketing campaigns.</p>
+                    <div class="specialty">Specialty: Digital Marketing</div>
+                    <a href="https://don.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grey Argentina</h5> 
+                    <p class="card-text">Grey Argentina is part of the global Grey Group, offering comprehensive marketing services including brand management, advertising, and digital marketing. The agency is known for its creativity and strategic approach to brand communication.</p>
+                    <div class="specialty">Specialty: Brand Management</div>
+                    <a href="https://www.grey.com/argentina" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">McCann Buenos Aires</h5> 
+                    <p class="card-text">McCann Buenos Aires is a top advertising agency in Argentina, offering integrated marketing services. The agency specializes in creating memorable and effective campaigns across various media channels.</p>
+                    <div class="specialty">Specialty: Integrated Marketing</div>
+                    <a href="https://www.mccann.com/buenos-aires" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Argentina are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Galicia</h5> 
+                    <p class="card-text">Banco Galicia is one of the largest private sector banks in Argentina, offering a wide range of financial services including retail banking, corporate banking, and wealth management. The bank is known for its innovative financial products and services.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bancogalicia.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BBVA Argentina</h5> 
+                    <p class="card-text">BBVA Argentina, a subsidiary of the BBVA Group, is a major financial institution in Argentina, specializing in retail banking, investment banking, and insurance services. The bank is known for its strong focus on customer experience and digital banking solutions.</p>
+                    <div class="specialty">Specialty: Retail & Investment Banking</div>
+                    <a href="https://www.bbva.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Santander Río</h5> 
+                    <p class="card-text">Banco Santander Río is the largest private bank in Argentina, offering a comprehensive range of financial services including personal banking, corporate banking, and asset management. The bank is recognized for its robust financial network and customer-centric services.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.santander.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Macro</h5> 
+                    <p class="card-text">Banco Macro is a leading financial institution in Argentina, specializing in banking services for small and medium-sized enterprises (SMEs), retail customers, and agricultural clients. The bank is known for its extensive branch network and commitment to regional development.</p>
+                    <div class="specialty">Specialty: SME & Retail Banking</div>
+                    <a href="https://www.macro.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Ciudad</h5> 
+                    <p class="card-text">Banco Ciudad is a public bank in Argentina, known for its social impact and financial inclusion initiatives. The bank offers a range of services including personal loans, mortgages, and investment products, with a focus on serving the community.</p>
+                    <div class="specialty">Specialty: Social Impact Banking</div>
+                    <a href="https://www.bancociudad.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Argentina are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">IRSA</h5> 
+                    <p class="card-text">IRSA (Inversiones y Representaciones Sociedad Anónima) is the largest real estate company in Argentina, specializing in the development and management of commercial properties including shopping malls, office buildings, and residential complexes.</p>
+                    <div class="specialty">Specialty: Commercial Real Estate</div>
+                    <a href="https://www.irsa.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Consultatio</h5> 
+                    <p class="card-text">Consultatio is a leading real estate development company in Argentina, known for its high-end residential and commercial projects. The company focuses on creating luxury properties in prime locations.</p>
+                    <div class="specialty">Specialty: Luxury Real Estate Development</div>
+                    <a href="http://www.consultatio.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cresud</h5> 
+                    <p class="card-text">Cresud is a diversified real estate company in Argentina, specializing in agricultural land management and urban real estate development. The company is recognized for its extensive portfolio of rural and urban properties.</p>
+                    <div class="specialty">Specialty: Agricultural & Urban Real Estate</div>
+                    <a href="https://www.cresud.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">TGLT</h5> 
+                    <p class="card-text">TGLT is a prominent real estate development company in Argentina, specializing in the construction and management of residential and commercial properties. The company is known for its innovative architectural designs and sustainable development practices.</p>
+                    <div class="specialty">Specialty: Sustainable Real Estate Development</div>
+                    <a href="https://www.tglt.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Monarca</h5> 
+                    <p class="card-text">Grupo Monarca is a leading real estate company in Argentina, focusing on residential developments and urban planning. The company is known for its quality construction and commitment to building vibrant communities.</p>
+                    <div class="specialty">Specialty: Residential Real Estate Development</div>
+                    <a href="https://www.grupomonarca.com.ar/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}

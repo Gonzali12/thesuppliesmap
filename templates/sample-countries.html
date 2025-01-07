@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+
+{% block title %} Sample countries {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sample-countries-style.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="country-cards">
+    <!--Argentina-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/argentina-flag.png') }}" class="card-img-top" alt="argentina flag">
+        <div class="card-body">
+        <h5 class="card-title">Argentina</h5> 
+        <p class="card-text">Argentina is a middle income country in South America. It has a population of 46.3 million and a GDP of 631.1 billion USD.</p>
+        <a href="{{ url_for('Argentina') }}" class="btn btn-primary">See Argentina's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Bolivia-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/bolivia-flag.png') }}" class="card-img-top" alt="bolivia flag">
+        <div class="card-body">
+        <h5 class="card-title">Bolivia</h5>
+        <p class="card-text">Bolivia is a lower middle income country in South America. It has a population of 11.6 million and a GDP of 40.3 billion USD.</p>
+        <a href="{{ url_for('Bolivia') }}" class="btn btn-primary">See Bolivia's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Brazil-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/brazil-flag.webp') }}" class="card-img-top" alt="brazil flag">
+        <div class="card-body">
+        <h5 class="card-title">Brazil</h5>
+        <p class="card-text">Brazil is an upper middle income country in South America. It has a population of 212.6 million and a GDP of 1.8 trillion USD.</p>
+        <a href="{{ url_for('Brazil') }}" class="btn btn-primary">See Brazil's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Canada-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/canada-flag.png') }}" class="card-img-top" alt="canada flag">
+        <div class="card-body">
+        <h5 class="card-title">Canada</h5>
+        <p class="card-text">Canada is a high income country in North America. It has a population of 38 million and a GDP of 1.7 trillion USD.</p>
+        <a href="{{ url_for('Canada') }}" class="btn btn-primary">See Canada's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Chile-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/chile-flag.png') }}" class="card-img-top" alt="chile flag">
+        <div class="card-body">
+        <h5 class="card-title">Chile</h5>
+        <p class="card-text">Chile is a high income country in South America. It has a population of 19.1 million and a GDP of 299.3 billion USD.</p>
+        <a href="{{ url_for('Chile') }}" class="btn btn-primary">See Chile's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--China-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/china-flag.png') }}" class="card-img-top" alt="china flag">
+        <div class="card-body">
+        <h5 class="card-title">China</h5>
+        <p class="card-text">China is an upper middle income country in Asia. It has a population of 1.4 billion and a GDP of 14.7 trillion USD.</p>
+        <a href="{{ url_for('China') }}" class="btn btn-primary">See China's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Colombia-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/colombia-flag.png') }}" class="card-img-top" alt="colombia flag">
+        <div class="card-body">
+        <h5 class="card-title">Colombia</h5>
+        <p class="card-text">Colombia is an upper middle income country in South America. It has a population of 50.3 million and a GDP of 351.7 billion USD.</p>
+        <a href="{{ url_for('Colombia') }}" class="btn btn-primary">See Colombia's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Ecuador-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/ecuador-flag.png') }}" class="card-img-top" alt="ecuador flag">
+        <div class="card-body">
+        <h5 class="card-title">Ecuador</h5>
+        <p class="card-text">Ecuador is an upper middle income country in South America. It has a population of 17.6 million and a GDP of 108.4 billion USD.</p>
+        <a href="{{ url_for('Ecuador') }}" class="btn btn-primary">See Ecuador's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--France-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/france-flag.png') }}" class="card-img-top" alt="france flag">
+        <div class="card-body">
+        <h5 class="card-title">France</h5>
+        <p class="card-text">France is a high income country in Europe. It has a population of 67.1 million and a GDP of 2.6 trillion USD.</p>
+        <a href="{{ url_for('France') }}" class="btn btn-primary">See France's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Germany-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/germany-flag.png') }}" class="card-img-top" alt="germany flag">
+        <div class="card-body">
+        <h5 class="card-title">Germany</h5>
+        <p class="card-text">Germany is a high income country in Europe. It has a population of 83.2 million and a GDP of 3.8 trillion USD.</p>
+        <a href="{{ url_for('Germany') }}" class="btn btn-primary">See Germany's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--India-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/india-flag.png') }}" class="card-img-top" alt="india flag">
+        <div class="card-body">
+        <h5 class="card-title">India</h5>
+        <p class="card-text">India is a lower middle income country in Asia. It has a population of 1.4 billion and a GDP of 2.9 trillion USD.</p>
+        <a href="{{ url_for('India') }}" class="btn btn-primary">See India's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Indonesia-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/indonesia-flag.png') }}" class="card-img-top" alt="indonesia flag">
+        <div class="card-body">
+        <h5 class="card-title">Indonesia</h5>
+        <p class="card-text">Indonesia is an upper middle income country in Asia. It has a population of 273.5 million and a GDP of 1.1 trillion USD.</p>
+        <a href="{{ url_for('Indonesia') }}" class="btn btn-primary">See Indonesia's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Italy-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/italy-flag.png') }}" class="card-img-top" alt="italy flag">
+        <div class="card-body">
+        <h5 class="card-title">Italy</h5>
+        <p class="card-text">Italy is a high income country in Europe. It has a population of 59.6 million and a GDP of 2.1 trillion USD.</p>
+        <a href="{{ url_for('Italy') }}" class="btn btn-primary">See Italy's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Mexico-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/mexico-flag.png') }}" class="card-img-top" alt="mexico flag">
+        <div class="card-body">
+        <h5 class="card-title">Mexico</h5>
+        <p class="card-text">Mexico is an upper middle income country in North America. It has a population of 126.2 million and a GDP of 1.1 trillion USD.</p>
+        <a href="{{ url_for('Mexico') }}" class="btn btn-primary">See Mexico's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Paraguay-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/paraguay-flag.png') }}" class="card-img-top" alt="paraguay flag">
+        <div class="card-body">
+        <h5 class="card-title">Paraguay</h5>
+        <p class="card-text">Paraguay is a lower middle income country in South America. It has a population of 7.1 million and a GDP of 37.6 billion USD.</p>
+        <a href="{{ url_for('Paraguay') }}" class="btn btn-primary">See Paraguay's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Peru-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/peru-flag.png') }}" class="card-img-top" alt="peru flag">
+        <div class="card-body">
+        <h5 class="card-title">Peru</h5>
+        <p class="card-text">Peru is an upper middle income country in South America. It has a population of 33 million and a GDP of 226.8 billion USD.</p>
+        <a href="{{ url_for('Peru') }}" class="btn btn-primary">See Peru's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Philippines-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/philippines-flag.png') }}" class="card-img-top" alt="philippines flag">
+        <div class="card-body">
+        <h5 class="card-title">Philippines</h5>
+        <p class="card-text">The Philippines is a lower middle income country in Asia. It has a population of 109.6 million and a GDP of 361.5 billion USD.</p>
+        <a href="{{ url_for('Philippines') }}" class="btn btn-primary">See Philippines' Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Portugal-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/portugal-flag.png') }}" class="card-img-top" alt="portugal flag">
+        <div class="card-body">
+        <h5 class="card-title">Portugal</h5>
+        <p class="card-text">Portugal is a high income country in Europe. It has a population of 10.3 million and a GDP of 237.2 billion USD.</p>
+        <a href="{{ url_for('Portugal') }}" class="btn btn-primary">See Portugal's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Russia-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/russia-flag.png') }}" class="card-img-top" alt="russia flag">
+        <div class="card-body">
+        <h5 class="card-title">Russia</h5>
+        <p class="card-text">Russia is an upper middle income country in Europe. It has a population of 144.1 million and a GDP of 1.7 trillion USD.</p>
+        <a href="{{ url_for('Russia') }}" class="btn btn-primary">See Russia's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Spain-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/spain-flag.png') }}" class="card-img-top" alt="spain flag">
+        <div class="card-body">
+        <h5 class="card-title">Spain</h5>
+        <p class="card-text">Spain is a high income country in Europe. It has a population of 47.4 million and a GDP of 1.4 trillion USD.</p>
+        <a href="{{ url_for('Spain') }}" class="btn btn-primary">See Spain's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--United Kingdom-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/united-kingdom-flag.png') }}" class="card-img-top" alt="united kingdom flag">
+        <div class="card-body">
+        <h5 class="card-title">United Kingdom</h5>
+        <p class="card-text">The United Kingdom is a high income country in Europe. It has a population of 67.2 million and a GDP of 2.8 trillion USD.</p>
+        <a href="{{ url_for('United_Kingdom') }}" class="btn btn-primary">See United Kingdom's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Uruguay-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/uruguay-flag.png') }}" class="card-img-top" alt="uruguay flag">
+        <div class="card-body">
+        <h5 class="card-title">Uruguay</h5>
+        <p class="card-text">Uruguay is a high income country in South America. It has a population of 3.5 million and a GDP of 56.2 billion USD.</p>
+        <a href="{{ url_for('Uruguay') }}" class="btn btn-primary">See Uruguay's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--United States of America-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/united-states-of-america-flag.png') }}" class="card-img-top" alt="united states of america flag">
+        <div class="card-body">
+        <h5 class="card-title">United States of America</h5>
+        <p class="card-text">The United States of America is a high income country in North America. It has a population of 331.4 million and a GDP of 21.4 trillion USD.</p>
+        <a href="{{ url_for('United_States_of_America') }}" class="btn btn-primary">See United States of America's Network Analysis</a>
+        </div>
+    </div>
+
+    <!--Vietnam-->
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/sample-countries/vietnam-flag.png') }}" class="card-img-top" alt="vietnam flag">
+        <div class="card-body">
+        <h5 class="card-title">Vietnam</h5>
+        <p class="card-text">Vietnam is a lower middle income country in Asia. It has a population of 96.5 million and a GDP of 340.6 billion USD.</p>
+        <a href="{{ url_for('Vietnam') }}" class="btn btn-primary">See Vietnam's Network Analysis</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

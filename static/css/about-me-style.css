@@ -1,0 +1,178 @@
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#description-title{
+    font-size: 30px;
+    margin: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+.text-block{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.portrait-block, .desk-block{
+    height: fit-content;
+    text-align: center;
+}
+
+#me-img, #desk-img{
+    border-radius: 10%;
+    height: 400px;
+}
+
+#quote{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+}
+
+#window-video{
+    height: 500px;
+    width: auto;
+}
+
+@media (max-width: 1600px) {
+    .text-image {
+        width: 65%;
+    }
+}
+
+@media(max-width: 1400px){
+    .text-image {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-block {
+        width: 40%;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1080px) {
+    #description-title {
+        font-size: 25px;
+    }
+
+    #quote{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (max-width: 900px) {
+    #description-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 888px) {
+    #window-video{
+        height: 300px;
+        width: auto;
+    }   
+}
+
+@media (max-width: 720px) {
+    .text-block {
+        width: 60%;
+    }
+
+    #description-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header-title{
+        display: block;
+    }
+
+    #quote{
+        font-size: 15px;
+        margin-top: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 675px){
+    #me-img, #desk-img{
+        height: 300px;
+    }
+
+    #portrait-description, #desk-description{
+        font-size: 12px;
+    }
+
+    .images {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px){
+    #quote{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (max-width: 533px) {
+    #window-video{
+        height: 200px;
+        width: auto;
+    }   
+}
+
+@media(max-width: 490px){
+    #description-title {
+        font-size: 20px;
+    }
+
+    #me-img, #desk-img{
+        height: 250px;
+    }
+
+    #portrait-description, #desk-description{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 465px){
+    #quote{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+
+
+
+

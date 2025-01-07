@@ -1,0 +1,306 @@
+{% extends "base.html" %}
+
+{% block title %} Bolivia {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/country-style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="country-title">
+    <h2>Bolivia</h2>
+    <img class="country-flag" src="{{ url_for('static', filename='img/sample-countries/bolivia-flag.png  ') }}" alt="bolivia flag">
+</div>
+<hr/> 
+<div class="introduction-box">
+    <div class="introduction-container">
+        <h3>Introduction</h3>
+        <p class="introduction-paragraph"> 
+            Bolivia, a country nestled in the heart of South America, is home to approximately 11.67 million people. It is classified as a Less Economically Developed Country (LEDC) with a Human Development Index (HDI) of 0.718, indicating moderate levels of income, health, and education. <br><br>The nation spans a geographical area of 1,098,581 square kilometers, characterized by diverse terrains including the Andes mountains, the Amazon rainforest, and the Altiplano plateau. <br><br>Bolivia is currently led by President Luis Arce, who is politically aligned with the left, focusing on social inclusion and economic policies aimed at reducing poverty and inequality. <br><br>Known for its rich indigenous heritage and cultural diversity, Bolivia also has significant natural gas and mineral resources, which play a crucial role in its economy.
+        </p>
+    </div>
+    <div class="graph">
+        <h3 class="graph-title">Score per measurement</h3>
+        <div class="porter-five-forces"></div>
+        <p class="mobile-announcement"></p>
+        <p class="average-score"></p>
+        <p class="graph-method-description">This is the score per measurement graph (num. of standard deviations from the mean). I calculated the standard deviation and mean for each measurement, and then found the number of standard deviations from the mean for each country, taking these as scores. In the case of non-normal distributions, I applied log transformations for every data point. In the case where lower scores were desirable (such as in taxes), I inverted the sign. </p>
+    </div>
+    <div class="country-metada">
+        <h3 class="etf-title">Bolivia's Investment Risk Analysis</h3>
+        <a id="finhub-data-1" href="https://finnhub.io/"></a>
+        <a id="finhub-data-2" href="https://finnhub.io/"></a>
+        <p id="country-metada-description">
+            A credit rating measures the ability of a country or entity to repay debt, assigned by agencies like Moody’s, S&P, or Fitch. Ratings range from high-grade investment ratings (e.g., AAA, A1) indicating low risk, to speculative or junk ratings (e.g., B, C) signaling high risk and potential default. A1 is a high-grade rating, reflecting strong financial stability, but external factors like economic shifts or geopolitical risks can still impact performance.<br><br>
+            The equity risk premium (ERP) is the extra return investors expect from stocks compared to risk-free assets like government bonds. For example, an ERP of 5.63% suggests equities are perceived as moderately risky, offering higher potential returns to compensate for volatility and uncertainty. A higher ERP indicates greater risk, while a lower ERP reflects market confidence.
+        </p>
+    </div>
+</div>
+<hr/>
+{% include "sample-countries/indicators.html" %}
+<hr/>
+<div class="first-row">
+    <div class="distribution">
+        <h3>Distribution Networks...</h3>
+        <p class="network-description">The logistics market in Bolivia is growing steadily, driven by the increase in international trade, infrastructure improvements, and the rise of e-commerce.</p>
+
+        <h1>The biggest logistics companies in Bolivia are:</h1>            
+
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte Castro</h5> 
+                    <p class="card-text">Transporte Castro is one of the leading logistics and transportation companies in Bolivia, specializing in freight and cargo services across the country and internationally.</p>
+                    <div class="specialty">Specialty: Freight & Cargo Services</div>
+                    <a href="https://www.transporte-castro.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DHL Bolivia</h5> 
+                    <p class="card-text">DHL Bolivia, part of the global DHL Express network, specializes in express shipping, logistics, and supply chain management, providing fast and reliable delivery services nationwide and internationally.</p>
+                    <div class="specialty">Specialty: Express Shipping</div>
+                    <a href="https://www.dhl.com/bo-es/home.html" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Maersk Bolivia</h5> 
+                    <p class="card-text">Maersk Bolivia offers end-to-end logistics solutions, including ocean and inland freight transportation. The company is a major player in container shipping and supply chain management in the region.</p>
+                    <div class="specialty">Specialty: Container Shipping</div>
+                    <a href="https://www.maersk.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Kuehne + Nagel Bolivia</h5> 
+                    <p class="card-text">Kuehne + Nagel Bolivia is a leader in global logistics, offering services in airfreight, seafreight, and contract logistics. The company is well-known for its innovative solutions and strong presence in the Bolivian market.</p>
+                    <div class="specialty">Specialty: Air & Sea Freight</div>
+                    <a href="https://home.kuehne-nagel.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">DSV Bolivia</h5> 
+                    <p class="card-text">DSV Bolivia is part of the global DSV network, offering comprehensive logistics services, including road, air, and sea transport, as well as supply chain management and warehousing solutions.</p>
+                    <div class="specialty">Specialty: Supply Chain Management</div>
+                    <a href="https://www.dsv.com/en/bo" class="btn btn-primary">See Company</a>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="manufacturing">
+        <h3>Manufacturing Networks...</h3>
+        <h1>The biggest manufacturing companies in Bolivia are:</h1>
+        
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sociedad Boliviana de Cemento (SOBOCE)</h5> 
+                    <p class="card-text">SOBOCE is one of the largest manufacturing companies in Bolivia, specializing in cement production. The company plays a crucial role in the construction industry, providing high-quality cement and related products.</p>
+                    <div class="specialty">Specialty: Cement Production</div>
+                    <a href="https://www.soboce.com/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cervecería Boliviana Nacional (CBN)</h5> 
+                    <p class="card-text">CBN is Bolivia’s leading beverage manufacturing company, known for producing popular beer brands. The company has a strong presence in the market and is recognized for its quality and innovation.</p>
+                    <div class="specialty">Specialty: Beverage Manufacturing</div>
+                    <a href="https://www.cbn.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Industrias Venado</h5> 
+                    <p class="card-text">Industrias Venado is a major food manufacturing company in Bolivia, producing a wide range of products including canned goods, sauces, and condiments. The company is known for its high standards of quality and wide distribution network.</p>
+                    <div class="specialty">Specialty: Food Manufacturing</div>
+                    <a href="http://www.venado.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Siderúrgica del Mutún</h5> 
+                    <p class="card-text">Siderúrgica del Mutún is a state-owned steel manufacturing company in Bolivia, focusing on the production of iron and steel products. The company is a cornerstone of Bolivia’s industrial sector.</p>
+                    <div class="specialty">Specialty: Steel Manufacturing</div>
+                    <a href="https://www.ebicaval.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Quimica Ltda.</h5> 
+                    <p class="card-text">Quimica Ltda. is a leading manufacturer of chemical products in Bolivia, catering to various industries including agriculture, mining, and manufacturing. The company is known for its innovation and quality in chemical manufacturing.</p>
+                    <div class="specialty">Specialty: Chemical Manufacturing</div>
+                    <a href="https://www.quimicaltda.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+    <div class="marketing">
+        <h3>Marketing Networks...</h3>
+        <h1>The biggest marketing companies in Bolivia are:</h1>            
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Agencia BIG BANG Comunicación</h5> 
+                    <p class="card-text">Agencia BIG BANG Comunicación is one of the most prominent advertising agencies in Bolivia, specializing in creative campaigns and brand strategy. The agency is known for its innovative and impactful marketing solutions.</p>
+                    <div class="specialty">Specialty: Creative Advertising</div>
+                    <a href="https://www.bigbangcomunicacion.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Agencia DMG</h5> 
+                    <p class="card-text">Agencia DMG is a leading digital marketing agency in Bolivia, specializing in digital strategy, social media management, and content creation. The agency has a strong reputation for delivering effective online marketing campaigns.</p>
+                    <div class="specialty">Specialty: Digital Marketing</div>
+                    <a href="https://www.agenciadmg.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Impacto Publicidad</h5> 
+                    <p class="card-text">Impacto Publicidad is well-known for its traditional and digital marketing solutions in Bolivia. The company offers comprehensive services including media buying, branding, and content marketing.</p>
+                    <div class="specialty">Specialty: Integrated Marketing</div>
+                    <a href="https://www.impactopublicidad.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Kreab Bolivia</h5> 
+                    <p class="card-text">Kreab Bolivia is part of the global Kreab network, focusing on strategic communications and public affairs. The company is a key player in managing complex communication challenges and building brand reputation.</p>
+                    <div class="specialty">Specialty: Strategic Communications</div>
+                    <a href="https://www.kreab.com/bolivia/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Industrias de Aceite S.A. (FINO)</h5> 
+                    <p class="card-text">Industrias de Aceite S.A. (FINO) is a leader in the food manufacturing sector in Bolivia, with a strong marketing division that promotes its wide range of edible oils and food products.</p>
+                    <div class="specialty">Specialty: Food Product Marketing</div>
+                    <a href="https://www.fino.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="second-row">
+    <div class="finance">
+        <h3>Finance Networks...</h3>
+        <h1>The biggest finance/banking companies in Bolivia are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Nacional de Bolivia (BNB)</h5> 
+                    <p class="card-text">Banco Nacional de Bolivia (BNB) is one of the oldest and largest banks in Bolivia, offering a wide range of financial services including retail banking, corporate banking, and wealth management.</p>
+                    <div class="specialty">Specialty: Retail & Corporate Banking</div>
+                    <a href="https://www.bnb.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Mercantil Santa Cruz</h5> 
+                    <p class="card-text">Banco Mercantil Santa Cruz is a leading financial institution in Bolivia, offering a comprehensive range of financial services including personal banking, corporate banking, and asset management.</p>
+                    <div class="specialty">Specialty: Personal & Corporate Banking</div>
+                    <a href="https://www.bmsc.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banco Unión</h5> 
+                    <p class="card-text">Banco Unión is a state-owned bank in Bolivia and one of the largest in the country, providing a wide array of financial services with a focus on social impact and financial inclusion.</p>
+                    <div class="specialty">Specialty: Social Impact Banking</div>
+                    <a href="https://www.bancounion.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">BancoSol</h5> 
+                    <p class="card-text">BancoSol is the leader in microfinance in Bolivia, offering financial services specifically designed for small and medium-sized enterprises (SMEs) and low-income individuals.</p>
+                    <div class="specialty">Specialty: Microfinance</div>
+                    <a href="https://www.bancosol.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">FIE Gran Poder</h5> 
+                    <p class="card-text">FIE Gran Poder is a prominent player in Bolivia's microfinance sector, offering a range of financial products tailored to meet the needs of micro and small businesses, as well as individuals in low-income brackets.</p>
+                    <div class="specialty">Specialty: Microfinance & SME Banking</div>
+                    <a href="https://www.fie.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>    
+    </div>    
+
+    <div class="real-estate">
+        <h3>Real Estate...</h3>
+        <h1>The biggest real estate companies in Bolivia are:</h1>
+    
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Las Lomas Real Estate</h5> 
+                    <p class="card-text">Las Lomas Real Estate is a leading real estate development company in Bolivia, known for its high-quality residential and commercial projects.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate</div>
+                    <a href="https://www.laslomas.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Urbaplan</h5> 
+                    <p class="card-text">Urbaplan is a major real estate and construction company in Bolivia, specializing in large-scale urban development projects. The company is known for its innovative approach to urban planning and development.</p>
+                    <div class="specialty">Specialty: Urban Development</div>
+                    <a href="https://www.urbaplan.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">PROVALOR</h5> 
+                    <p class="card-text">PROVALOR is a leading real estate development company in Bolivia, focused on high-end residential and commercial projects. The company is recognized for its quality construction and luxury properties.</p>
+                    <div class="specialty">Specialty: High-End Real Estate Development</div>
+                    <a href="https://www.provalor.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grupo Forza</h5> 
+                    <p class="card-text">Grupo Forza is known for its large-scale residential and commercial real estate projects in Bolivia, with a strong reputation for quality and innovation in the construction industry.</p>
+                    <div class="specialty">Specialty: Residential & Commercial Real Estate</div>
+                    <a href="https://www.grupoforza.com.bo/" class="btn btn-primary">See Company</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="{{ url_for('static', filename='js/mappopup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/receive-final-list.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stock-exchange-data.js') }}"></script>
+
+{% endblock %}
