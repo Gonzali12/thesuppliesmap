@@ -1,13 +1,26 @@
+# Node.js dependencies
 node_modules
 
+# Python virtual environments
 .venv
-.vscode
 venv
 
+# Editor settings
+.vscode
+.idea/
+
+# Environment and configuration files
 .env
 config.js
 
+# Compiled Python files
 __pycache__/
 
+# Logs and temporary files
 *.log
 *.tmp
+logs
+
+# OS-specific files
+.DS_Store
+Thumbs.db
