@@ -6,10 +6,6 @@ import os
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-app.config['ENV'] = 'production'
-app.config['DEBUG'] = False
-app.config['TESTING'] = False
-
 country_metadata = []
 
 # CPI YoY var values from IMF
