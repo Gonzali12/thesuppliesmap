@@ -1,7 +1,11 @@
 node_modules
 
-.venv/
-venv/
+.venv
+.vscode
+venv
+
+.env
+config.js
 
 __pycache__/
 

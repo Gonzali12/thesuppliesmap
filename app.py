@@ -1,9 +1,16 @@
 from flask import Flask, request, render_template, send_from_directory, url_for, jsonify
 import json
 from flask_cors import CORS
+import os
+
+from waitress import serve
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
+
+app.config['ENV'] = 'production'
+app.config['DEBUG'] = False
+app.config['TESTING'] = False
 
 country_metadata = []
 
@@ -545,4 +552,4 @@ def library():
     return render_template('library.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    serve(app, host="0.0.0.0", port=8000)

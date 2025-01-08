@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "flask-app",
+      "script": "C:\\Users\\gonza\\OneDrive\\Escritorio\\thesuppliesmap\\venv\\Scripts\\python.exe",
+      "args": "app.py",
+      "interpreter_args": "--noconsole"
+    },
+    {
+      "name": "task-runner",
+      "script": "C:\\Users\\gonza\\OneDrive\\Escritorio\\thesuppliesmap\\static\\js\\task-runner.js"
+    },
+    {
+      "name": "free-api-finhub",
+      "script": "C:\\Users\\gonza\\OneDrive\\Escritorio\\thesuppliesmap\\venv\\Scripts\\python.exe",
+      "args": "free-api-finhub.py",
+      "interpreter_args": "--noconsole"
+    }
+  ]
+}
