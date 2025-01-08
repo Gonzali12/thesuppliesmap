@@ -521,33 +521,9 @@ def get_json_Merger_List():
 
     return jsonify(Final_List)
 
-@app.route("/login")
-def login():
-    return render_template('login.html')
-
-@app.route("/account")
-def account():
-    return render_template("account.html")
-
-@app.route("/register")
-def register():
-    return render_template('register.html')
-
-@app.route("/recover-password")
-def recover_password():
-    return render_template('recover-password.html')
-
-@app.route("/terms-and-conditions")
-def terms_and_conditions():
-    return render_template('terms-and-conditions.html')
-
 @app.route("/search-in-mobile")
 def search_in_mobile():
     return render_template('search-in-mobile.html')
-
-@app.route("/library")
-def library():
-    return render_template('library.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
